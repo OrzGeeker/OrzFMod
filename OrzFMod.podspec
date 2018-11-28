@@ -31,8 +31,7 @@ Pod::Spec.new do |s|
 
   s.source_files  = "OrzFMod/**/*.{h,hpp,m,mm}"
   # s.exclude_files = "Classes/Exclude"
-
-  # s.public_header_files = "OrzFMod/OrzFMod.h", "OrzFMod/FModCapsule/FModCapsule.h"
+  s.public_header_files = "OrzFMod/OrzFMod.h", "OrzFMod/FModCapsule/FModCapsule.h"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

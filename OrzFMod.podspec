@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-
+  Use this Framework to power a Keygen Music Player
                    DESC
 
   s.homepage     = "https://github.com/OrzGeeker/OrzFMod"
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.author             = { "wangzhizhou" => "824219521@qq.com" }
   s.social_media_url   = "https://github.com/wangzhizhou"
   s.platform     = :ios, "9.0"
-  s.source       = { :git => "https://github.com/wangzhizhou", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/OrzGeeker/OrzFMod.git", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

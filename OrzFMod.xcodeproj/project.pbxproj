@@ -197,6 +197,7 @@
 		F326F85521AEEEC200B60098 /* OrzFMod */ = {
 			isa = PBXGroup;
 			children = (
+				F326F8D721AEFA2B00B60098 /* Resources */,
 				F326F85621AEEEC200B60098 /* OrzFMod.h */,
 				F326F85721AEEEC200B60098 /* Info.plist */,
 				F326F86D21AEEF8E00B60098 /* FModCapsule */,
@@ -346,6 +347,13 @@
 				F326F8CA21AEF15A00B60098 /* Info.plist */,
 			);
 			path = FModDemoTests;
+			sourceTree = "<group>";
+		};
+		F326F8D721AEFA2B00B60098 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -659,7 +667,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -717,7 +725,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

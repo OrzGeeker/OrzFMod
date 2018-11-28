@@ -1,0 +1,961 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F326F85D21AEEEC200B60098 /* OrzFMod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F85321AEEEC200B60098 /* OrzFMod.framework */; };
+		F326F86221AEEEC200B60098 /* OrzFModTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326F86121AEEEC200B60098 /* OrzFModTests.swift */; };
+		F326F86421AEEEC200B60098 /* OrzFMod.h in Headers */ = {isa = PBXBuildFile; fileRef = F326F85621AEEEC200B60098 /* OrzFMod.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F326F88521AEEF8E00B60098 /* common.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F326F86F21AEEF8E00B60098 /* common.cpp */; };
+		F326F88621AEEF8E00B60098 /* common_platform.h in Headers */ = {isa = PBXBuildFile; fileRef = F326F87021AEEF8E00B60098 /* common_platform.h */; };
+		F326F88721AEEF8E00B60098 /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = F326F87121AEEF8E00B60098 /* common.h */; };
+		F326F88821AEEF8E00B60098 /* common_platform.mm in Sources */ = {isa = PBXBuildFile; fileRef = F326F87221AEEF8E00B60098 /* common_platform.mm */; };
+		F326F88921AEEF8E00B60098 /* FModCapsule.mm in Sources */ = {isa = PBXBuildFile; fileRef = F326F87321AEEF8E00B60098 /* FModCapsule.mm */; };
+		F326F88A21AEEF8E00B60098 /* FModCapsule.h in Headers */ = {isa = PBXBuildFile; fileRef = F326F87421AEEF8E00B60098 /* FModCapsule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F326F88B21AEEF8E00B60098 /* fmod_output.h in Headers */ = {isa = PBXBuildFile; fileRef = F326F87921AEEF8E00B60098 /* fmod_output.h */; };
+		F326F88C21AEEF8E00B60098 /* fmod_dsp.h in Headers */ = {isa = PBXBuildFile; fileRef = F326F87A21AEEF8E00B60098 /* fmod_dsp.h */; };
+		F326F88D21AEEF8E00B60098 /* fmod_errors.h in Headers */ = {isa = PBXBuildFile; fileRef = F326F87B21AEEF8E00B60098 /* fmod_errors.h */; };
+		F326F88E21AEEF8E00B60098 /* fmod.h in Headers */ = {isa = PBXBuildFile; fileRef = F326F87C21AEEF8E00B60098 /* fmod.h */; };
+		F326F88F21AEEF8E00B60098 /* fmod_codec.h in Headers */ = {isa = PBXBuildFile; fileRef = F326F87D21AEEF8E00B60098 /* fmod_codec.h */; };
+		F326F89021AEEF8E00B60098 /* fmod.hpp in Headers */ = {isa = PBXBuildFile; fileRef = F326F87E21AEEF8E00B60098 /* fmod.hpp */; };
+		F326F89121AEEF8E00B60098 /* fmod_ios.h in Headers */ = {isa = PBXBuildFile; fileRef = F326F87F21AEEF8E00B60098 /* fmod_ios.h */; };
+		F326F89221AEEF8E00B60098 /* fmod_common.h in Headers */ = {isa = PBXBuildFile; fileRef = F326F88021AEEF8E00B60098 /* fmod_common.h */; };
+		F326F89321AEEF8E00B60098 /* fmod_dsp_effects.h in Headers */ = {isa = PBXBuildFile; fileRef = F326F88121AEEF8E00B60098 /* fmod_dsp_effects.h */; };
+		F326F89421AEEF8E00B60098 /* libfmod_iphonesimulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F88321AEEF8E00B60098 /* libfmod_iphonesimulator.a */; };
+		F326F89521AEEF8E00B60098 /* libfmod_iphoneos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F88421AEEF8E00B60098 /* libfmod_iphoneos.a */; };
+		F326F89E21AEF02600B60098 /* fmod_studio.h in Headers */ = {isa = PBXBuildFile; fileRef = F326F89821AEF02600B60098 /* fmod_studio.h */; };
+		F326F89F21AEF02600B60098 /* fmod_studio.hpp in Headers */ = {isa = PBXBuildFile; fileRef = F326F89921AEF02600B60098 /* fmod_studio.hpp */; };
+		F326F8A021AEF02600B60098 /* fmod_studio_common.h in Headers */ = {isa = PBXBuildFile; fileRef = F326F89A21AEF02600B60098 /* fmod_studio_common.h */; };
+		F326F8A121AEF02600B60098 /* libfmodstudio_iphonesimulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F89C21AEF02600B60098 /* libfmodstudio_iphonesimulator.a */; };
+		F326F8A221AEF02600B60098 /* libfmodstudio_iphoneos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F89D21AEF02600B60098 /* libfmodstudio_iphoneos.a */; };
+		F326F8A721AEF04900B60098 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F8A621AEF04900B60098 /* AVFoundation.framework */; };
+		F326F8A921AEF05200B60098 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F8A821AEF05200B60098 /* AudioToolbox.framework */; };
+		F326F8AB21AEF05A00B60098 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F8AA21AEF05A00B60098 /* UIKit.framework */; };
+		F326F8B421AEF15900B60098 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326F8B321AEF15900B60098 /* AppDelegate.swift */; };
+		F326F8B621AEF15900B60098 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326F8B521AEF15900B60098 /* ViewController.swift */; };
+		F326F8B921AEF15900B60098 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F326F8B721AEF15900B60098 /* Main.storyboard */; };
+		F326F8BB21AEF15A00B60098 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F326F8BA21AEF15A00B60098 /* Assets.xcassets */; };
+		F326F8BE21AEF15A00B60098 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F326F8BC21AEF15A00B60098 /* LaunchScreen.storyboard */; };
+		F326F8C921AEF15A00B60098 /* FModDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326F8C821AEF15A00B60098 /* FModDemoTests.swift */; };
+		F326F8D121AEF1D300B60098 /* OrzFMod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F85321AEEEC200B60098 /* OrzFMod.framework */; };
+		F326F8D221AEF1D300B60098 /* OrzFMod.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F326F85321AEEEC200B60098 /* OrzFMod.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F326F8D621AEF30800B60098 /* test.xm in Resources */ = {isa = PBXBuildFile; fileRef = F326F8AC21AEF13600B60098 /* test.xm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F326F85E21AEEEC200B60098 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F326F84A21AEEEC200B60098 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F326F85221AEEEC200B60098;
+			remoteInfo = OrzFMod;
+		};
+		F326F8C521AEF15A00B60098 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F326F84A21AEEEC200B60098 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F326F8B021AEF15900B60098;
+			remoteInfo = FModDemo;
+		};
+		F326F8D321AEF1D300B60098 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F326F84A21AEEEC200B60098 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F326F85221AEEEC200B60098;
+			remoteInfo = OrzFMod;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F326F8D521AEF1D300B60098 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F326F8D221AEF1D300B60098 /* OrzFMod.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		F326F85321AEEEC200B60098 /* OrzFMod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OrzFMod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F326F85621AEEEC200B60098 /* OrzFMod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrzFMod.h; sourceTree = "<group>"; };
+		F326F85721AEEEC200B60098 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F326F85C21AEEEC200B60098 /* OrzFModTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrzFModTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F326F86121AEEEC200B60098 /* OrzFModTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrzFModTests.swift; sourceTree = "<group>"; };
+		F326F86321AEEEC200B60098 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F326F86F21AEEF8E00B60098 /* common.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = common.cpp; sourceTree = "<group>"; };
+		F326F87021AEEF8E00B60098 /* common_platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common_platform.h; sourceTree = "<group>"; };
+		F326F87121AEEF8E00B60098 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		F326F87221AEEF8E00B60098 /* common_platform.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = common_platform.mm; sourceTree = "<group>"; };
+		F326F87321AEEF8E00B60098 /* FModCapsule.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FModCapsule.mm; sourceTree = "<group>"; };
+		F326F87421AEEF8E00B60098 /* FModCapsule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FModCapsule.h; sourceTree = "<group>"; };
+		F326F87921AEEF8E00B60098 /* fmod_output.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_output.h; sourceTree = "<group>"; };
+		F326F87A21AEEF8E00B60098 /* fmod_dsp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_dsp.h; sourceTree = "<group>"; };
+		F326F87B21AEEF8E00B60098 /* fmod_errors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_errors.h; sourceTree = "<group>"; };
+		F326F87C21AEEF8E00B60098 /* fmod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod.h; sourceTree = "<group>"; };
+		F326F87D21AEEF8E00B60098 /* fmod_codec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_codec.h; sourceTree = "<group>"; };
+		F326F87E21AEEF8E00B60098 /* fmod.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fmod.hpp; sourceTree = "<group>"; };
+		F326F87F21AEEF8E00B60098 /* fmod_ios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_ios.h; sourceTree = "<group>"; };
+		F326F88021AEEF8E00B60098 /* fmod_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_common.h; sourceTree = "<group>"; };
+		F326F88121AEEF8E00B60098 /* fmod_dsp_effects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_dsp_effects.h; sourceTree = "<group>"; };
+		F326F88321AEEF8E00B60098 /* libfmod_iphonesimulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmod_iphonesimulator.a; sourceTree = "<group>"; };
+		F326F88421AEEF8E00B60098 /* libfmod_iphoneos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmod_iphoneos.a; sourceTree = "<group>"; };
+		F326F89821AEF02600B60098 /* fmod_studio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_studio.h; sourceTree = "<group>"; };
+		F326F89921AEF02600B60098 /* fmod_studio.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fmod_studio.hpp; sourceTree = "<group>"; };
+		F326F89A21AEF02600B60098 /* fmod_studio_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_studio_common.h; sourceTree = "<group>"; };
+		F326F89C21AEF02600B60098 /* libfmodstudio_iphonesimulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmodstudio_iphonesimulator.a; sourceTree = "<group>"; };
+		F326F89D21AEF02600B60098 /* libfmodstudio_iphoneos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmodstudio_iphoneos.a; sourceTree = "<group>"; };
+		F326F8A421AEF04200B60098 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		F326F8A621AEF04900B60098 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		F326F8A821AEF05200B60098 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		F326F8AA21AEF05A00B60098 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F326F8AC21AEF13600B60098 /* test.xm */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.xm; sourceTree = "<group>"; };
+		F326F8B121AEF15900B60098 /* FModDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FModDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F326F8B321AEF15900B60098 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F326F8B521AEF15900B60098 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F326F8B821AEF15900B60098 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F326F8BA21AEF15A00B60098 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F326F8BD21AEF15A00B60098 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F326F8BF21AEF15A00B60098 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F326F8C421AEF15A00B60098 /* FModDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FModDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F326F8C821AEF15A00B60098 /* FModDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FModDemoTests.swift; sourceTree = "<group>"; };
+		F326F8CA21AEF15A00B60098 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F326F85021AEEEC200B60098 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F326F8AB21AEF05A00B60098 /* UIKit.framework in Frameworks */,
+				F326F8A921AEF05200B60098 /* AudioToolbox.framework in Frameworks */,
+				F326F8A721AEF04900B60098 /* AVFoundation.framework in Frameworks */,
+				F326F8A221AEF02600B60098 /* libfmodstudio_iphoneos.a in Frameworks */,
+				F326F89521AEEF8E00B60098 /* libfmod_iphoneos.a in Frameworks */,
+				F326F8A121AEF02600B60098 /* libfmodstudio_iphonesimulator.a in Frameworks */,
+				F326F89421AEEF8E00B60098 /* libfmod_iphonesimulator.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F326F85921AEEEC200B60098 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F326F85D21AEEEC200B60098 /* OrzFMod.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F326F8AE21AEF15900B60098 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F326F8D121AEF1D300B60098 /* OrzFMod.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F326F8C121AEF15A00B60098 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F326F84921AEEEC200B60098 = {
+			isa = PBXGroup;
+			children = (
+				F326F85521AEEEC200B60098 /* OrzFMod */,
+				F326F86021AEEEC200B60098 /* OrzFModTests */,
+				F326F8B221AEF15900B60098 /* FModDemo */,
+				F326F8C721AEF15A00B60098 /* FModDemoTests */,
+				F326F85421AEEEC200B60098 /* Products */,
+				F326F8A321AEF04100B60098 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F326F85421AEEEC200B60098 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F326F85321AEEEC200B60098 /* OrzFMod.framework */,
+				F326F85C21AEEEC200B60098 /* OrzFModTests.xctest */,
+				F326F8B121AEF15900B60098 /* FModDemo.app */,
+				F326F8C421AEF15A00B60098 /* FModDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F326F85521AEEEC200B60098 /* OrzFMod */ = {
+			isa = PBXGroup;
+			children = (
+				F326F85621AEEEC200B60098 /* OrzFMod.h */,
+				F326F85721AEEEC200B60098 /* Info.plist */,
+				F326F86D21AEEF8E00B60098 /* FModCapsule */,
+			);
+			path = OrzFMod;
+			sourceTree = "<group>";
+		};
+		F326F86021AEEEC200B60098 /* OrzFModTests */ = {
+			isa = PBXGroup;
+			children = (
+				F326F86121AEEEC200B60098 /* OrzFModTests.swift */,
+				F326F86321AEEEC200B60098 /* Info.plist */,
+			);
+			path = OrzFModTests;
+			sourceTree = "<group>";
+		};
+		F326F86D21AEEF8E00B60098 /* FModCapsule */ = {
+			isa = PBXGroup;
+			children = (
+				F326F86E21AEEF8E00B60098 /* Common */,
+				F326F87321AEEF8E00B60098 /* FModCapsule.mm */,
+				F326F87421AEEF8E00B60098 /* FModCapsule.h */,
+				F326F87521AEEF8E00B60098 /* FModAPI */,
+			);
+			path = FModCapsule;
+			sourceTree = "<group>";
+		};
+		F326F86E21AEEF8E00B60098 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				F326F86F21AEEF8E00B60098 /* common.cpp */,
+				F326F87021AEEF8E00B60098 /* common_platform.h */,
+				F326F87121AEEF8E00B60098 /* common.h */,
+				F326F87221AEEF8E00B60098 /* common_platform.mm */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		F326F87521AEEF8E00B60098 /* FModAPI */ = {
+			isa = PBXGroup;
+			children = (
+				F326F87621AEEF8E00B60098 /* api */,
+			);
+			path = FModAPI;
+			sourceTree = "<group>";
+		};
+		F326F87621AEEF8E00B60098 /* api */ = {
+			isa = PBXGroup;
+			children = (
+				F326F89621AEF02600B60098 /* studio */,
+				F326F87721AEEF8E00B60098 /* lowlevel */,
+			);
+			path = api;
+			sourceTree = "<group>";
+		};
+		F326F87721AEEF8E00B60098 /* lowlevel */ = {
+			isa = PBXGroup;
+			children = (
+				F326F87821AEEF8E00B60098 /* inc */,
+				F326F88221AEEF8E00B60098 /* lib */,
+			);
+			path = lowlevel;
+			sourceTree = "<group>";
+		};
+		F326F87821AEEF8E00B60098 /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				F326F87921AEEF8E00B60098 /* fmod_output.h */,
+				F326F87A21AEEF8E00B60098 /* fmod_dsp.h */,
+				F326F87B21AEEF8E00B60098 /* fmod_errors.h */,
+				F326F87C21AEEF8E00B60098 /* fmod.h */,
+				F326F87D21AEEF8E00B60098 /* fmod_codec.h */,
+				F326F87E21AEEF8E00B60098 /* fmod.hpp */,
+				F326F87F21AEEF8E00B60098 /* fmod_ios.h */,
+				F326F88021AEEF8E00B60098 /* fmod_common.h */,
+				F326F88121AEEF8E00B60098 /* fmod_dsp_effects.h */,
+			);
+			path = inc;
+			sourceTree = "<group>";
+		};
+		F326F88221AEEF8E00B60098 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				F326F88321AEEF8E00B60098 /* libfmod_iphonesimulator.a */,
+				F326F88421AEEF8E00B60098 /* libfmod_iphoneos.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		F326F89621AEF02600B60098 /* studio */ = {
+			isa = PBXGroup;
+			children = (
+				F326F89721AEF02600B60098 /* inc */,
+				F326F89B21AEF02600B60098 /* lib */,
+			);
+			path = studio;
+			sourceTree = "<group>";
+		};
+		F326F89721AEF02600B60098 /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				F326F89821AEF02600B60098 /* fmod_studio.h */,
+				F326F89921AEF02600B60098 /* fmod_studio.hpp */,
+				F326F89A21AEF02600B60098 /* fmod_studio_common.h */,
+			);
+			path = inc;
+			sourceTree = "<group>";
+		};
+		F326F89B21AEF02600B60098 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				F326F89C21AEF02600B60098 /* libfmodstudio_iphonesimulator.a */,
+				F326F89D21AEF02600B60098 /* libfmodstudio_iphoneos.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		F326F8A321AEF04100B60098 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F326F8AA21AEF05A00B60098 /* UIKit.framework */,
+				F326F8A821AEF05200B60098 /* AudioToolbox.framework */,
+				F326F8A621AEF04900B60098 /* AVFoundation.framework */,
+				F326F8A421AEF04200B60098 /* AVKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F326F8B221AEF15900B60098 /* FModDemo */ = {
+			isa = PBXGroup;
+			children = (
+				F326F8B321AEF15900B60098 /* AppDelegate.swift */,
+				F326F8B521AEF15900B60098 /* ViewController.swift */,
+				F326F8B721AEF15900B60098 /* Main.storyboard */,
+				F326F8BA21AEF15A00B60098 /* Assets.xcassets */,
+				F326F8AC21AEF13600B60098 /* test.xm */,
+				F326F8BC21AEF15A00B60098 /* LaunchScreen.storyboard */,
+				F326F8BF21AEF15A00B60098 /* Info.plist */,
+			);
+			path = FModDemo;
+			sourceTree = "<group>";
+		};
+		F326F8C721AEF15A00B60098 /* FModDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				F326F8C821AEF15A00B60098 /* FModDemoTests.swift */,
+				F326F8CA21AEF15A00B60098 /* Info.plist */,
+			);
+			path = FModDemoTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F326F84E21AEEEC200B60098 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F326F88A21AEEF8E00B60098 /* FModCapsule.h in Headers */,
+				F326F88F21AEEF8E00B60098 /* fmod_codec.h in Headers */,
+				F326F89121AEEF8E00B60098 /* fmod_ios.h in Headers */,
+				F326F88621AEEF8E00B60098 /* common_platform.h in Headers */,
+				F326F88B21AEEF8E00B60098 /* fmod_output.h in Headers */,
+				F326F89321AEEF8E00B60098 /* fmod_dsp_effects.h in Headers */,
+				F326F88E21AEEF8E00B60098 /* fmod.h in Headers */,
+				F326F89221AEEF8E00B60098 /* fmod_common.h in Headers */,
+				F326F88721AEEF8E00B60098 /* common.h in Headers */,
+				F326F89E21AEF02600B60098 /* fmod_studio.h in Headers */,
+				F326F89F21AEF02600B60098 /* fmod_studio.hpp in Headers */,
+				F326F88D21AEEF8E00B60098 /* fmod_errors.h in Headers */,
+				F326F88C21AEEF8E00B60098 /* fmod_dsp.h in Headers */,
+				F326F89021AEEF8E00B60098 /* fmod.hpp in Headers */,
+				F326F86421AEEEC200B60098 /* OrzFMod.h in Headers */,
+				F326F8A021AEF02600B60098 /* fmod_studio_common.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F326F85221AEEEC200B60098 /* OrzFMod */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F326F86721AEEEC200B60098 /* Build configuration list for PBXNativeTarget "OrzFMod" */;
+			buildPhases = (
+				F326F84E21AEEEC200B60098 /* Headers */,
+				F326F84F21AEEEC200B60098 /* Sources */,
+				F326F85021AEEEC200B60098 /* Frameworks */,
+				F326F85121AEEEC200B60098 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OrzFMod;
+			productName = OrzFMod;
+			productReference = F326F85321AEEEC200B60098 /* OrzFMod.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F326F85B21AEEEC200B60098 /* OrzFModTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F326F86A21AEEEC200B60098 /* Build configuration list for PBXNativeTarget "OrzFModTests" */;
+			buildPhases = (
+				F326F85821AEEEC200B60098 /* Sources */,
+				F326F85921AEEEC200B60098 /* Frameworks */,
+				F326F85A21AEEEC200B60098 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F326F85F21AEEEC200B60098 /* PBXTargetDependency */,
+			);
+			name = OrzFModTests;
+			productName = OrzFModTests;
+			productReference = F326F85C21AEEEC200B60098 /* OrzFModTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F326F8B021AEF15900B60098 /* FModDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F326F8CB21AEF15A00B60098 /* Build configuration list for PBXNativeTarget "FModDemo" */;
+			buildPhases = (
+				F326F8AD21AEF15900B60098 /* Sources */,
+				F326F8AE21AEF15900B60098 /* Frameworks */,
+				F326F8AF21AEF15900B60098 /* Resources */,
+				F326F8D521AEF1D300B60098 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F326F8D421AEF1D300B60098 /* PBXTargetDependency */,
+			);
+			name = FModDemo;
+			productName = FModDemo;
+			productReference = F326F8B121AEF15900B60098 /* FModDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F326F8C321AEF15A00B60098 /* FModDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F326F8CE21AEF15A00B60098 /* Build configuration list for PBXNativeTarget "FModDemoTests" */;
+			buildPhases = (
+				F326F8C021AEF15A00B60098 /* Sources */,
+				F326F8C121AEF15A00B60098 /* Frameworks */,
+				F326F8C221AEF15A00B60098 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F326F8C621AEF15A00B60098 /* PBXTargetDependency */,
+			);
+			name = FModDemoTests;
+			productName = FModDemoTests;
+			productReference = F326F8C421AEF15A00B60098 /* FModDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F326F84A21AEEEC200B60098 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = joker;
+				TargetAttributes = {
+					F326F85221AEEEC200B60098 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					F326F85B21AEEEC200B60098 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					F326F8B021AEF15900B60098 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					F326F8C321AEF15A00B60098 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = F326F8B021AEF15900B60098;
+					};
+				};
+			};
+			buildConfigurationList = F326F84D21AEEEC200B60098 /* Build configuration list for PBXProject "OrzFMod" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F326F84921AEEEC200B60098;
+			productRefGroup = F326F85421AEEEC200B60098 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F326F85221AEEEC200B60098 /* OrzFMod */,
+				F326F85B21AEEEC200B60098 /* OrzFModTests */,
+				F326F8B021AEF15900B60098 /* FModDemo */,
+				F326F8C321AEF15A00B60098 /* FModDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F326F85121AEEEC200B60098 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F326F85A21AEEEC200B60098 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F326F8AF21AEF15900B60098 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F326F8D621AEF30800B60098 /* test.xm in Resources */,
+				F326F8BE21AEF15A00B60098 /* LaunchScreen.storyboard in Resources */,
+				F326F8BB21AEF15A00B60098 /* Assets.xcassets in Resources */,
+				F326F8B921AEF15900B60098 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F326F8C221AEF15A00B60098 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F326F84F21AEEEC200B60098 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F326F88521AEEF8E00B60098 /* common.cpp in Sources */,
+				F326F88821AEEF8E00B60098 /* common_platform.mm in Sources */,
+				F326F88921AEEF8E00B60098 /* FModCapsule.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F326F85821AEEEC200B60098 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F326F86221AEEEC200B60098 /* OrzFModTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F326F8AD21AEF15900B60098 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F326F8B621AEF15900B60098 /* ViewController.swift in Sources */,
+				F326F8B421AEF15900B60098 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F326F8C021AEF15A00B60098 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F326F8C921AEF15A00B60098 /* FModDemoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F326F85F21AEEEC200B60098 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F326F85221AEEEC200B60098 /* OrzFMod */;
+			targetProxy = F326F85E21AEEEC200B60098 /* PBXContainerItemProxy */;
+		};
+		F326F8C621AEF15A00B60098 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F326F8B021AEF15900B60098 /* FModDemo */;
+			targetProxy = F326F8C521AEF15A00B60098 /* PBXContainerItemProxy */;
+		};
+		F326F8D421AEF1D300B60098 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F326F85221AEEEC200B60098 /* OrzFMod */;
+			targetProxy = F326F8D321AEF1D300B60098 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F326F8B721AEF15900B60098 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F326F8B821AEF15900B60098 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F326F8BC21AEF15A00B60098 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F326F8BD21AEF15A00B60098 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F326F86521AEEEC200B60098 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F326F86621AEEEC200B60098 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		F326F86821AEEEC200B60098 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2N62934Y28;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = OrzFMod/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OrzFMod/FModCapsule/FModAPI/api/lowlevel/lib",
+					"$(PROJECT_DIR)/OrzFMod/FModCapsule/FModAPI/api/studio/lib",
+				);
+				MACH_O_TYPE = mh_dylib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joker.OrzFMod;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F326F86921AEEEC200B60098 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2N62934Y28;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = OrzFMod/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/OrzFMod/FModCapsule/FModAPI/api/lowlevel/lib",
+					"$(PROJECT_DIR)/OrzFMod/FModCapsule/FModAPI/api/studio/lib",
+				);
+				MACH_O_TYPE = mh_dylib;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joker.OrzFMod;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F326F86B21AEEEC200B60098 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2N62934Y28;
+				INFOPLIST_FILE = OrzFModTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joker.OrzFModTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F326F86C21AEEEC200B60098 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2N62934Y28;
+				INFOPLIST_FILE = OrzFModTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joker.OrzFModTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F326F8CC21AEF15A00B60098 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2N62934Y28;
+				INFOPLIST_FILE = FModDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joker.FModDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F326F8CD21AEF15A00B60098 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2N62934Y28;
+				INFOPLIST_FILE = FModDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joker.FModDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F326F8CF21AEF15A00B60098 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2N62934Y28;
+				INFOPLIST_FILE = FModDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joker.FModDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FModDemo.app/FModDemo";
+			};
+			name = Debug;
+		};
+		F326F8D021AEF15A00B60098 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2N62934Y28;
+				INFOPLIST_FILE = FModDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.joker.FModDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FModDemo.app/FModDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F326F84D21AEEEC200B60098 /* Build configuration list for PBXProject "OrzFMod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F326F86521AEEEC200B60098 /* Debug */,
+				F326F86621AEEEC200B60098 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F326F86721AEEEC200B60098 /* Build configuration list for PBXNativeTarget "OrzFMod" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F326F86821AEEEC200B60098 /* Debug */,
+				F326F86921AEEEC200B60098 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F326F86A21AEEEC200B60098 /* Build configuration list for PBXNativeTarget "OrzFModTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F326F86B21AEEEC200B60098 /* Debug */,
+				F326F86C21AEEEC200B60098 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F326F8CB21AEF15A00B60098 /* Build configuration list for PBXNativeTarget "FModDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F326F8CC21AEF15A00B60098 /* Debug */,
+				F326F8CD21AEF15A00B60098 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F326F8CE21AEF15A00B60098 /* Build configuration list for PBXNativeTarget "FModDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F326F8CF21AEF15A00B60098 /* Debug */,
+				F326F8D021AEF15A00B60098 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F326F84A21AEEEC200B60098 /* Project object */;
+}

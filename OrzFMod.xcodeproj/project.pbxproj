@@ -46,6 +46,7 @@
 		F326F8D621AEF30800B60098 /* test.xm in Resources */ = {isa = PBXBuildFile; fileRef = F326F8AC21AEF13600B60098 /* test.xm */; };
 		F389BBDA21B05451002F8EAF /* FMOD_White.png in Resources */ = {isa = PBXBuildFile; fileRef = F389BBD821B05451002F8EAF /* FMOD_White.png */; };
 		F389BBDB21B05451002F8EAF /* FMOD_Black.png in Resources */ = {isa = PBXBuildFile; fileRef = F389BBD921B05451002F8EAF /* FMOD_Black.png */; };
+		F389BBDC21B0552E002F8EAF /* test.xm in Resources */ = {isa = PBXBuildFile; fileRef = F326F8AC21AEF13600B60098 /* test.xm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -337,7 +338,6 @@
 				F326F8B521AEF15900B60098 /* ViewController.swift */,
 				F326F8B721AEF15900B60098 /* Main.storyboard */,
 				F326F8BA21AEF15A00B60098 /* Assets.xcassets */,
-				F326F8AC21AEF13600B60098 /* test.xm */,
 				F326F8BC21AEF15A00B60098 /* LaunchScreen.storyboard */,
 				F326F8BF21AEF15A00B60098 /* Info.plist */,
 			);
@@ -358,6 +358,7 @@
 			children = (
 				F389BBD921B05451002F8EAF /* FMOD_Black.png */,
 				F389BBD821B05451002F8EAF /* FMOD_White.png */,
+				F326F8AC21AEF13600B60098 /* test.xm */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -515,6 +516,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F389BBDC21B0552E002F8EAF /* test.xm in Resources */,
 				F389BBDA21B05451002F8EAF /* FMOD_White.png in Resources */,
 				F389BBDB21B05451002F8EAF /* FMOD_Black.png in Resources */,
 			);

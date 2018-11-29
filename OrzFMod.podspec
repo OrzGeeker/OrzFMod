@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/OrzGeeker/OrzFMod.git", :tag => "#{s.version}" }
   s.source_files  = "OrzFMod/**/*.{h,hpp,m,mm}"
   s.public_header_files = "OrzFMod/OrzFMod.h", "OrzFMod/FModCapsule/FModCapsule.h"
-  s.resources = "OrzFMod/Resources/*"
+  s.resources = "OrzFMod/**/*.{png,xm}"
   s.frameworks = "UIKit", "AudioToolbox", "AVFoundation"
   s.vendored_libraries = "OrzFMod/**/*.{a}"
 end

@@ -44,8 +44,8 @@
 		F326F8D121AEF1D300B60098 /* OrzFMod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F85321AEEEC200B60098 /* OrzFMod.framework */; };
 		F326F8D221AEF1D300B60098 /* OrzFMod.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F326F85321AEEEC200B60098 /* OrzFMod.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F326F8D621AEF30800B60098 /* test.xm in Resources */ = {isa = PBXBuildFile; fileRef = F326F8AC21AEF13600B60098 /* test.xm */; };
-		F389BBD621B051F6002F8EAF /* FMOD Logo White - Black Background.png in Resources */ = {isa = PBXBuildFile; fileRef = F389BBD421B051F6002F8EAF /* FMOD Logo White - Black Background.png */; };
-		F389BBD721B051F6002F8EAF /* FMOD Logo Black - White Background.png in Resources */ = {isa = PBXBuildFile; fileRef = F389BBD521B051F6002F8EAF /* FMOD Logo Black - White Background.png */; };
+		F389BBDA21B05451002F8EAF /* FMOD_White.png in Resources */ = {isa = PBXBuildFile; fileRef = F389BBD821B05451002F8EAF /* FMOD_White.png */; };
+		F389BBDB21B05451002F8EAF /* FMOD_Black.png in Resources */ = {isa = PBXBuildFile; fileRef = F389BBD921B05451002F8EAF /* FMOD_Black.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,8 +130,8 @@
 		F326F8C421AEF15A00B60098 /* FModDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FModDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F326F8C821AEF15A00B60098 /* FModDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FModDemoTests.swift; sourceTree = "<group>"; };
 		F326F8CA21AEF15A00B60098 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F389BBD421B051F6002F8EAF /* FMOD Logo White - Black Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FMOD Logo White - Black Background.png"; sourceTree = "<group>"; };
-		F389BBD521B051F6002F8EAF /* FMOD Logo Black - White Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FMOD Logo Black - White Background.png"; sourceTree = "<group>"; };
+		F389BBD821B05451002F8EAF /* FMOD_White.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FMOD_White.png; sourceTree = "<group>"; };
+		F389BBD921B05451002F8EAF /* FMOD_Black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FMOD_Black.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -356,8 +356,8 @@
 		F326F8D721AEFA2B00B60098 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				F389BBD521B051F6002F8EAF /* FMOD Logo Black - White Background.png */,
-				F389BBD421B051F6002F8EAF /* FMOD Logo White - Black Background.png */,
+				F389BBD921B05451002F8EAF /* FMOD_Black.png */,
+				F389BBD821B05451002F8EAF /* FMOD_White.png */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -515,8 +515,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F389BBD621B051F6002F8EAF /* FMOD Logo White - Black Background.png in Resources */,
-				F389BBD721B051F6002F8EAF /* FMOD Logo Black - White Background.png in Resources */,
+				F389BBDA21B05451002F8EAF /* FMOD_White.png in Resources */,
+				F389BBDB21B05451002F8EAF /* FMOD_Black.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

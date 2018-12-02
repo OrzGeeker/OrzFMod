@@ -70,14 +70,13 @@ void Common_Init(void **extraDriverData)
         }
     }];
 
-    if (&AVAudioSessionSilenceSecondaryAudioHintNotification)
-    {
-        [[NSNotificationCenter defaultCenter] addObserverForName:AVAudioSessionSilenceSecondaryAudioHintNotification object:nil queue:nil usingBlock:^(NSNotification *notification)
-        {
-            bool began = [[notification.userInfo valueForKey:AVAudioSessionSilenceSecondaryAudioHintTypeKey] intValue] == AVAudioSessionSilenceSecondaryAudioHintTypeBegin;
-            NSLog(@"Silence secondary audio %@", began ? @"Began" : @"Ended");
-        }];
-    }
+
+    [[NSNotificationCenter defaultCenter] addObserverForName:AVAudioSessionSilenceSecondaryAudioHintNotification object:nil queue:nil usingBlock:^(NSNotification *notification)
+     {
+         bool began = [[notification.userInfo valueForKey:AVAudioSessionSilenceSecondaryAudioHintTypeKey] intValue] == AVAudioSessionSilenceSecondaryAudioHintTypeBegin;
+         NSLog(@"Silence secondary audio %@", began ? @"Began" : @"Ended");
+     }];
+    
 
     [[NSNotificationCenter defaultCenter] addObserverForName:AVAudioSessionRouteChangeNotification object:nil queue:nil usingBlock:^(NSNotification *notification)
     {
@@ -101,13 +100,11 @@ void Common_Init(void **extraDriverData)
         NSLog(@"Output route has changed from %dch %@ to %dch %@ due to '%s'", (int)[[oldOutput channels] count], [oldOutput portName], (int)[[newOutput channels] count], [newOutput portName], reasonString);
     }];
 
-    if (&AVAudioSessionMediaServicesWereLostNotification)
-    {
-        [[NSNotificationCenter defaultCenter] addObserverForName:AVAudioSessionMediaServicesWereLostNotification object:nil queue:nil usingBlock:^(NSNotification *notification)
-        {
-            NSLog(@"Media services were lost");
-        }];
-    }
+    [[NSNotificationCenter defaultCenter] addObserverForName:AVAudioSessionMediaServicesWereLostNotification object:nil queue:nil usingBlock:^(NSNotification *notification)
+     {
+         NSLog(@"Media services were lost");
+     }];
+    
     [[NSNotificationCenter defaultCenter] addObserverForName:AVAudioSessionMediaServicesWereResetNotification object:nil queue:nil usingBlock:^(NSNotification *notification)
     {
         NSLog(@"Media services were reset");

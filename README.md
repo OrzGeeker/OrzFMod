@@ -6,6 +6,8 @@ FMod Offical Site: <https://www.fmod.com>
 
 # Usage
 
+In you `Podfile`, add my private podspec repo OrzGeeker, and use my pods
+
 ```
 source 'https://github.com/OrzGeeker/Specs.git'
 ...

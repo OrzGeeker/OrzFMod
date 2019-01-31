@@ -25,7 +25,7 @@ void Common_Init(void **extraDriverData)
 
     // Make our category 'solo' for the best chance at getting our desired settings
     // Use AVAudioSessionCategoryPlayAndRecord if you need microphone input
-    success = [session setCategory:AVAudioSessionCategorySoloAmbient error:nil];
+    success = [session setCategory:AVAudioSessionCategoryPlayback error:nil];
     assert(success);
     
     // Set our preferred rate and activate the session to test it

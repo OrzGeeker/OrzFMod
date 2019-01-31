@@ -483,6 +483,11 @@
 					};
 					F326F8B021AEF15900B60098 = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					F326F8C321AEF15A00B60098 = {
 						CreatedOnToolsVersion = 10.1;

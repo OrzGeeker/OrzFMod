@@ -1,9 +1,12 @@
+/*==============================================================================
+FMOD Example Framework
+Copyright (c), Firelight Technologies Pty, Ltd 2012-2019.
+==============================================================================*/
 #import "common.h"
 #import <Foundation/NSString.h>
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVAudioSession.h>
-#import <GameController/GameController.h>
 
 void (*gSuspendCallback)(bool suspend);
 
@@ -25,7 +28,7 @@ void Common_Init(void **extraDriverData)
 
     // Make our category 'solo' for the best chance at getting our desired settings
     // Use AVAudioSessionCategoryPlayAndRecord if you need microphone input
-    success = [session setCategory:AVAudioSessionCategoryPlayback error:nil];
+    success = [session setCategory:AVAudioSessionCategorySoloAmbient error:nil];
     assert(success);
     
     // Set our preferred rate and activate the session to test it
@@ -69,7 +72,6 @@ void Common_Init(void **extraDriverData)
             gSuspendCallback(began);
         }
     }];
-
 
     [[NSNotificationCenter defaultCenter] addObserverForName:AVAudioSessionSilenceSecondaryAudioHintNotification object:nil queue:nil usingBlock:^(NSNotification *notification)
      {
@@ -135,6 +137,11 @@ void Common_Init(void **extraDriverData)
     assert(success);
 }
 
+void Common_Close()
+{
+
+}
+
 void Common_Sleep(unsigned int ms)
 {
     [NSThread sleepForTimeInterval:(ms / 1000.0f)];
@@ -143,11 +150,6 @@ void Common_Sleep(unsigned int ms)
 void Common_Exit(int returnCode)
 {
     exit(-1);
-}
-
-const char *Common_MediaPath(const char *fileName)
-{
-    return [[NSString stringWithFormat:@"%@/%s", [[NSBundle mainBundle] resourcePath], fileName] UTF8String];
 }
 
 void Common_LoadFileMemory(const char *name, void **buff, int *length)
@@ -171,4 +173,3 @@ void Common_UnloadFileMemory(void *buff)
 {
     free(buff);
 }
-

@@ -7,31 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E22D945922FD9A6500A9013E /* fmod_output.h in Headers */ = {isa = PBXBuildFile; fileRef = E22D944B22FD9A6500A9013E /* fmod_output.h */; };
+		E22D945A22FD9A6500A9013E /* fmod_dsp.h in Headers */ = {isa = PBXBuildFile; fileRef = E22D944C22FD9A6500A9013E /* fmod_dsp.h */; };
+		E22D945B22FD9A6500A9013E /* fmod_errors.h in Headers */ = {isa = PBXBuildFile; fileRef = E22D944D22FD9A6500A9013E /* fmod_errors.h */; };
+		E22D945C22FD9A6500A9013E /* fmod.h in Headers */ = {isa = PBXBuildFile; fileRef = E22D944E22FD9A6500A9013E /* fmod.h */; };
+		E22D945D22FD9A6500A9013E /* fmod_codec.h in Headers */ = {isa = PBXBuildFile; fileRef = E22D944F22FD9A6500A9013E /* fmod_codec.h */; };
+		E22D945E22FD9A6500A9013E /* fmod.hpp in Headers */ = {isa = PBXBuildFile; fileRef = E22D945022FD9A6500A9013E /* fmod.hpp */; };
+		E22D945F22FD9A6500A9013E /* fmod_ios.h in Headers */ = {isa = PBXBuildFile; fileRef = E22D945122FD9A6500A9013E /* fmod_ios.h */; };
+		E22D946022FD9A6500A9013E /* fmod_common.h in Headers */ = {isa = PBXBuildFile; fileRef = E22D945222FD9A6500A9013E /* fmod_common.h */; };
+		E22D946122FD9A6500A9013E /* fmod_dsp_effects.h in Headers */ = {isa = PBXBuildFile; fileRef = E22D945322FD9A6500A9013E /* fmod_dsp_effects.h */; };
+		E22D946222FD9A6500A9013E /* libfmod_iphonesimulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E22D945522FD9A6500A9013E /* libfmod_iphonesimulator.a */; };
+		E22D946322FD9A6500A9013E /* libfmodL_iphonesimulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E22D945622FD9A6500A9013E /* libfmodL_iphonesimulator.a */; };
+		E22D946422FD9A6500A9013E /* libfmodL_iphoneos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E22D945722FD9A6500A9013E /* libfmodL_iphoneos.a */; };
+		E22D946522FD9A6500A9013E /* libfmod_iphoneos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E22D945822FD9A6500A9013E /* libfmod_iphoneos.a */; };
+		E22D946A22FD9BC300A9013E /* common_platform.h in Headers */ = {isa = PBXBuildFile; fileRef = E22D946622FD9BC100A9013E /* common_platform.h */; };
+		E22D946B22FD9BC300A9013E /* common.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E22D946722FD9BC200A9013E /* common.cpp */; };
+		E22D946C22FD9BC300A9013E /* common_platform.mm in Sources */ = {isa = PBXBuildFile; fileRef = E22D946822FD9BC200A9013E /* common_platform.mm */; };
+		E22D946D22FD9BC300A9013E /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = E22D946922FD9BC300A9013E /* common.h */; };
 		F326F85D21AEEEC200B60098 /* OrzFMod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F85321AEEEC200B60098 /* OrzFMod.framework */; };
 		F326F86221AEEEC200B60098 /* OrzFModTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326F86121AEEEC200B60098 /* OrzFModTests.swift */; };
 		F326F86421AEEEC200B60098 /* OrzFMod.h in Headers */ = {isa = PBXBuildFile; fileRef = F326F85621AEEEC200B60098 /* OrzFMod.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F326F88521AEEF8E00B60098 /* common.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F326F86F21AEEF8E00B60098 /* common.cpp */; };
-		F326F88621AEEF8E00B60098 /* common_platform.h in Headers */ = {isa = PBXBuildFile; fileRef = F326F87021AEEF8E00B60098 /* common_platform.h */; };
-		F326F88721AEEF8E00B60098 /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = F326F87121AEEF8E00B60098 /* common.h */; };
-		F326F88821AEEF8E00B60098 /* common_platform.mm in Sources */ = {isa = PBXBuildFile; fileRef = F326F87221AEEF8E00B60098 /* common_platform.mm */; };
 		F326F88921AEEF8E00B60098 /* FModCapsule.mm in Sources */ = {isa = PBXBuildFile; fileRef = F326F87321AEEF8E00B60098 /* FModCapsule.mm */; };
 		F326F88A21AEEF8E00B60098 /* FModCapsule.h in Headers */ = {isa = PBXBuildFile; fileRef = F326F87421AEEF8E00B60098 /* FModCapsule.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F326F88B21AEEF8E00B60098 /* fmod_output.h in Headers */ = {isa = PBXBuildFile; fileRef = F326F87921AEEF8E00B60098 /* fmod_output.h */; };
-		F326F88C21AEEF8E00B60098 /* fmod_dsp.h in Headers */ = {isa = PBXBuildFile; fileRef = F326F87A21AEEF8E00B60098 /* fmod_dsp.h */; };
-		F326F88D21AEEF8E00B60098 /* fmod_errors.h in Headers */ = {isa = PBXBuildFile; fileRef = F326F87B21AEEF8E00B60098 /* fmod_errors.h */; };
-		F326F88E21AEEF8E00B60098 /* fmod.h in Headers */ = {isa = PBXBuildFile; fileRef = F326F87C21AEEF8E00B60098 /* fmod.h */; };
-		F326F88F21AEEF8E00B60098 /* fmod_codec.h in Headers */ = {isa = PBXBuildFile; fileRef = F326F87D21AEEF8E00B60098 /* fmod_codec.h */; };
-		F326F89021AEEF8E00B60098 /* fmod.hpp in Headers */ = {isa = PBXBuildFile; fileRef = F326F87E21AEEF8E00B60098 /* fmod.hpp */; };
-		F326F89121AEEF8E00B60098 /* fmod_ios.h in Headers */ = {isa = PBXBuildFile; fileRef = F326F87F21AEEF8E00B60098 /* fmod_ios.h */; };
-		F326F89221AEEF8E00B60098 /* fmod_common.h in Headers */ = {isa = PBXBuildFile; fileRef = F326F88021AEEF8E00B60098 /* fmod_common.h */; };
-		F326F89321AEEF8E00B60098 /* fmod_dsp_effects.h in Headers */ = {isa = PBXBuildFile; fileRef = F326F88121AEEF8E00B60098 /* fmod_dsp_effects.h */; };
-		F326F89421AEEF8E00B60098 /* libfmod_iphonesimulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F88321AEEF8E00B60098 /* libfmod_iphonesimulator.a */; };
-		F326F89521AEEF8E00B60098 /* libfmod_iphoneos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F88421AEEF8E00B60098 /* libfmod_iphoneos.a */; };
-		F326F89E21AEF02600B60098 /* fmod_studio.h in Headers */ = {isa = PBXBuildFile; fileRef = F326F89821AEF02600B60098 /* fmod_studio.h */; };
-		F326F89F21AEF02600B60098 /* fmod_studio.hpp in Headers */ = {isa = PBXBuildFile; fileRef = F326F89921AEF02600B60098 /* fmod_studio.hpp */; };
-		F326F8A021AEF02600B60098 /* fmod_studio_common.h in Headers */ = {isa = PBXBuildFile; fileRef = F326F89A21AEF02600B60098 /* fmod_studio_common.h */; };
-		F326F8A121AEF02600B60098 /* libfmodstudio_iphonesimulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F89C21AEF02600B60098 /* libfmodstudio_iphonesimulator.a */; };
-		F326F8A221AEF02600B60098 /* libfmodstudio_iphoneos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F89D21AEF02600B60098 /* libfmodstudio_iphoneos.a */; };
 		F326F8A721AEF04900B60098 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F8A621AEF04900B60098 /* AVFoundation.framework */; };
 		F326F8A921AEF05200B60098 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F8A821AEF05200B60098 /* AudioToolbox.framework */; };
 		F326F8AB21AEF05A00B60098 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F8AA21AEF05A00B60098 /* UIKit.framework */; };
@@ -88,34 +85,31 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		E22D944B22FD9A6500A9013E /* fmod_output.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_output.h; sourceTree = "<group>"; };
+		E22D944C22FD9A6500A9013E /* fmod_dsp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_dsp.h; sourceTree = "<group>"; };
+		E22D944D22FD9A6500A9013E /* fmod_errors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_errors.h; sourceTree = "<group>"; };
+		E22D944E22FD9A6500A9013E /* fmod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod.h; sourceTree = "<group>"; };
+		E22D944F22FD9A6500A9013E /* fmod_codec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_codec.h; sourceTree = "<group>"; };
+		E22D945022FD9A6500A9013E /* fmod.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fmod.hpp; sourceTree = "<group>"; };
+		E22D945122FD9A6500A9013E /* fmod_ios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_ios.h; sourceTree = "<group>"; };
+		E22D945222FD9A6500A9013E /* fmod_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_common.h; sourceTree = "<group>"; };
+		E22D945322FD9A6500A9013E /* fmod_dsp_effects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_dsp_effects.h; sourceTree = "<group>"; };
+		E22D945522FD9A6500A9013E /* libfmod_iphonesimulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmod_iphonesimulator.a; sourceTree = "<group>"; };
+		E22D945622FD9A6500A9013E /* libfmodL_iphonesimulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmodL_iphonesimulator.a; sourceTree = "<group>"; };
+		E22D945722FD9A6500A9013E /* libfmodL_iphoneos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmodL_iphoneos.a; sourceTree = "<group>"; };
+		E22D945822FD9A6500A9013E /* libfmod_iphoneos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmod_iphoneos.a; sourceTree = "<group>"; };
+		E22D946622FD9BC100A9013E /* common_platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common_platform.h; sourceTree = "<group>"; };
+		E22D946722FD9BC200A9013E /* common.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = common.cpp; sourceTree = "<group>"; };
+		E22D946822FD9BC200A9013E /* common_platform.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = common_platform.mm; sourceTree = "<group>"; };
+		E22D946922FD9BC300A9013E /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
 		F326F85321AEEEC200B60098 /* OrzFMod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OrzFMod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F326F85621AEEEC200B60098 /* OrzFMod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrzFMod.h; sourceTree = "<group>"; };
 		F326F85721AEEEC200B60098 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F326F85C21AEEEC200B60098 /* OrzFModTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrzFModTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F326F86121AEEEC200B60098 /* OrzFModTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrzFModTests.swift; sourceTree = "<group>"; };
 		F326F86321AEEEC200B60098 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F326F86F21AEEF8E00B60098 /* common.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = common.cpp; sourceTree = "<group>"; };
-		F326F87021AEEF8E00B60098 /* common_platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common_platform.h; sourceTree = "<group>"; };
-		F326F87121AEEF8E00B60098 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
-		F326F87221AEEF8E00B60098 /* common_platform.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = common_platform.mm; sourceTree = "<group>"; };
 		F326F87321AEEF8E00B60098 /* FModCapsule.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FModCapsule.mm; sourceTree = "<group>"; };
 		F326F87421AEEF8E00B60098 /* FModCapsule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FModCapsule.h; sourceTree = "<group>"; };
-		F326F87921AEEF8E00B60098 /* fmod_output.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_output.h; sourceTree = "<group>"; };
-		F326F87A21AEEF8E00B60098 /* fmod_dsp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_dsp.h; sourceTree = "<group>"; };
-		F326F87B21AEEF8E00B60098 /* fmod_errors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_errors.h; sourceTree = "<group>"; };
-		F326F87C21AEEF8E00B60098 /* fmod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod.h; sourceTree = "<group>"; };
-		F326F87D21AEEF8E00B60098 /* fmod_codec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_codec.h; sourceTree = "<group>"; };
-		F326F87E21AEEF8E00B60098 /* fmod.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fmod.hpp; sourceTree = "<group>"; };
-		F326F87F21AEEF8E00B60098 /* fmod_ios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_ios.h; sourceTree = "<group>"; };
-		F326F88021AEEF8E00B60098 /* fmod_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_common.h; sourceTree = "<group>"; };
-		F326F88121AEEF8E00B60098 /* fmod_dsp_effects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_dsp_effects.h; sourceTree = "<group>"; };
-		F326F88321AEEF8E00B60098 /* libfmod_iphonesimulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmod_iphonesimulator.a; sourceTree = "<group>"; };
-		F326F88421AEEF8E00B60098 /* libfmod_iphoneos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmod_iphoneos.a; sourceTree = "<group>"; };
-		F326F89821AEF02600B60098 /* fmod_studio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_studio.h; sourceTree = "<group>"; };
-		F326F89921AEF02600B60098 /* fmod_studio.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fmod_studio.hpp; sourceTree = "<group>"; };
-		F326F89A21AEF02600B60098 /* fmod_studio_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_studio_common.h; sourceTree = "<group>"; };
-		F326F89C21AEF02600B60098 /* libfmodstudio_iphonesimulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmodstudio_iphonesimulator.a; sourceTree = "<group>"; };
-		F326F89D21AEF02600B60098 /* libfmodstudio_iphoneos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmodstudio_iphoneos.a; sourceTree = "<group>"; };
 		F326F8A421AEF04200B60098 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		F326F8A621AEF04900B60098 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		F326F8A821AEF05200B60098 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -141,12 +135,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F326F8AB21AEF05A00B60098 /* UIKit.framework in Frameworks */,
+				E22D946422FD9A6500A9013E /* libfmodL_iphoneos.a in Frameworks */,
+				E22D946322FD9A6500A9013E /* libfmodL_iphonesimulator.a in Frameworks */,
 				F326F8A921AEF05200B60098 /* AudioToolbox.framework in Frameworks */,
 				F326F8A721AEF04900B60098 /* AVFoundation.framework in Frameworks */,
-				F326F8A221AEF02600B60098 /* libfmodstudio_iphoneos.a in Frameworks */,
-				F326F89521AEEF8E00B60098 /* libfmod_iphoneos.a in Frameworks */,
-				F326F8A121AEF02600B60098 /* libfmodstudio_iphonesimulator.a in Frameworks */,
-				F326F89421AEEF8E00B60098 /* libfmod_iphonesimulator.a in Frameworks */,
+				E22D946522FD9A6500A9013E /* libfmod_iphoneos.a in Frameworks */,
+				E22D946222FD9A6500A9013E /* libfmod_iphonesimulator.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +170,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E22D944922FD9A6500A9013E /* core */ = {
+			isa = PBXGroup;
+			children = (
+				E22D944A22FD9A6500A9013E /* inc */,
+				E22D945422FD9A6500A9013E /* lib */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		E22D944A22FD9A6500A9013E /* inc */ = {
+			isa = PBXGroup;
+			children = (
+				E22D944B22FD9A6500A9013E /* fmod_output.h */,
+				E22D944C22FD9A6500A9013E /* fmod_dsp.h */,
+				E22D944D22FD9A6500A9013E /* fmod_errors.h */,
+				E22D944E22FD9A6500A9013E /* fmod.h */,
+				E22D944F22FD9A6500A9013E /* fmod_codec.h */,
+				E22D945022FD9A6500A9013E /* fmod.hpp */,
+				E22D945122FD9A6500A9013E /* fmod_ios.h */,
+				E22D945222FD9A6500A9013E /* fmod_common.h */,
+				E22D945322FD9A6500A9013E /* fmod_dsp_effects.h */,
+			);
+			path = inc;
+			sourceTree = "<group>";
+		};
+		E22D945422FD9A6500A9013E /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				E22D945522FD9A6500A9013E /* libfmod_iphonesimulator.a */,
+				E22D945622FD9A6500A9013E /* libfmodL_iphonesimulator.a */,
+				E22D945722FD9A6500A9013E /* libfmodL_iphoneos.a */,
+				E22D945822FD9A6500A9013E /* libfmod_iphoneos.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
 		F326F84921AEEEC200B60098 = {
 			isa = PBXGroup;
 			children = (
@@ -222,9 +252,9 @@
 		F326F86D21AEEF8E00B60098 /* FModCapsule */ = {
 			isa = PBXGroup;
 			children = (
-				F326F86E21AEEF8E00B60098 /* Common */,
-				F326F87321AEEF8E00B60098 /* FModCapsule.mm */,
 				F326F87421AEEF8E00B60098 /* FModCapsule.h */,
+				F326F87321AEEF8E00B60098 /* FModCapsule.mm */,
+				F326F86E21AEEF8E00B60098 /* Common */,
 				F326F87521AEEF8E00B60098 /* FModAPI */,
 			);
 			path = FModCapsule;
@@ -233,10 +263,10 @@
 		F326F86E21AEEF8E00B60098 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				F326F86F21AEEF8E00B60098 /* common.cpp */,
-				F326F87021AEEF8E00B60098 /* common_platform.h */,
-				F326F87121AEEF8E00B60098 /* common.h */,
-				F326F87221AEEF8E00B60098 /* common_platform.mm */,
+				E22D946622FD9BC100A9013E /* common_platform.h */,
+				E22D946822FD9BC200A9013E /* common_platform.mm */,
+				E22D946722FD9BC200A9013E /* common.cpp */,
+				E22D946922FD9BC300A9013E /* common.h */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -252,72 +282,9 @@
 		F326F87621AEEF8E00B60098 /* api */ = {
 			isa = PBXGroup;
 			children = (
-				F326F89621AEF02600B60098 /* studio */,
-				F326F87721AEEF8E00B60098 /* lowlevel */,
+				E22D944922FD9A6500A9013E /* core */,
 			);
 			path = api;
-			sourceTree = "<group>";
-		};
-		F326F87721AEEF8E00B60098 /* lowlevel */ = {
-			isa = PBXGroup;
-			children = (
-				F326F87821AEEF8E00B60098 /* inc */,
-				F326F88221AEEF8E00B60098 /* lib */,
-			);
-			path = lowlevel;
-			sourceTree = "<group>";
-		};
-		F326F87821AEEF8E00B60098 /* inc */ = {
-			isa = PBXGroup;
-			children = (
-				F326F87921AEEF8E00B60098 /* fmod_output.h */,
-				F326F87A21AEEF8E00B60098 /* fmod_dsp.h */,
-				F326F87B21AEEF8E00B60098 /* fmod_errors.h */,
-				F326F87C21AEEF8E00B60098 /* fmod.h */,
-				F326F87D21AEEF8E00B60098 /* fmod_codec.h */,
-				F326F87E21AEEF8E00B60098 /* fmod.hpp */,
-				F326F87F21AEEF8E00B60098 /* fmod_ios.h */,
-				F326F88021AEEF8E00B60098 /* fmod_common.h */,
-				F326F88121AEEF8E00B60098 /* fmod_dsp_effects.h */,
-			);
-			path = inc;
-			sourceTree = "<group>";
-		};
-		F326F88221AEEF8E00B60098 /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				F326F88321AEEF8E00B60098 /* libfmod_iphonesimulator.a */,
-				F326F88421AEEF8E00B60098 /* libfmod_iphoneos.a */,
-			);
-			path = lib;
-			sourceTree = "<group>";
-		};
-		F326F89621AEF02600B60098 /* studio */ = {
-			isa = PBXGroup;
-			children = (
-				F326F89721AEF02600B60098 /* inc */,
-				F326F89B21AEF02600B60098 /* lib */,
-			);
-			path = studio;
-			sourceTree = "<group>";
-		};
-		F326F89721AEF02600B60098 /* inc */ = {
-			isa = PBXGroup;
-			children = (
-				F326F89821AEF02600B60098 /* fmod_studio.h */,
-				F326F89921AEF02600B60098 /* fmod_studio.hpp */,
-				F326F89A21AEF02600B60098 /* fmod_studio_common.h */,
-			);
-			path = inc;
-			sourceTree = "<group>";
-		};
-		F326F89B21AEF02600B60098 /* lib */ = {
-			isa = PBXGroup;
-			children = (
-				F326F89C21AEF02600B60098 /* libfmodstudio_iphonesimulator.a */,
-				F326F89D21AEF02600B60098 /* libfmodstudio_iphoneos.a */,
-			);
-			path = lib;
 			sourceTree = "<group>";
 		};
 		F326F8A321AEF04100B60098 /* Frameworks */ = {
@@ -370,22 +337,19 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E22D946A22FD9BC300A9013E /* common_platform.h in Headers */,
+				E22D945D22FD9A6500A9013E /* fmod_codec.h in Headers */,
+				E22D945F22FD9A6500A9013E /* fmod_ios.h in Headers */,
 				F326F88A21AEEF8E00B60098 /* FModCapsule.h in Headers */,
-				F326F88F21AEEF8E00B60098 /* fmod_codec.h in Headers */,
-				F326F89121AEEF8E00B60098 /* fmod_ios.h in Headers */,
-				F326F88621AEEF8E00B60098 /* common_platform.h in Headers */,
-				F326F88B21AEEF8E00B60098 /* fmod_output.h in Headers */,
-				F326F89321AEEF8E00B60098 /* fmod_dsp_effects.h in Headers */,
-				F326F88E21AEEF8E00B60098 /* fmod.h in Headers */,
-				F326F89221AEEF8E00B60098 /* fmod_common.h in Headers */,
-				F326F88721AEEF8E00B60098 /* common.h in Headers */,
-				F326F89E21AEF02600B60098 /* fmod_studio.h in Headers */,
-				F326F89F21AEF02600B60098 /* fmod_studio.hpp in Headers */,
-				F326F88D21AEEF8E00B60098 /* fmod_errors.h in Headers */,
-				F326F88C21AEEF8E00B60098 /* fmod_dsp.h in Headers */,
-				F326F89021AEEF8E00B60098 /* fmod.hpp in Headers */,
+				E22D945922FD9A6500A9013E /* fmod_output.h in Headers */,
+				E22D946D22FD9BC300A9013E /* common.h in Headers */,
+				E22D946122FD9A6500A9013E /* fmod_dsp_effects.h in Headers */,
+				E22D945C22FD9A6500A9013E /* fmod.h in Headers */,
+				E22D946022FD9A6500A9013E /* fmod_common.h in Headers */,
+				E22D945B22FD9A6500A9013E /* fmod_errors.h in Headers */,
+				E22D945A22FD9A6500A9013E /* fmod_dsp.h in Headers */,
+				E22D945E22FD9A6500A9013E /* fmod.hpp in Headers */,
 				F326F86421AEEEC200B60098 /* OrzFMod.h in Headers */,
-				F326F8A021AEF02600B60098 /* fmod_studio_common.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,6 +447,7 @@
 					};
 					F326F8B021AEF15900B60098 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1030;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -491,6 +456,7 @@
 					};
 					F326F8C321AEF15A00B60098 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1030;
 						TestTargetID = F326F8B021AEF15900B60098;
 					};
 				};
@@ -559,8 +525,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F326F88521AEEF8E00B60098 /* common.cpp in Sources */,
-				F326F88821AEEF8E00B60098 /* common_platform.mm in Sources */,
+				E22D946B22FD9BC300A9013E /* common.cpp in Sources */,
+				E22D946C22FD9BC300A9013E /* common_platform.mm in Sources */,
 				F326F88921AEEF8E00B60098 /* FModCapsule.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -772,8 +738,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/OrzFMod/FModCapsule/FModAPI/api/lowlevel/lib",
-					"$(PROJECT_DIR)/OrzFMod/FModCapsule/FModAPI/api/studio/lib",
+					"$(PROJECT_DIR)/OrzFMod/FModCapsule/FModAPI/api/core/lib",
 				);
 				MACH_O_TYPE = mh_dylib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.joker.OrzFMod;
@@ -804,8 +769,7 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/OrzFMod/FModCapsule/FModAPI/api/lowlevel/lib",
-					"$(PROJECT_DIR)/OrzFMod/FModCapsule/FModAPI/api/studio/lib",
+					"$(PROJECT_DIR)/OrzFMod/FModCapsule/FModAPI/api/core/lib",
 				);
 				MACH_O_TYPE = mh_dylib;
 				PRODUCT_BUNDLE_IDENTIFIER = com.joker.OrzFMod;
@@ -865,7 +829,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.joker.FModDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -883,7 +847,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.joker.FModDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -903,7 +867,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.joker.FModDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FModDemo.app/FModDemo";
 			};
@@ -924,7 +888,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.joker.FModDemoTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FModDemo.app/FModDemo";
 			};

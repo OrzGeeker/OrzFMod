@@ -9,7 +9,10 @@ FMod Offical Site: <https://www.fmod.com>
 In you `Podfile`, add my private podspec repo OrzGeeker, and use my pods
 
 ```
-pod 'OrzFMod', :source => 'https://github.com/OrzGeeker/Specs.git'
+source 'https://github.com/OrzGeeker/Specs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+
+pod 'OrzFMod'
 ```
 
 Now you can use my FMod Swift Capsule!

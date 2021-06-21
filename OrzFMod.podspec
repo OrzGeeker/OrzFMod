@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "OrzFMod"
-  s.version      = "0.0.3"
+  s.version      = "0.0.4"
   s.summary      = "A Swift Capsule of FMod Audio Framework."
   s.description  = <<-DESC
   Use this Framework to power a Keygen Music Player

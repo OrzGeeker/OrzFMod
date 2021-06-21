@@ -16,14 +16,12 @@
 		E22D945F22FD9A6500A9013E /* fmod_ios.h in Headers */ = {isa = PBXBuildFile; fileRef = E22D945122FD9A6500A9013E /* fmod_ios.h */; };
 		E22D946022FD9A6500A9013E /* fmod_common.h in Headers */ = {isa = PBXBuildFile; fileRef = E22D945222FD9A6500A9013E /* fmod_common.h */; };
 		E22D946122FD9A6500A9013E /* fmod_dsp_effects.h in Headers */ = {isa = PBXBuildFile; fileRef = E22D945322FD9A6500A9013E /* fmod_dsp_effects.h */; };
-		E22D946222FD9A6500A9013E /* libfmod_iphonesimulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E22D945522FD9A6500A9013E /* libfmod_iphonesimulator.a */; };
-		E22D946322FD9A6500A9013E /* libfmodL_iphonesimulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E22D945622FD9A6500A9013E /* libfmodL_iphonesimulator.a */; };
-		E22D946422FD9A6500A9013E /* libfmodL_iphoneos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E22D945722FD9A6500A9013E /* libfmodL_iphoneos.a */; };
-		E22D946522FD9A6500A9013E /* libfmod_iphoneos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E22D945822FD9A6500A9013E /* libfmod_iphoneos.a */; };
 		E22D946A22FD9BC300A9013E /* common_platform.h in Headers */ = {isa = PBXBuildFile; fileRef = E22D946622FD9BC100A9013E /* common_platform.h */; };
 		E22D946B22FD9BC300A9013E /* common.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E22D946722FD9BC200A9013E /* common.cpp */; };
 		E22D946C22FD9BC300A9013E /* common_platform.mm in Sources */ = {isa = PBXBuildFile; fileRef = E22D946822FD9BC200A9013E /* common_platform.mm */; };
 		E22D946D22FD9BC300A9013E /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = E22D946922FD9BC300A9013E /* common.h */; };
+		E246E7AF2680A3F8006F3DDD /* libfmodL_iphone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E246E7AD2680A3F8006F3DDD /* libfmodL_iphone.a */; };
+		E246E7B02680A3F8006F3DDD /* libfmod_iphone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E246E7AE2680A3F8006F3DDD /* libfmod_iphone.a */; };
 		F326F85D21AEEEC200B60098 /* OrzFMod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F85321AEEEC200B60098 /* OrzFMod.framework */; };
 		F326F86221AEEEC200B60098 /* OrzFModTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326F86121AEEEC200B60098 /* OrzFModTests.swift */; };
 		F326F86421AEEEC200B60098 /* OrzFMod.h in Headers */ = {isa = PBXBuildFile; fileRef = F326F85621AEEEC200B60098 /* OrzFMod.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -94,14 +92,12 @@
 		E22D945122FD9A6500A9013E /* fmod_ios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_ios.h; sourceTree = "<group>"; };
 		E22D945222FD9A6500A9013E /* fmod_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_common.h; sourceTree = "<group>"; };
 		E22D945322FD9A6500A9013E /* fmod_dsp_effects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_dsp_effects.h; sourceTree = "<group>"; };
-		E22D945522FD9A6500A9013E /* libfmod_iphonesimulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmod_iphonesimulator.a; sourceTree = "<group>"; };
-		E22D945622FD9A6500A9013E /* libfmodL_iphonesimulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmodL_iphonesimulator.a; sourceTree = "<group>"; };
-		E22D945722FD9A6500A9013E /* libfmodL_iphoneos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmodL_iphoneos.a; sourceTree = "<group>"; };
-		E22D945822FD9A6500A9013E /* libfmod_iphoneos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmod_iphoneos.a; sourceTree = "<group>"; };
 		E22D946622FD9BC100A9013E /* common_platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common_platform.h; sourceTree = "<group>"; };
 		E22D946722FD9BC200A9013E /* common.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = common.cpp; sourceTree = "<group>"; };
 		E22D946822FD9BC200A9013E /* common_platform.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = common_platform.mm; sourceTree = "<group>"; };
 		E22D946922FD9BC300A9013E /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		E246E7AD2680A3F8006F3DDD /* libfmodL_iphone.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmodL_iphone.a; sourceTree = "<group>"; };
+		E246E7AE2680A3F8006F3DDD /* libfmod_iphone.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmod_iphone.a; sourceTree = "<group>"; };
 		F326F85321AEEEC200B60098 /* OrzFMod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OrzFMod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F326F85621AEEEC200B60098 /* OrzFMod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrzFMod.h; sourceTree = "<group>"; };
 		F326F85721AEEEC200B60098 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -135,12 +131,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F326F8AB21AEF05A00B60098 /* UIKit.framework in Frameworks */,
-				E22D946422FD9A6500A9013E /* libfmodL_iphoneos.a in Frameworks */,
-				E22D946322FD9A6500A9013E /* libfmodL_iphonesimulator.a in Frameworks */,
+				E246E7B02680A3F8006F3DDD /* libfmod_iphone.a in Frameworks */,
 				F326F8A921AEF05200B60098 /* AudioToolbox.framework in Frameworks */,
 				F326F8A721AEF04900B60098 /* AVFoundation.framework in Frameworks */,
-				E22D946522FD9A6500A9013E /* libfmod_iphoneos.a in Frameworks */,
-				E22D946222FD9A6500A9013E /* libfmod_iphonesimulator.a in Frameworks */,
+				E246E7AF2680A3F8006F3DDD /* libfmodL_iphone.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -198,10 +192,8 @@
 		E22D945422FD9A6500A9013E /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				E22D945522FD9A6500A9013E /* libfmod_iphonesimulator.a */,
-				E22D945622FD9A6500A9013E /* libfmodL_iphonesimulator.a */,
-				E22D945722FD9A6500A9013E /* libfmodL_iphoneos.a */,
-				E22D945822FD9A6500A9013E /* libfmod_iphoneos.a */,
+				E246E7AE2680A3F8006F3DDD /* libfmod_iphone.a */,
+				E246E7AD2680A3F8006F3DDD /* libfmodL_iphone.a */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -436,7 +428,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1010;
+				LastUpgradeCheck = 1250;
 				ORGANIZATIONNAME = joker;
 				TargetAttributes = {
 					F326F85221AEEEC200B60098 = {
@@ -444,6 +436,7 @@
 					};
 					F326F85B21AEEEC200B60098 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1250;
 					};
 					F326F8B021AEF15900B60098 = {
 						CreatedOnToolsVersion = 10.1;
@@ -622,6 +615,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -648,7 +642,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -686,6 +680,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -706,7 +701,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -730,7 +725,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = OrzFMod/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -744,6 +739,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.joker.OrzFMod;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -761,7 +757,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = OrzFMod/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -775,6 +771,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.joker.OrzFMod;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -793,7 +790,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.joker.OrzFModTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -811,7 +808,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.joker.OrzFModTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

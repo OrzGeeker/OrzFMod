@@ -16,4 +16,5 @@ Pod::Spec.new do |s|
   s.resources = "OrzFMod/**/*.{png,xm}"
   s.frameworks = "UIKit", "AudioToolbox", "AVFoundation"
   s.vendored_libraries = "OrzFMod/**/*.{a}"
+  s.pod_target_xcconfig = { 'VALID_ARCHS' => 'i386 armv7 armv7s x86_64 arm64 arm64e' }
 end

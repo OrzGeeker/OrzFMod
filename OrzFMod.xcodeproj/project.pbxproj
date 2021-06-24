@@ -20,7 +20,6 @@
 		E22D946B22FD9BC300A9013E /* common.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E22D946722FD9BC200A9013E /* common.cpp */; };
 		E22D946C22FD9BC300A9013E /* common_platform.mm in Sources */ = {isa = PBXBuildFile; fileRef = E22D946822FD9BC200A9013E /* common_platform.mm */; };
 		E22D946D22FD9BC300A9013E /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = E22D946922FD9BC300A9013E /* common.h */; };
-		E246E7AF2680A3F8006F3DDD /* libfmodL_iphone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E246E7AD2680A3F8006F3DDD /* libfmodL_iphone.a */; };
 		E246E7B02680A3F8006F3DDD /* libfmod_iphone.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E246E7AE2680A3F8006F3DDD /* libfmod_iphone.a */; };
 		F326F85D21AEEEC200B60098 /* OrzFMod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F85321AEEEC200B60098 /* OrzFMod.framework */; };
 		F326F86221AEEEC200B60098 /* OrzFModTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326F86121AEEEC200B60098 /* OrzFModTests.swift */; };
@@ -96,7 +95,6 @@
 		E22D946722FD9BC200A9013E /* common.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = common.cpp; sourceTree = "<group>"; };
 		E22D946822FD9BC200A9013E /* common_platform.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = common_platform.mm; sourceTree = "<group>"; };
 		E22D946922FD9BC300A9013E /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
-		E246E7AD2680A3F8006F3DDD /* libfmodL_iphone.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmodL_iphone.a; sourceTree = "<group>"; };
 		E246E7AE2680A3F8006F3DDD /* libfmod_iphone.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmod_iphone.a; sourceTree = "<group>"; };
 		F326F85321AEEEC200B60098 /* OrzFMod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OrzFMod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F326F85621AEEEC200B60098 /* OrzFMod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrzFMod.h; sourceTree = "<group>"; };
@@ -134,7 +132,6 @@
 				E246E7B02680A3F8006F3DDD /* libfmod_iphone.a in Frameworks */,
 				F326F8A921AEF05200B60098 /* AudioToolbox.framework in Frameworks */,
 				F326F8A721AEF04900B60098 /* AVFoundation.framework in Frameworks */,
-				E246E7AF2680A3F8006F3DDD /* libfmodL_iphone.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,7 +190,6 @@
 			isa = PBXGroup;
 			children = (
 				E246E7AE2680A3F8006F3DDD /* libfmod_iphone.a */,
-				E246E7AD2680A3F8006F3DDD /* libfmodL_iphone.a */,
 			);
 			path = lib;
 			sourceTree = "<group>";

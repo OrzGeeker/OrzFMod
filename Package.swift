@@ -19,7 +19,7 @@ let package = Package(
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .binaryTarget(
-            name: "OrzOpenCV",
+            name: "OrzFMod",
             url: "https://github.com/OrzGeeker/OrzFMod/blob/master/OrzFMod.xcframework.zip",
             checksum: "2e462b38861183ad60ece41ed6eab3e732e133713cec32e79675c8c17e1ffc9e"),
     ]

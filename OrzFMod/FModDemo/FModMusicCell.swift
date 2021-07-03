@@ -71,11 +71,11 @@ extension FModMusicCell {
         
         switch status {
         case .pause:
-            self.status.image = UIImage(systemName: "play")
+            self.status.image = UIImage(systemName: "pause")
             self.status.tintColor = .systemBlue
             self.name.textColor = .systemBlue
         case .play:
-            self.status.image = UIImage(systemName: "pause")
+            self.status.image = UIImage(systemName: "play")
             self.status.tintColor = .systemBlue
             self.name.textColor = .systemBlue
         case .unavailable:

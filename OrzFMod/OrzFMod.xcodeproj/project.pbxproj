@@ -30,7 +30,7 @@
 		F326F8A921AEF05200B60098 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F8A821AEF05200B60098 /* AudioToolbox.framework */; };
 		F326F8AB21AEF05A00B60098 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F8AA21AEF05A00B60098 /* UIKit.framework */; };
 		F326F8B421AEF15900B60098 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326F8B321AEF15900B60098 /* AppDelegate.swift */; };
-		F326F8B621AEF15900B60098 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326F8B521AEF15900B60098 /* ViewController.swift */; };
+		F326F8B621AEF15900B60098 /* FModMusicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326F8B521AEF15900B60098 /* FModMusicListViewController.swift */; };
 		F326F8B921AEF15900B60098 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F326F8B721AEF15900B60098 /* Main.storyboard */; };
 		F326F8BB21AEF15A00B60098 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F326F8BA21AEF15A00B60098 /* Assets.xcassets */; };
 		F326F8BE21AEF15A00B60098 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F326F8BC21AEF15A00B60098 /* LaunchScreen.storyboard */; };
@@ -38,6 +38,7 @@
 		F326F8D121AEF1D300B60098 /* OrzFMod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F85321AEEEC200B60098 /* OrzFMod.framework */; };
 		F326F8D221AEF1D300B60098 /* OrzFMod.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F326F85321AEEEC200B60098 /* OrzFMod.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F326F8D621AEF30800B60098 /* test.xm in Resources */ = {isa = PBXBuildFile; fileRef = F326F8AC21AEF13600B60098 /* test.xm */; };
+		F3680AE5269014F70012F2CF /* FModMusicStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3680AE4269014F70012F2CF /* FModMusicStore.swift */; };
 		F389BBDA21B05451002F8EAF /* FMOD_White.png in Resources */ = {isa = PBXBuildFile; fileRef = F389BBD821B05451002F8EAF /* FMOD_White.png */; };
 		F389BBDB21B05451002F8EAF /* FMOD_Black.png in Resources */ = {isa = PBXBuildFile; fileRef = F389BBD921B05451002F8EAF /* FMOD_Black.png */; };
 		F389BBDC21B0552E002F8EAF /* test.xm in Resources */ = {isa = PBXBuildFile; fileRef = F326F8AC21AEF13600B60098 /* test.xm */; };
@@ -111,7 +112,7 @@
 		F326F8AC21AEF13600B60098 /* test.xm */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.xm; sourceTree = "<group>"; };
 		F326F8B121AEF15900B60098 /* FModDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FModDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F326F8B321AEF15900B60098 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F326F8B521AEF15900B60098 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F326F8B521AEF15900B60098 /* FModMusicListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FModMusicListViewController.swift; sourceTree = "<group>"; };
 		F326F8B821AEF15900B60098 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F326F8BA21AEF15A00B60098 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F326F8BD21AEF15A00B60098 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -119,6 +120,7 @@
 		F326F8C421AEF15A00B60098 /* FModDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FModDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F326F8C821AEF15A00B60098 /* FModDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FModDemoTests.swift; sourceTree = "<group>"; };
 		F326F8CA21AEF15A00B60098 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3680AE4269014F70012F2CF /* FModMusicStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FModMusicStore.swift; sourceTree = "<group>"; };
 		F389BBD821B05451002F8EAF /* FMOD_White.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FMOD_White.png; sourceTree = "<group>"; };
 		F389BBD921B05451002F8EAF /* FMOD_Black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FMOD_Black.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -290,7 +292,8 @@
 			isa = PBXGroup;
 			children = (
 				F326F8B321AEF15900B60098 /* AppDelegate.swift */,
-				F326F8B521AEF15900B60098 /* ViewController.swift */,
+				F326F8B521AEF15900B60098 /* FModMusicListViewController.swift */,
+				F3680AE4269014F70012F2CF /* FModMusicStore.swift */,
 				F326F8B721AEF15900B60098 /* Main.storyboard */,
 				F326F8BA21AEF15A00B60098 /* Assets.xcassets */,
 				F326F8BC21AEF15A00B60098 /* LaunchScreen.storyboard */,
@@ -532,7 +535,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F326F8B621AEF15900B60098 /* ViewController.swift in Sources */,
+				F326F8B621AEF15900B60098 /* FModMusicListViewController.swift in Sources */,
+				F3680AE5269014F70012F2CF /* FModMusicStore.swift in Sources */,
 				F326F8B421AEF15900B60098 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -641,7 +645,6 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";

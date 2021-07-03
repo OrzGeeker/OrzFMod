@@ -10,10 +10,11 @@ import Foundation
 
 struct FModMusicStore {
     
-    static let musics_root_dir = "musics"
+    static let musicRootDir = "musics"
+    static let unsupportMusicTypes = ["mod", "it"]
     static private let documentDir = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first! as NSString
     
-    static let musicStoreDir = FModMusicStore.documentDir.appendingPathComponent(FModMusicStore.musics_root_dir) as NSString
+    static let musicStoreDir = FModMusicStore.documentDir.appendingPathComponent(FModMusicStore.musicRootDir) as NSString
     static func findAllMusic() -> [MusicInfo]? {
         let fileManager = FileManager.default
         if let allObjects = fileManager.enumerator(atPath: FModMusicStore.musicStoreDir as String)?.allObjects {
@@ -30,7 +31,10 @@ struct FModMusicStore {
                 }
             }
             
-            return ret
+            return ret.filter { musicInfo in
+                let fileExtensionName = musicInfo.fileURL.pathExtension
+                return !FModMusicStore.unsupportMusicTypes.contains(fileExtensionName)
+            }
         }
         
         return nil
@@ -39,6 +43,7 @@ struct FModMusicStore {
 
 struct MusicInfo {
     let fileURL: URL
+    var canPlay = true
 }
 
 class OrzFileSysNode {

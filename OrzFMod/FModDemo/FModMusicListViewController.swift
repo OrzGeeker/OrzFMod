@@ -61,11 +61,12 @@ class FModMusicListViewController: UIViewController {
 
 extension FModMusicListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if let music = store?[indexPath.row] {
+        if var musicInfo = store?[indexPath.row], musicInfo.canPlay {
             let cell = tableView.cellForRow(at: indexPath) as! FModMusicCell
-            let filePath = music.fileURL.path
+            let filePath = musicInfo.fileURL.path
             
             guard player.canPlay(filePath) else {
+                musicInfo.canPlay = false
                 cell.updatePlayStatus(.unavailable)
                 return
             }
@@ -79,7 +80,7 @@ extension FModMusicListViewController: UITableViewDelegate {
                     cell.updatePlayStatus(.play)
                 }
             } else{
-                player.playStream(withFilePath: music.fileURL.path);
+                player.playStream(withFilePath: filePath);
                 cell.updatePlayStatus(.play)
             }
         }
@@ -95,12 +96,13 @@ extension FModMusicListViewController: UITableViewDelegate {
 extension FModMusicListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: FModMusicCell.reuseIdentifier, for: indexPath) as! FModMusicCell
-        if let musicInfo = store?[indexPath.row] {
+        if var musicInfo = store?[indexPath.row], musicInfo.canPlay {
             let filePath = musicInfo.fileURL.path
             
             cell.name.text = musicInfo.fileURL.lastPathComponent
             
             guard player.canPlay(filePath) else {
+                musicInfo.canPlay = false
                 cell.updatePlayStatus(.unavailable)
                 return cell
             }

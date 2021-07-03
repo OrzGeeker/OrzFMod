@@ -179,10 +179,16 @@
 - (BOOL)canPlay:(NSString *)filePath {
     BOOL ret = NO;
     
-    FMOD::Sound *sound = 0;
+    FMOD::Sound *sound = NULL;
+    FMOD_RESULT result = FMOD_OK;
+    
     result = system->createStream(filePath.UTF8String, FMOD_LOOP_NORMAL | FMOD_2D, 0, &sound);
-    ret = result == FMOD_OK;
-    result = sound->release();
+    ret = (result == FMOD_OK);
+    
+    if(sound) {
+        result = sound->release();
+        sound = NULL;
+    }
     
     return ret;
 }

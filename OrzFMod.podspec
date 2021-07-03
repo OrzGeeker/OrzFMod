@@ -16,6 +16,6 @@ Pod::Spec.new do |s|
   s.resources = "OrzFMod/OrzFMod/**/*.{png,xm}"
   s.frameworks = "UIKit", "AudioToolbox", "AVFoundation"
   s.vendored_libraries = "OrzFMod/OrzFMod/**/*.{a}"
-  s.pod_target_xcconfig = { 'VALID_ARCHS' => 'armv7 armv7s i386 x86_64 arm64 arm64e' }
+  s.pod_target_xcconfig = { 'VALID_ARCHS' => 'armv7 armv7s i386 x86_64 arm64 arm64e', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'armv7 armv7s arm64 arm64e' }
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'armv7 armv7s arm64 arm64e' }
 end

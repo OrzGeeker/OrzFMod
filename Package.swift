@@ -21,6 +21,6 @@ let package = Package(
         .binaryTarget(
             name: "OrzFMod",
             url: "https://download.jokerhub.cn/OrzFMod.xcframework.zip",
-            checksum: "2e462b38861183ad60ece41ed6eab3e732e133713cec32e79675c8c17e1ffc9e"),
+            checksum: "4bc126850f548f04416f48021881ab0a013c1c409c7d2e6c6e72ed5f68aa870d"),
     ]
 )

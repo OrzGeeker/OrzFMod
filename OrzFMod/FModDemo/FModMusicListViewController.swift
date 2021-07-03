@@ -43,6 +43,7 @@ class FModMusicListViewController: UIViewController {
         musicListView?.register(FModMusicCell.self, forCellReuseIdentifier: FModMusicCell.reuseIdentifier)
         musicListView?.delegate = self
         musicListView?.dataSource = self
+        musicListView?.rowHeight = 40
         self.view.addSubview(musicListView!)
     }
         

@@ -42,7 +42,6 @@ class FModMusicCell: UITableViewCell {
         self.name.snp.makeConstraints { make in
             make.right.top.bottom.equalTo(self.contentView)
             make.left.equalTo(self.status.snp.right).offset(5)
-            make.height.equalTo(40)
         }
         
     }

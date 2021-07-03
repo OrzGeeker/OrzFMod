@@ -25,7 +25,6 @@ class FModMusicCell: UITableViewCell {
         return label
     }()
     
-    
     static let reuseIdentifier = String(describing: FModMusicCell.self)
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -67,13 +66,23 @@ extension FModMusicCell {
         case unavailable
     }
     func updatePlayStatus(_ status: MusicPlayStatus = .reset) {
+        
+        self.name.textColor = .label
+        self.status.tintColor = tintColor
+        
         switch status {
         case .pause:
             self.status.image = UIImage(systemName: "play")
+            self.status.tintColor = .systemBlue
+            self.name.textColor = .systemBlue
         case .play:
             self.status.image = UIImage(systemName: "pause")
+            self.status.tintColor = .systemBlue
+            self.name.textColor = .systemBlue
         case .unavailable:
             self.status.image = UIImage(systemName: "play.slash")
+            self.status.tintColor = .gray
+            self.name.textColor = .gray
         case .reset:
             self.status.image = nil
         }

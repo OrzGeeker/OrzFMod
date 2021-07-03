@@ -49,12 +49,7 @@ class FModMusicCell: UITableViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-
-    override func prepareForReuse() {
-        super.prepareForReuse()
-        
-        updatePlayStatus(.reset)
-    }
+    
 }
 
 extension FModMusicCell {
@@ -65,6 +60,9 @@ extension FModMusicCell {
         case unavailable
     }
     func updatePlayStatus(_ status: MusicPlayStatus = .reset) {
+        
+        self.isUserInteractionEnabled = true
+        self.selectionStyle = .default
         
         self.name.textColor = .label
         self.status.tintColor = tintColor
@@ -82,6 +80,8 @@ extension FModMusicCell {
             self.status.image = UIImage(systemName: "play.slash")
             self.status.tintColor = .gray
             self.name.textColor = .gray
+            self.isUserInteractionEnabled = false
+            self.selectionStyle = .none
         case .reset:
             self.status.image = nil
         }

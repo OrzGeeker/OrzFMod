@@ -41,9 +41,14 @@ struct FModMusicStore {
     }
 }
 
-struct MusicInfo {
+class MusicInfo {
     let fileURL: URL
     var canPlay = true
+    var isSelected = false
+    
+    init(fileURL: URL) {
+        self.fileURL = fileURL
+    }
 }
 
 class OrzFileSysNode {

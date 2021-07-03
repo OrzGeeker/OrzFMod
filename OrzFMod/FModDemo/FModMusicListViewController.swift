@@ -60,40 +60,33 @@ class FModMusicListViewController: UIViewController {
 }
 
 extension FModMusicListViewController: UITableViewDelegate {
+        
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if var musicInfo = store?[indexPath.row] {
+        if let musicInfo = store?[indexPath.row], let cell = tableView.cellForRow(at: indexPath) as? FModMusicCell {
             
-            let cell = tableView.cellForRow(at: indexPath) as! FModMusicCell
-            guard musicInfo.canPlay else {
-                cell.updatePlayStatus(.unavailable)
-                return
-            }
+            musicInfo.isSelected = true
             
             let filePath = musicInfo.fileURL.path
-            guard player.canPlay(filePath) else {
-                musicInfo.canPlay = false
-                cell.updatePlayStatus(.unavailable)
-                return
-            }
-            
             if player.isSame(as: filePath as String) {
                 if player.isPlaying() {
                     player.pause()
-                    cell.updatePlayStatus(.pause)
                 } else if player.isPaused() {
                     player.play()
-                    cell.updatePlayStatus(.play)
+                } else {
+                    player.playStream(withFilePath: filePath);
                 }
             } else{
                 player.playStream(withFilePath: filePath);
-                cell.updatePlayStatus(.play)
             }
+            
+            updateCell(cell: cell, indexPath: indexPath)
         }
     }
     
     func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        if let cell = tableView.cellForRow(at: indexPath) as? FModMusicCell {
-            cell.updatePlayStatus(.reset)
+        if let musicInfo = store?[indexPath.row], let cell = tableView.cellForRow(at: indexPath) as? FModMusicCell {
+            musicInfo.isSelected = false
+            updateCell(cell: cell, indexPath: indexPath)
         }
     }
 }
@@ -102,39 +95,49 @@ extension FModMusicListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: FModMusicCell.reuseIdentifier, for: indexPath) as! FModMusicCell
+
+        updateCell(cell: cell, indexPath: indexPath)
         
-        if var musicInfo = store?[indexPath.row] {
-            
-            cell.name.text = musicInfo.fileURL.lastPathComponent
-            
-            guard musicInfo.canPlay else {
-                cell.updatePlayStatus(.unavailable)
-                return cell
-            }
-            
-            let filePath = musicInfo.fileURL.path
-            guard player.canPlay(filePath) else {
-                musicInfo.canPlay = false
-                cell.updatePlayStatus(.unavailable)
-                return cell
-            }
-            
-            if player.isSame(as: filePath as String) {
-                if player.isPlaying() {
-                    cell.updatePlayStatus(.play)
-                } else if player.isPaused() {
-                    cell.updatePlayStatus(.pause)
-                } else {
-                    cell.updatePlayStatus()
-                }
-            } else {
-                cell.updatePlayStatus()
-            }
-        }
         return cell
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return store?.count ?? 0
+    }
+    
+    func updateCell(cell: FModMusicCell, indexPath: IndexPath) {
+        if let musicInfo = store?[indexPath.row] {
+            
+            cell.name.text = musicInfo.fileURL.lastPathComponent
+            
+            guard canPlay(musicInfo) else {
+                cell.updatePlayStatus(.unavailable)
+                return
+            }
+
+            cell.updatePlayStatus()
+            if musicInfo.isSelected && player.isSame(as: musicInfo.fileURL.path as String) {
+                if player.isPlaying() {
+                    cell.updatePlayStatus(.play)
+                } else if player.isPaused() {
+                    cell.updatePlayStatus(.pause)
+                }
+            }
+        }
+    }
+    
+    func canPlay(_ musicInfo: MusicInfo) -> Bool {
+        
+        guard musicInfo.canPlay else {
+            return false
+        }
+        
+        let filePath = musicInfo.fileURL.path
+        guard player.canPlay(filePath) else {
+            musicInfo.canPlay = false
+            return false
+        }
+        
+        return true
     }
 }

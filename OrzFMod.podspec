@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "OrzFMod"
-  s.version      = "0.0.4"
+  s.version      = "0.0.5"
   s.summary      = "A Swift Capsule of FMod Audio Framework."
   s.description  = <<-DESC
   Use this Framework to power a Keygen Music Player
@@ -11,10 +11,10 @@ Pod::Spec.new do |s|
   s.social_media_url   = "https://github.com/wangzhizhou"
   s.platform     = :ios, "9.0"
   s.source       = { :git => "https://github.com/OrzGeeker/OrzFMod.git", :tag => "#{s.version}" }
-  s.source_files  = "OrzFMod/**/*.{h,hpp,m,mm}"
-  s.public_header_files = "OrzFMod/OrzFMod.h", "OrzFMod/FModCapsule/FModCapsule.h"
-  s.resources = "OrzFMod/**/*.{png,xm}"
+  s.source_files  = "OrzFMod/OrzFMod/**/*.{h,hpp,m,mm}"
+  s.public_header_files = "OrzFMod/OrzFMod/OrzFMod.h", "OrzFMod/OrzFMod/FModCapsule/FModCapsule.h"
+  s.resources = "OrzFMod/OrzFMod/**/*.{png,xm}"
   s.frameworks = "UIKit", "AudioToolbox", "AVFoundation"
-  s.vendored_libraries = "OrzFMod/**/*.{a}"
+  s.vendored_libraries = "OrzFMod/OrzFMod/**/*.{a}"
   s.pod_target_xcconfig = { 'VALID_ARCHS' => 'armv7 armv7s x86_64 arm64 arm64e' }
 end

@@ -10,9 +10,10 @@ import Foundation
 
 struct FModMusicStore {
     
+    static let musics_root_dir = "musics"
     static private let documentDir = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first! as NSString
     
-    static let musicStoreDir = FModMusicStore.documentDir.appendingPathComponent("musics") as NSString
+    static let musicStoreDir = FModMusicStore.documentDir.appendingPathComponent(FModMusicStore.musics_root_dir) as NSString
     static func findAllMusic() -> [MusicInfo]? {
         let fileManager = FileManager.default
         if let allObjects = fileManager.enumerator(atPath: FModMusicStore.musicStoreDir as String)?.allObjects {

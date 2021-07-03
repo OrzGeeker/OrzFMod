@@ -21,6 +21,7 @@
     void             *extradriverdata;
     int               numsubsounds;
 }
+@property (nonatomic, copy) NSString *currentPlayFilePath;
 @end
 
 
@@ -66,7 +67,7 @@
 }
 
 -(void)playStreamWithFilePath:(NSString *)filePath
-{
+{    
     [self releaseSound];
     
     result = system->createStream(filePath.UTF8String, FMOD_LOOP_NORMAL | FMOD_2D, 0, &sound);
@@ -87,6 +88,8 @@
     
     result = system->playSound(sound_to_play, 0, false, &channel);
     ERROR_CHECK(result);
+    
+    self.currentPlayFilePath = filePath;
 }
 -(void)play
 {
@@ -152,10 +155,35 @@
     {
         bool isPlaying = false;
         channel->isPlaying(&isPlaying);
-        if(isPlaying) {
+        bool isPaused = false;
+        channel->getPaused(&isPaused);
+        if(isPlaying && !isPaused) {
             return YES;
         }
     }
     return NO;
+}
+- (BOOL)isPaused {
+    if(channel) {
+        bool isPaused = false;
+        channel->getPaused(&isPaused);
+        if(isPaused) {
+            return YES;
+        }
+    }
+    return NO;
+}
+- (BOOL)isSameAs:(NSString *)filePath {
+    return [self.currentPlayFilePath isEqualToString:filePath];
+}
+- (BOOL)canPlay:(NSString *)filePath {
+    BOOL ret = NO;
+    
+    FMOD::Sound *sound = 0;
+    result = system->createStream(filePath.UTF8String, FMOD_LOOP_NORMAL | FMOD_2D, 0, &sound);
+    ret = result == FMOD_OK;
+    result = sound->release();
+    
+    return ret;
 }
 @end

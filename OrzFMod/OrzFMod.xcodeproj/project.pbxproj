@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,7 +20,6 @@
 		E22D946B22FD9BC300A9013E /* common.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E22D946722FD9BC200A9013E /* common.cpp */; };
 		E22D946C22FD9BC300A9013E /* common_platform.mm in Sources */ = {isa = PBXBuildFile; fileRef = E22D946822FD9BC200A9013E /* common_platform.mm */; };
 		E22D946D22FD9BC300A9013E /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = E22D946922FD9BC300A9013E /* common.h */; };
-		E2C16C4426848FAA009085C2 /* libfmod_iphoneos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E2C16C4226848FAA009085C2 /* libfmod_iphoneos.a */; };
 		F326F85D21AEEEC200B60098 /* OrzFMod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F85321AEEEC200B60098 /* OrzFMod.framework */; };
 		F326F86221AEEEC200B60098 /* OrzFModTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326F86121AEEEC200B60098 /* OrzFModTests.swift */; };
 		F326F86421AEEEC200B60098 /* OrzFMod.h in Headers */ = {isa = PBXBuildFile; fileRef = F326F85621AEEEC200B60098 /* OrzFMod.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -38,6 +37,9 @@
 		F326F8D121AEF1D300B60098 /* OrzFMod.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F85321AEEEC200B60098 /* OrzFMod.framework */; };
 		F326F8D221AEF1D300B60098 /* OrzFMod.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F326F85321AEEEC200B60098 /* OrzFMod.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F326F8D621AEF30800B60098 /* test.xm in Resources */ = {isa = PBXBuildFile; fileRef = F326F8AC21AEF13600B60098 /* test.xm */; };
+		F33C382A26907B73008E6FC4 /* libfmod_iphoneos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F33C382826907B73008E6FC4 /* libfmod_iphoneos.a */; };
+		F33C382E26908D27008E6FC4 /* FModMusicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33C382D26908D27008E6FC4 /* FModMusicCell.swift */; };
+		F33C383126908F0F008E6FC4 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F33C383026908F0F008E6FC4 /* SnapKit */; };
 		F3680AE5269014F70012F2CF /* FModMusicStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3680AE4269014F70012F2CF /* FModMusicStore.swift */; };
 		F389BBDA21B05451002F8EAF /* FMOD_White.png in Resources */ = {isa = PBXBuildFile; fileRef = F389BBD821B05451002F8EAF /* FMOD_White.png */; };
 		F389BBDB21B05451002F8EAF /* FMOD_Black.png in Resources */ = {isa = PBXBuildFile; fileRef = F389BBD921B05451002F8EAF /* FMOD_Black.png */; };
@@ -96,7 +98,6 @@
 		E22D946722FD9BC200A9013E /* common.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = common.cpp; sourceTree = "<group>"; };
 		E22D946822FD9BC200A9013E /* common_platform.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = common_platform.mm; sourceTree = "<group>"; };
 		E22D946922FD9BC300A9013E /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
-		E2C16C4226848FAA009085C2 /* libfmod_iphoneos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmod_iphoneos.a; sourceTree = "<group>"; };
 		F326F85321AEEEC200B60098 /* OrzFMod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OrzFMod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F326F85621AEEEC200B60098 /* OrzFMod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrzFMod.h; sourceTree = "<group>"; };
 		F326F85721AEEEC200B60098 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -120,6 +121,8 @@
 		F326F8C421AEF15A00B60098 /* FModDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FModDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F326F8C821AEF15A00B60098 /* FModDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FModDemoTests.swift; sourceTree = "<group>"; };
 		F326F8CA21AEF15A00B60098 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F33C382826907B73008E6FC4 /* libfmod_iphoneos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmod_iphoneos.a; sourceTree = "<group>"; };
+		F33C382D26908D27008E6FC4 /* FModMusicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FModMusicCell.swift; sourceTree = "<group>"; };
 		F3680AE4269014F70012F2CF /* FModMusicStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FModMusicStore.swift; sourceTree = "<group>"; };
 		F389BBD821B05451002F8EAF /* FMOD_White.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FMOD_White.png; sourceTree = "<group>"; };
 		F389BBD921B05451002F8EAF /* FMOD_Black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FMOD_Black.png; sourceTree = "<group>"; };
@@ -132,8 +135,9 @@
 			files = (
 				F326F8AB21AEF05A00B60098 /* UIKit.framework in Frameworks */,
 				F326F8A921AEF05200B60098 /* AudioToolbox.framework in Frameworks */,
-				E2C16C4426848FAA009085C2 /* libfmod_iphoneos.a in Frameworks */,
 				F326F8A721AEF04900B60098 /* AVFoundation.framework in Frameworks */,
+				F33C382A26907B73008E6FC4 /* libfmod_iphoneos.a in Frameworks */,
+				F33C383126908F0F008E6FC4 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,7 +195,7 @@
 		E22D945422FD9A6500A9013E /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				E2C16C4226848FAA009085C2 /* libfmod_iphoneos.a */,
+				F33C382826907B73008E6FC4 /* libfmod_iphoneos.a */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -292,6 +296,7 @@
 			isa = PBXGroup;
 			children = (
 				F326F8B321AEF15900B60098 /* AppDelegate.swift */,
+				F33C382D26908D27008E6FC4 /* FModMusicCell.swift */,
 				F326F8B521AEF15900B60098 /* FModMusicListViewController.swift */,
 				F3680AE4269014F70012F2CF /* FModMusicStore.swift */,
 				F326F8B721AEF15900B60098 /* Main.storyboard */,
@@ -361,6 +366,9 @@
 			dependencies = (
 			);
 			name = OrzFMod;
+			packageProductDependencies = (
+				F33C383026908F0F008E6FC4 /* SnapKit */,
+			);
 			productName = OrzFMod;
 			productReference = F326F85321AEEEC200B60098 /* OrzFMod.framework */;
 			productType = "com.apple.product-type.framework";
@@ -462,6 +470,9 @@
 				Base,
 			);
 			mainGroup = F326F84921AEEEC200B60098;
+			packageReferences = (
+				F33C382F26908F0F008E6FC4 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = F326F85421AEEEC200B60098 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -536,6 +547,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F326F8B621AEF15900B60098 /* FModMusicListViewController.swift in Sources */,
+				F33C382E26908D27008E6FC4 /* FModMusicCell.swift in Sources */,
 				F3680AE5269014F70012F2CF /* FModMusicStore.swift in Sources */,
 				F326F8B421AEF15900B60098 /* AppDelegate.swift in Sources */,
 			);
@@ -642,7 +654,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -701,7 +713,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -723,9 +735,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "armv7 armv7s arm64 arm64e";
 				INFOPLIST_FILE = OrzFMod/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -755,9 +768,10 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "armv7 armv7s arm64 arm64e ";
 				INFOPLIST_FILE = OrzFMod/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -820,8 +834,9 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2N62934Y28;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 arm64e  armv7 armv7s";
 				INFOPLIST_FILE = FModDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -840,8 +855,9 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2N62934Y28;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "armv7 armv7s arm64 arm64e ";
 				INFOPLIST_FILE = FModDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -944,6 +960,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F33C382F26908F0F008E6FC4 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F33C383026908F0F008E6FC4 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F33C382F26908F0F008E6FC4 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F326F84A21AEEEC200B60098 /* Project object */;
 }

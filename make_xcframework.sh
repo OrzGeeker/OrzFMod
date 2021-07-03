@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #-*- coding: utf-8 -*-
 
-PROJECT_NAME="OrzFMod.xcodeproj"
+PROJECT_NAME="OrzFMod/OrzFMod.xcodeproj"
 SCHEME="OrzFMod"
 BUILD_DIR="./build/${SCHEME}"
 

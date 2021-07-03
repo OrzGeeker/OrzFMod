@@ -16,4 +16,7 @@
 -(void)stop;
 -(void)close;
 -(BOOL)isPlaying;
+-(BOOL)isPaused;
+-(BOOL)isSameAs:(NSString *)filePath;
+-(BOOL)canPlay:(NSString *)filePath;
 @end

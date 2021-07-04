@@ -25,6 +25,12 @@ class FModMusicCell: UITableViewCell {
         return label
     }()
     
+    lazy var info: UIImageView = {
+       let imageView = UIImageView()
+        imageView.image = UIImage(systemName: "info.circle")
+        return imageView
+    }()
+    
     static let reuseIdentifier = String(describing: FModMusicCell.self)
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
@@ -32,6 +38,7 @@ class FModMusicCell: UITableViewCell {
         
         self.contentView.addSubview(self.status)
         self.contentView.addSubview(self.name)
+        self.contentView.addSubview(self.info)
         
         self.status.snp.makeConstraints { make in
             make.top.left.equalTo(self.contentView).offset(10)
@@ -40,10 +47,16 @@ class FModMusicCell: UITableViewCell {
         }
         
         self.name.snp.makeConstraints { make in
-            make.right.top.bottom.equalTo(self.contentView)
+            make.top.bottom.equalTo(self.contentView)
+            make.right.equalTo(self.info.snp.left).offset(-5)
             make.left.equalTo(self.status.snp.right).offset(5)
         }
         
+        self.info.snp.makeConstraints { make in
+            make.top.equalTo(self.contentView).offset(10)
+            make.right.bottom.equalTo(self.contentView).offset(-10)
+            make.width.equalTo(self.info.snp.height)
+        }
     }
     
     required init?(coder: NSCoder) {

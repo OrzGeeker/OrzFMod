@@ -46,6 +46,10 @@ class MusicInfo {
     var canPlay = true
     var isSelected = false
     
+    lazy var fileSize = {
+       return 12
+    }()
+    
     init(fileURL: URL) {
         self.fileURL = fileURL
     }

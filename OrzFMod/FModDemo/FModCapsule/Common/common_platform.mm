@@ -3,7 +3,6 @@ FMOD Example Framework
 Copyright (c), Firelight Technologies Pty, Ltd 2012-2019.
 ==============================================================================*/
 #import "common.h"
-#import <Foundation/NSString.h>
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVAudioSession.h>

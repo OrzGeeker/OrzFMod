@@ -5,7 +5,6 @@
 ## Build generated
 build/
 DerivedData/
-OrzFMod/build/
 
 ## Various settings
 *.pbxuser
@@ -68,6 +67,6 @@ fastlane/Preview.html
 fastlane/screenshots/**/*.png
 fastlane/test_output
 .DS_Store
-*.xcframework
 .swiftpm/
 *.xcframework.zip
+OrzFMod/build/

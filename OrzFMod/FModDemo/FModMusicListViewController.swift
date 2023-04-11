@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import OrzFMod
 
 class FModMusicListViewController: UIViewController {
 
@@ -23,7 +22,6 @@ class FModMusicListViewController: UIViewController {
         
         configTitle()
         configMusicList()
-        
     }
     
     func configTitle() {

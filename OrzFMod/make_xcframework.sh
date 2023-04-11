@@ -3,7 +3,7 @@
 # 参考文档： https://developer.apple.com/documentation/xcode/creating-a-multi-platform-binary-framework-bundle
 
 PROJECT_NAME="OrzFMod.xcodeproj"
-SCHEME="OrzFMod"
+SCHEME="FModAPI"
 BUILD_DIR="./build"
 ARVHIVE_DIR="${BUILD_DIR}/archives"
 
@@ -40,4 +40,21 @@ xcodebuild -create-xcframework \
     -archive ${IPHONE_SIMULATOR_ARCHIVE_PATH} -framework ${IPHONE_SIMULATOR_SCHEMA}.framework  \
     -output ${XCFRAMEWORK}
 
-zip -r "${XCFRAMEWORK_ZIP}" "${XCFRAMEWORK}" && swift package compute-checksum "${XCFRAMEWORK_ZIP}"
+zip -r "${XCFRAMEWORK_ZIP}" "${XCFRAMEWORK}"
+if [ $? -eq 0 ]; then
+    
+    xcframework_zip_checksum=$(swift package compute-checksum "${XCFRAMEWORK_ZIP}")
+    
+    echo 
+    echo xcframework checksum: 
+    echo "    $xcframework_zip_checksum"
+
+    echo "$xcframework_zip_checksum" | cat > "${BUILD_DIR}/$(basename ${XCFRAMEWORK_ZIP}).checksum"
+
+    xcframework_name=$(basename ${XCFRAMEWORK})
+    if [ -d "${xcframework_name}" ]; then
+        rm -rf "${xcframework_name}"
+    fi
+    mv -f "${XCFRAMEWORK}" .
+fi
+

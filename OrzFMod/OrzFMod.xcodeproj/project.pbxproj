@@ -7,52 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B0C29E129E5514E00D802A5 /* libfmodL_iphoneos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F334373D2690B37F004BCB3C /* libfmodL_iphoneos.a */; platformFilter = ios; };
-		2B0C29E529E55A4200D802A5 /* common_platform.h in Headers */ = {isa = PBXBuildFile; fileRef = E22D946622FD9BC100A9013E /* common_platform.h */; };
-		2B0C29E629E55A4200D802A5 /* fmod_codec.h in Headers */ = {isa = PBXBuildFile; fileRef = E22D944F22FD9A6500A9013E /* fmod_codec.h */; };
-		2B0C29E729E55A4200D802A5 /* fmod_ios.h in Headers */ = {isa = PBXBuildFile; fileRef = E22D945122FD9A6500A9013E /* fmod_ios.h */; };
-		2B0C29E829E55A4200D802A5 /* FModCapsule.h in Headers */ = {isa = PBXBuildFile; fileRef = F326F87421AEEF8E00B60098 /* FModCapsule.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2B0C29E929E55A4200D802A5 /* fmod_output.h in Headers */ = {isa = PBXBuildFile; fileRef = E22D944B22FD9A6500A9013E /* fmod_output.h */; };
-		2B0C29EA29E55A4200D802A5 /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = E22D946922FD9BC300A9013E /* common.h */; };
-		2B0C29EB29E55A4200D802A5 /* fmod_dsp_effects.h in Headers */ = {isa = PBXBuildFile; fileRef = E22D945322FD9A6500A9013E /* fmod_dsp_effects.h */; };
-		2B0C29EC29E55A4200D802A5 /* fmod.h in Headers */ = {isa = PBXBuildFile; fileRef = E22D944E22FD9A6500A9013E /* fmod.h */; };
-		2B0C29ED29E55A4200D802A5 /* fmod_common.h in Headers */ = {isa = PBXBuildFile; fileRef = E22D945222FD9A6500A9013E /* fmod_common.h */; };
-		2B0C29EE29E55A4200D802A5 /* fmod_errors.h in Headers */ = {isa = PBXBuildFile; fileRef = E22D944D22FD9A6500A9013E /* fmod_errors.h */; };
-		2B0C29EF29E55A4200D802A5 /* fmod_dsp.h in Headers */ = {isa = PBXBuildFile; fileRef = E22D944C22FD9A6500A9013E /* fmod_dsp.h */; };
-		2B0C29F029E55A4200D802A5 /* fmod.hpp in Headers */ = {isa = PBXBuildFile; fileRef = E22D945022FD9A6500A9013E /* fmod.hpp */; };
-		2B0C29F129E55A4200D802A5 /* OrzFMod.h in Headers */ = {isa = PBXBuildFile; fileRef = F326F85621AEEEC200B60098 /* OrzFMod.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2B0C29F329E55A4200D802A5 /* common.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E22D946722FD9BC200A9013E /* common.cpp */; };
-		2B0C29F429E55A4200D802A5 /* common_platform.mm in Sources */ = {isa = PBXBuildFile; fileRef = E22D946822FD9BC200A9013E /* common_platform.mm */; };
-		2B0C29F529E55A4200D802A5 /* FModCapsule.mm in Sources */ = {isa = PBXBuildFile; fileRef = F326F87321AEEF8E00B60098 /* FModCapsule.mm */; };
+		2B0C29F129E55A4200D802A5 /* FModAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = F326F85621AEEEC200B60098 /* FModAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2B0C29F729E55A4200D802A5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB39F4729E54E6900ACE40B /* UIKit.framework */; platformFilter = ios; };
 		2B0C29F829E55A4200D802A5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB39F4529E54E5800ACE40B /* AudioToolbox.framework */; platformFilter = ios; };
 		2B0C29F929E55A4200D802A5 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB39F4329E54E4600ACE40B /* AVFoundation.framework */; platformFilter = ios; };
 		2B0C29FC29E55A4200D802A5 /* test.xm in Resources */ = {isa = PBXBuildFile; fileRef = F326F8AC21AEF13600B60098 /* test.xm */; };
 		2B0C29FD29E55A4200D802A5 /* FMOD_White.png in Resources */ = {isa = PBXBuildFile; fileRef = F389BBD821B05451002F8EAF /* FMOD_White.png */; };
 		2B0C29FE29E55A4200D802A5 /* FMOD_Black.png in Resources */ = {isa = PBXBuildFile; fileRef = F389BBD921B05451002F8EAF /* FMOD_Black.png */; };
-		2B4035D429E54B9500E484FB /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 2B4035D329E54B9500E484FB /* SnapKit */; };
-		2BA1977B29E55B400022D9C8 /* libfmodL_iphonesimulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4035DA29E54BC900E484FB /* libfmodL_iphonesimulator.a */; platformFilter = ios; };
-		2BA1978329E563EC0022D9C8 /* OrzFMod.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA1977C29E562590022D9C8 /* OrzFMod.xcframework */; };
-		2BA1978429E563EC0022D9C8 /* OrzFMod.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA1977C29E562590022D9C8 /* OrzFMod.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2BA197FC29E583F00022D9C8 /* fmod_output.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F029E583F00022D9C8 /* fmod_output.h */; };
+		2BA197FD29E583F00022D9C8 /* fmod_output.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F029E583F00022D9C8 /* fmod_output.h */; };
+		2BA197FE29E583F00022D9C8 /* fmod_dsp.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F129E583F00022D9C8 /* fmod_dsp.h */; };
+		2BA197FF29E583F00022D9C8 /* fmod_dsp.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F129E583F00022D9C8 /* fmod_dsp.h */; };
+		2BA1980029E583F00022D9C8 /* fmod_errors.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F229E583F00022D9C8 /* fmod_errors.h */; };
+		2BA1980129E583F00022D9C8 /* fmod_errors.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F229E583F00022D9C8 /* fmod_errors.h */; };
+		2BA1980229E583F00022D9C8 /* fmod.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F329E583F00022D9C8 /* fmod.h */; };
+		2BA1980329E583F00022D9C8 /* fmod.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F329E583F00022D9C8 /* fmod.h */; };
+		2BA1980429E583F00022D9C8 /* fmod_codec.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F429E583F00022D9C8 /* fmod_codec.h */; };
+		2BA1980529E583F00022D9C8 /* fmod_codec.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F429E583F00022D9C8 /* fmod_codec.h */; };
+		2BA1980629E583F00022D9C8 /* fmod.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F529E583F00022D9C8 /* fmod.hpp */; };
+		2BA1980729E583F00022D9C8 /* fmod.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F529E583F00022D9C8 /* fmod.hpp */; };
+		2BA1980829E583F00022D9C8 /* fmod_ios.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F629E583F00022D9C8 /* fmod_ios.h */; };
+		2BA1980929E583F00022D9C8 /* fmod_ios.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F629E583F00022D9C8 /* fmod_ios.h */; };
+		2BA1980A29E583F00022D9C8 /* fmod_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F729E583F00022D9C8 /* fmod_common.h */; };
+		2BA1980B29E583F00022D9C8 /* fmod_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F729E583F00022D9C8 /* fmod_common.h */; };
+		2BA1980C29E583F00022D9C8 /* fmod_dsp_effects.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F829E583F00022D9C8 /* fmod_dsp_effects.h */; };
+		2BA1980D29E583F00022D9C8 /* fmod_dsp_effects.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F829E583F00022D9C8 /* fmod_dsp_effects.h */; };
+		2BA1980F29E583F00022D9C8 /* libfmodL_iphonesimulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA197FA29E583F00022D9C8 /* libfmodL_iphonesimulator.a */; };
+		2BA1981029E583F00022D9C8 /* libfmodL_iphoneos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA197FB29E583F00022D9C8 /* libfmodL_iphoneos.a */; };
+		2BA1987929E58EC20022D9C8 /* common_platform.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA1987229E58EC20022D9C8 /* common_platform.h */; };
+		2BA1987A29E58EC20022D9C8 /* common_platform.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA1987229E58EC20022D9C8 /* common_platform.h */; };
+		2BA1987B29E58EC20022D9C8 /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA1987329E58EC20022D9C8 /* common.h */; };
+		2BA1987C29E58EC20022D9C8 /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA1987329E58EC20022D9C8 /* common.h */; };
+		2BA1987D29E58EC20022D9C8 /* common_platform.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2BA1987429E58EC20022D9C8 /* common_platform.mm */; };
+		2BA1987E29E58EC20022D9C8 /* common_platform.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2BA1987429E58EC20022D9C8 /* common_platform.mm */; };
+		2BA1987F29E58EC20022D9C8 /* FModCapsule.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2BA1987529E58EC20022D9C8 /* FModCapsule.mm */; };
+		2BA1988029E58EC20022D9C8 /* FModCapsule.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2BA1987529E58EC20022D9C8 /* FModCapsule.mm */; };
+		2BA1988129E58EC20022D9C8 /* FModCapsule.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA1987629E58EC20022D9C8 /* FModCapsule.h */; };
+		2BA1988229E58EC20022D9C8 /* FModCapsule.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA1987629E58EC20022D9C8 /* FModCapsule.h */; };
+		2BA1988F29E591820022D9C8 /* FModAPI.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA1988E29E591820022D9C8 /* FModAPI.xcframework */; };
+		2BA1989029E591820022D9C8 /* FModAPI.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA1988E29E591820022D9C8 /* FModAPI.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2BA1989329E5918A0022D9C8 /* SnapKit-Dynamic in Frameworks */ = {isa = PBXBuildFile; productRef = 2BA1989229E5918A0022D9C8 /* SnapKit-Dynamic */; };
+		2BA1989429E5918A0022D9C8 /* SnapKit-Dynamic in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 2BA1989229E5918A0022D9C8 /* SnapKit-Dynamic */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		2BA1989729E5936B0022D9C8 /* common.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2BA1989629E5936B0022D9C8 /* common.mm */; };
 		2BB39F4429E54E4600ACE40B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB39F4329E54E4600ACE40B /* AVFoundation.framework */; platformFilter = ios; };
 		2BB39F4629E54E5800ACE40B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB39F4529E54E5800ACE40B /* AudioToolbox.framework */; platformFilter = ios; };
 		2BB39F4829E54E6A00ACE40B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BB39F4729E54E6900ACE40B /* UIKit.framework */; platformFilter = ios; };
-		E22D945922FD9A6500A9013E /* fmod_output.h in Headers */ = {isa = PBXBuildFile; fileRef = E22D944B22FD9A6500A9013E /* fmod_output.h */; };
-		E22D945A22FD9A6500A9013E /* fmod_dsp.h in Headers */ = {isa = PBXBuildFile; fileRef = E22D944C22FD9A6500A9013E /* fmod_dsp.h */; };
-		E22D945B22FD9A6500A9013E /* fmod_errors.h in Headers */ = {isa = PBXBuildFile; fileRef = E22D944D22FD9A6500A9013E /* fmod_errors.h */; };
-		E22D945C22FD9A6500A9013E /* fmod.h in Headers */ = {isa = PBXBuildFile; fileRef = E22D944E22FD9A6500A9013E /* fmod.h */; };
-		E22D945D22FD9A6500A9013E /* fmod_codec.h in Headers */ = {isa = PBXBuildFile; fileRef = E22D944F22FD9A6500A9013E /* fmod_codec.h */; };
-		E22D945E22FD9A6500A9013E /* fmod.hpp in Headers */ = {isa = PBXBuildFile; fileRef = E22D945022FD9A6500A9013E /* fmod.hpp */; };
-		E22D945F22FD9A6500A9013E /* fmod_ios.h in Headers */ = {isa = PBXBuildFile; fileRef = E22D945122FD9A6500A9013E /* fmod_ios.h */; };
-		E22D946022FD9A6500A9013E /* fmod_common.h in Headers */ = {isa = PBXBuildFile; fileRef = E22D945222FD9A6500A9013E /* fmod_common.h */; };
-		E22D946122FD9A6500A9013E /* fmod_dsp_effects.h in Headers */ = {isa = PBXBuildFile; fileRef = E22D945322FD9A6500A9013E /* fmod_dsp_effects.h */; };
-		E22D946A22FD9BC300A9013E /* common_platform.h in Headers */ = {isa = PBXBuildFile; fileRef = E22D946622FD9BC100A9013E /* common_platform.h */; };
-		E22D946B22FD9BC300A9013E /* common.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E22D946722FD9BC200A9013E /* common.cpp */; };
-		E22D946C22FD9BC300A9013E /* common_platform.mm in Sources */ = {isa = PBXBuildFile; fileRef = E22D946822FD9BC200A9013E /* common_platform.mm */; };
-		E22D946D22FD9BC300A9013E /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = E22D946922FD9BC300A9013E /* common.h */; };
-		F326F86421AEEEC200B60098 /* OrzFMod.h in Headers */ = {isa = PBXBuildFile; fileRef = F326F85621AEEEC200B60098 /* OrzFMod.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F326F88921AEEF8E00B60098 /* FModCapsule.mm in Sources */ = {isa = PBXBuildFile; fileRef = F326F87321AEEF8E00B60098 /* FModCapsule.mm */; };
-		F326F88A21AEEF8E00B60098 /* FModCapsule.h in Headers */ = {isa = PBXBuildFile; fileRef = F326F87421AEEF8E00B60098 /* FModCapsule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F326F86421AEEEC200B60098 /* FModAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = F326F85621AEEEC200B60098 /* FModAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F326F8B421AEF15900B60098 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326F8B321AEF15900B60098 /* AppDelegate.swift */; };
 		F326F8B621AEF15900B60098 /* FModMusicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326F8B521AEF15900B60098 /* FModMusicListViewController.swift */; };
 		F326F8B921AEF15900B60098 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F326F8B721AEF15900B60098 /* Main.storyboard */; };
@@ -67,13 +67,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		2BA1978529E563EC0022D9C8 /* Embed Frameworks */ = {
+		2BA1989129E591820022D9C8 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2BA1978429E563EC0022D9C8 /* OrzFMod.xcframework in Embed Frameworks */,
+				2BA1989029E591820022D9C8 /* FModAPI.xcframework in Embed Frameworks */,
+				2BA1989429E5918A0022D9C8 /* SnapKit-Dynamic in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,30 +82,32 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2B0C2A0229E55A4200D802A5 /* OrzFMod-Simulator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "OrzFMod-Simulator.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2B4035DA29E54BC900E484FB /* libfmodL_iphonesimulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmodL_iphonesimulator.a; sourceTree = "<group>"; };
-		2BA1977C29E562590022D9C8 /* OrzFMod.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = OrzFMod.xcframework; path = build/OrzFMod.xcframework; sourceTree = "<group>"; };
+		2B0C2A0229E55A4200D802A5 /* FModAPI-Simulator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "FModAPI-Simulator.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BA197F029E583F00022D9C8 /* fmod_output.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_output.h; sourceTree = "<group>"; };
+		2BA197F129E583F00022D9C8 /* fmod_dsp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_dsp.h; sourceTree = "<group>"; };
+		2BA197F229E583F00022D9C8 /* fmod_errors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_errors.h; sourceTree = "<group>"; };
+		2BA197F329E583F00022D9C8 /* fmod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod.h; sourceTree = "<group>"; };
+		2BA197F429E583F00022D9C8 /* fmod_codec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_codec.h; sourceTree = "<group>"; };
+		2BA197F529E583F00022D9C8 /* fmod.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fmod.hpp; sourceTree = "<group>"; };
+		2BA197F629E583F00022D9C8 /* fmod_ios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_ios.h; sourceTree = "<group>"; };
+		2BA197F729E583F00022D9C8 /* fmod_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_common.h; sourceTree = "<group>"; };
+		2BA197F829E583F00022D9C8 /* fmod_dsp_effects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_dsp_effects.h; sourceTree = "<group>"; };
+		2BA197FA29E583F00022D9C8 /* libfmodL_iphonesimulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmodL_iphonesimulator.a; sourceTree = "<group>"; };
+		2BA197FB29E583F00022D9C8 /* libfmodL_iphoneos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmodL_iphoneos.a; sourceTree = "<group>"; };
+		2BA1987229E58EC20022D9C8 /* common_platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common_platform.h; sourceTree = "<group>"; };
+		2BA1987329E58EC20022D9C8 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
+		2BA1987429E58EC20022D9C8 /* common_platform.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = common_platform.mm; sourceTree = "<group>"; };
+		2BA1987529E58EC20022D9C8 /* FModCapsule.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FModCapsule.mm; sourceTree = "<group>"; };
+		2BA1987629E58EC20022D9C8 /* FModCapsule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FModCapsule.h; sourceTree = "<group>"; };
+		2BA1988E29E591820022D9C8 /* FModAPI.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FModAPI.xcframework; sourceTree = "<group>"; };
+		2BA1989529E5936B0022D9C8 /* FModDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FModDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		2BA1989629E5936B0022D9C8 /* common.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = common.mm; sourceTree = "<group>"; };
 		2BB39F4329E54E4600ACE40B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS16.1.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
 		2BB39F4529E54E5800ACE40B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS16.1.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
 		2BB39F4729E54E6900ACE40B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS16.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		E22D944B22FD9A6500A9013E /* fmod_output.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_output.h; sourceTree = "<group>"; };
-		E22D944C22FD9A6500A9013E /* fmod_dsp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_dsp.h; sourceTree = "<group>"; };
-		E22D944D22FD9A6500A9013E /* fmod_errors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_errors.h; sourceTree = "<group>"; };
-		E22D944E22FD9A6500A9013E /* fmod.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod.h; sourceTree = "<group>"; };
-		E22D944F22FD9A6500A9013E /* fmod_codec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_codec.h; sourceTree = "<group>"; };
-		E22D945022FD9A6500A9013E /* fmod.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = fmod.hpp; sourceTree = "<group>"; };
-		E22D945122FD9A6500A9013E /* fmod_ios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_ios.h; sourceTree = "<group>"; };
-		E22D945222FD9A6500A9013E /* fmod_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_common.h; sourceTree = "<group>"; };
-		E22D945322FD9A6500A9013E /* fmod_dsp_effects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_dsp_effects.h; sourceTree = "<group>"; };
-		E22D946622FD9BC100A9013E /* common_platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common_platform.h; sourceTree = "<group>"; };
-		E22D946722FD9BC200A9013E /* common.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = common.cpp; sourceTree = "<group>"; };
-		E22D946822FD9BC200A9013E /* common_platform.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = common_platform.mm; sourceTree = "<group>"; };
-		E22D946922FD9BC300A9013E /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
-		F326F85321AEEEC200B60098 /* OrzFMod.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OrzFMod.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F326F85621AEEEC200B60098 /* OrzFMod.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OrzFMod.h; sourceTree = "<group>"; };
+		F326F85321AEEEC200B60098 /* FModAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FModAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F326F85621AEEEC200B60098 /* FModAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FModAPI.h; sourceTree = "<group>"; };
 		F326F85721AEEEC200B60098 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F326F87321AEEF8E00B60098 /* FModCapsule.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FModCapsule.mm; sourceTree = "<group>"; };
-		F326F87421AEEF8E00B60098 /* FModCapsule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FModCapsule.h; sourceTree = "<group>"; };
 		F326F8A421AEF04200B60098 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		F326F8A621AEF04900B60098 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		F326F8A821AEF05200B60098 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -117,7 +120,6 @@
 		F326F8BA21AEF15A00B60098 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F326F8BD21AEF15A00B60098 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F326F8BF21AEF15A00B60098 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F334373D2690B37F004BCB3C /* libfmodL_iphoneos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmodL_iphoneos.a; sourceTree = "<group>"; };
 		F33C382D26908D27008E6FC4 /* FModMusicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FModMusicCell.swift; sourceTree = "<group>"; };
 		F3680AE4269014F70012F2CF /* FModMusicStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FModMusicStore.swift; sourceTree = "<group>"; };
 		F389BBD821B05451002F8EAF /* FMOD_White.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FMOD_White.png; sourceTree = "<group>"; };
@@ -129,7 +131,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BA1977B29E55B400022D9C8 /* libfmodL_iphonesimulator.a in Frameworks */,
+				2BA1980F29E583F00022D9C8 /* libfmodL_iphonesimulator.a in Frameworks */,
 				2B0C29F729E55A4200D802A5 /* UIKit.framework in Frameworks */,
 				2B0C29F829E55A4200D802A5 /* AudioToolbox.framework in Frameworks */,
 				2B0C29F929E55A4200D802A5 /* AVFoundation.framework in Frameworks */,
@@ -141,9 +143,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BB39F4829E54E6A00ACE40B /* UIKit.framework in Frameworks */,
+				2BA1981029E583F00022D9C8 /* libfmodL_iphoneos.a in Frameworks */,
 				2BB39F4629E54E5800ACE40B /* AudioToolbox.framework in Frameworks */,
 				2BB39F4429E54E4600ACE40B /* AVFoundation.framework in Frameworks */,
-				2B0C29E129E5514E00D802A5 /* libfmodL_iphoneos.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,52 +153,74 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B4035D429E54B9500E484FB /* SnapKit in Frameworks */,
-				2BA1978329E563EC0022D9C8 /* OrzFMod.xcframework in Frameworks */,
+				2BA1988F29E591820022D9C8 /* FModAPI.xcframework in Frameworks */,
+				2BA1989329E5918A0022D9C8 /* SnapKit-Dynamic in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E22D944922FD9A6500A9013E /* core */ = {
+		2BA197EE29E583F00022D9C8 /* iOSAPI */ = {
 			isa = PBXGroup;
 			children = (
-				E22D944A22FD9A6500A9013E /* inc */,
-				E22D945422FD9A6500A9013E /* lib */,
+				2BA197EF29E583F00022D9C8 /* inc */,
+				2BA197F929E583F00022D9C8 /* lib */,
 			);
-			path = core;
+			path = iOSAPI;
 			sourceTree = "<group>";
 		};
-		E22D944A22FD9A6500A9013E /* inc */ = {
+		2BA197EF29E583F00022D9C8 /* inc */ = {
 			isa = PBXGroup;
 			children = (
-				E22D944B22FD9A6500A9013E /* fmod_output.h */,
-				E22D944C22FD9A6500A9013E /* fmod_dsp.h */,
-				E22D944D22FD9A6500A9013E /* fmod_errors.h */,
-				E22D944E22FD9A6500A9013E /* fmod.h */,
-				E22D944F22FD9A6500A9013E /* fmod_codec.h */,
-				E22D945022FD9A6500A9013E /* fmod.hpp */,
-				E22D945122FD9A6500A9013E /* fmod_ios.h */,
-				E22D945222FD9A6500A9013E /* fmod_common.h */,
-				E22D945322FD9A6500A9013E /* fmod_dsp_effects.h */,
+				2BA197F029E583F00022D9C8 /* fmod_output.h */,
+				2BA197F129E583F00022D9C8 /* fmod_dsp.h */,
+				2BA197F229E583F00022D9C8 /* fmod_errors.h */,
+				2BA197F329E583F00022D9C8 /* fmod.h */,
+				2BA197F429E583F00022D9C8 /* fmod_codec.h */,
+				2BA197F529E583F00022D9C8 /* fmod.hpp */,
+				2BA197F629E583F00022D9C8 /* fmod_ios.h */,
+				2BA197F729E583F00022D9C8 /* fmod_common.h */,
+				2BA197F829E583F00022D9C8 /* fmod_dsp_effects.h */,
 			);
 			path = inc;
 			sourceTree = "<group>";
 		};
-		E22D945422FD9A6500A9013E /* lib */ = {
+		2BA197F929E583F00022D9C8 /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				2B4035DA29E54BC900E484FB /* libfmodL_iphonesimulator.a */,
-				F334373D2690B37F004BCB3C /* libfmodL_iphoneos.a */,
+				2BA197FA29E583F00022D9C8 /* libfmodL_iphonesimulator.a */,
+				2BA197FB29E583F00022D9C8 /* libfmodL_iphoneos.a */,
 			);
 			path = lib;
+			sourceTree = "<group>";
+		};
+		2BA1986F29E58EC20022D9C8 /* FModCapsule */ = {
+			isa = PBXGroup;
+			children = (
+				2BA1987029E58EC20022D9C8 /* Common */,
+				2BA1987529E58EC20022D9C8 /* FModCapsule.mm */,
+				2BA1987629E58EC20022D9C8 /* FModCapsule.h */,
+			);
+			path = FModCapsule;
+			sourceTree = "<group>";
+		};
+		2BA1987029E58EC20022D9C8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				2BA1989629E5936B0022D9C8 /* common.mm */,
+				2BA1987229E58EC20022D9C8 /* common_platform.h */,
+				2BA1987329E58EC20022D9C8 /* common.h */,
+				2BA1987429E58EC20022D9C8 /* common_platform.mm */,
+				2BA1989529E5936B0022D9C8 /* FModDemo-Bridging-Header.h */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		F326F84921AEEEC200B60098 = {
 			isa = PBXGroup;
 			children = (
-				F326F85521AEEEC200B60098 /* OrzFMod */,
+				F326F85521AEEEC200B60098 /* FModAPI */,
 				F326F8B221AEF15900B60098 /* FModDemo */,
 				F326F85421AEEEC200B60098 /* Products */,
 				F326F8A321AEF04100B60098 /* Frameworks */,
@@ -206,66 +230,28 @@
 		F326F85421AEEEC200B60098 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F326F85321AEEEC200B60098 /* OrzFMod.framework */,
+				F326F85321AEEEC200B60098 /* FModAPI.framework */,
 				F326F8B121AEF15900B60098 /* FModDemo.app */,
-				2B0C2A0229E55A4200D802A5 /* OrzFMod-Simulator.framework */,
+				2B0C2A0229E55A4200D802A5 /* FModAPI-Simulator.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F326F85521AEEEC200B60098 /* OrzFMod */ = {
+		F326F85521AEEEC200B60098 /* FModAPI */ = {
 			isa = PBXGroup;
 			children = (
+				2BA197EE29E583F00022D9C8 /* iOSAPI */,
 				F326F8D721AEFA2B00B60098 /* Resources */,
-				F326F85621AEEEC200B60098 /* OrzFMod.h */,
+				F326F85621AEEEC200B60098 /* FModAPI.h */,
 				F326F85721AEEEC200B60098 /* Info.plist */,
-				F326F86D21AEEF8E00B60098 /* FModCapsule */,
-			);
-			path = OrzFMod;
-			sourceTree = "<group>";
-		};
-		F326F86D21AEEF8E00B60098 /* FModCapsule */ = {
-			isa = PBXGroup;
-			children = (
-				F326F87421AEEF8E00B60098 /* FModCapsule.h */,
-				F326F87321AEEF8E00B60098 /* FModCapsule.mm */,
-				F326F86E21AEEF8E00B60098 /* Common */,
-				F326F87521AEEF8E00B60098 /* FModAPI */,
-			);
-			path = FModCapsule;
-			sourceTree = "<group>";
-		};
-		F326F86E21AEEF8E00B60098 /* Common */ = {
-			isa = PBXGroup;
-			children = (
-				E22D946622FD9BC100A9013E /* common_platform.h */,
-				E22D946822FD9BC200A9013E /* common_platform.mm */,
-				E22D946722FD9BC200A9013E /* common.cpp */,
-				E22D946922FD9BC300A9013E /* common.h */,
-			);
-			path = Common;
-			sourceTree = "<group>";
-		};
-		F326F87521AEEF8E00B60098 /* FModAPI */ = {
-			isa = PBXGroup;
-			children = (
-				F326F87621AEEF8E00B60098 /* iOS */,
 			);
 			path = FModAPI;
-			sourceTree = "<group>";
-		};
-		F326F87621AEEF8E00B60098 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				E22D944922FD9A6500A9013E /* core */,
-			);
-			path = iOS;
 			sourceTree = "<group>";
 		};
 		F326F8A321AEF04100B60098 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2BA1977C29E562590022D9C8 /* OrzFMod.xcframework */,
+				2BA1988E29E591820022D9C8 /* FModAPI.xcframework */,
 				2BB39F4729E54E6900ACE40B /* UIKit.framework */,
 				2BB39F4529E54E5800ACE40B /* AudioToolbox.framework */,
 				2BB39F4329E54E4600ACE40B /* AVFoundation.framework */,
@@ -280,6 +266,7 @@
 		F326F8B221AEF15900B60098 /* FModDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2BA1986F29E58EC20022D9C8 /* FModCapsule */,
 				F326F8B321AEF15900B60098 /* AppDelegate.swift */,
 				F33C382D26908D27008E6FC4 /* FModMusicCell.swift */,
 				F326F8B521AEF15900B60098 /* FModMusicListViewController.swift */,
@@ -309,19 +296,19 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B0C29E529E55A4200D802A5 /* common_platform.h in Headers */,
-				2B0C29E629E55A4200D802A5 /* fmod_codec.h in Headers */,
-				2B0C29E729E55A4200D802A5 /* fmod_ios.h in Headers */,
-				2B0C29E829E55A4200D802A5 /* FModCapsule.h in Headers */,
-				2B0C29E929E55A4200D802A5 /* fmod_output.h in Headers */,
-				2B0C29EA29E55A4200D802A5 /* common.h in Headers */,
-				2B0C29EB29E55A4200D802A5 /* fmod_dsp_effects.h in Headers */,
-				2B0C29EC29E55A4200D802A5 /* fmod.h in Headers */,
-				2B0C29ED29E55A4200D802A5 /* fmod_common.h in Headers */,
-				2B0C29EE29E55A4200D802A5 /* fmod_errors.h in Headers */,
-				2B0C29EF29E55A4200D802A5 /* fmod_dsp.h in Headers */,
-				2B0C29F029E55A4200D802A5 /* fmod.hpp in Headers */,
-				2B0C29F129E55A4200D802A5 /* OrzFMod.h in Headers */,
+				2BA1988229E58EC20022D9C8 /* FModCapsule.h in Headers */,
+				2B0C29F129E55A4200D802A5 /* FModAPI.h in Headers */,
+				2BA1987C29E58EC20022D9C8 /* common.h in Headers */,
+				2BA1987A29E58EC20022D9C8 /* common_platform.h in Headers */,
+				2BA1980929E583F00022D9C8 /* fmod_ios.h in Headers */,
+				2BA1980D29E583F00022D9C8 /* fmod_dsp_effects.h in Headers */,
+				2BA1980329E583F00022D9C8 /* fmod.h in Headers */,
+				2BA1980129E583F00022D9C8 /* fmod_errors.h in Headers */,
+				2BA1980529E583F00022D9C8 /* fmod_codec.h in Headers */,
+				2BA1980B29E583F00022D9C8 /* fmod_common.h in Headers */,
+				2BA197FF29E583F00022D9C8 /* fmod_dsp.h in Headers */,
+				2BA1980729E583F00022D9C8 /* fmod.hpp in Headers */,
+				2BA197FD29E583F00022D9C8 /* fmod_output.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,28 +316,28 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E22D946A22FD9BC300A9013E /* common_platform.h in Headers */,
-				E22D945D22FD9A6500A9013E /* fmod_codec.h in Headers */,
-				E22D945F22FD9A6500A9013E /* fmod_ios.h in Headers */,
-				F326F88A21AEEF8E00B60098 /* FModCapsule.h in Headers */,
-				E22D945922FD9A6500A9013E /* fmod_output.h in Headers */,
-				E22D946D22FD9BC300A9013E /* common.h in Headers */,
-				E22D946122FD9A6500A9013E /* fmod_dsp_effects.h in Headers */,
-				E22D945C22FD9A6500A9013E /* fmod.h in Headers */,
-				E22D946022FD9A6500A9013E /* fmod_common.h in Headers */,
-				E22D945B22FD9A6500A9013E /* fmod_errors.h in Headers */,
-				E22D945A22FD9A6500A9013E /* fmod_dsp.h in Headers */,
-				E22D945E22FD9A6500A9013E /* fmod.hpp in Headers */,
-				F326F86421AEEEC200B60098 /* OrzFMod.h in Headers */,
+				F326F86421AEEEC200B60098 /* FModAPI.h in Headers */,
+				2BA1988129E58EC20022D9C8 /* FModCapsule.h in Headers */,
+				2BA1987B29E58EC20022D9C8 /* common.h in Headers */,
+				2BA1987929E58EC20022D9C8 /* common_platform.h in Headers */,
+				2BA1980829E583F00022D9C8 /* fmod_ios.h in Headers */,
+				2BA1980C29E583F00022D9C8 /* fmod_dsp_effects.h in Headers */,
+				2BA1980229E583F00022D9C8 /* fmod.h in Headers */,
+				2BA1980029E583F00022D9C8 /* fmod_errors.h in Headers */,
+				2BA1980429E583F00022D9C8 /* fmod_codec.h in Headers */,
+				2BA1980A29E583F00022D9C8 /* fmod_common.h in Headers */,
+				2BA197FE29E583F00022D9C8 /* fmod_dsp.h in Headers */,
+				2BA1980629E583F00022D9C8 /* fmod.hpp in Headers */,
+				2BA197FC29E583F00022D9C8 /* fmod_output.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		2B0C29E329E55A4200D802A5 /* OrzFMod-Simulator */ = {
+		2B0C29E329E55A4200D802A5 /* FModAPI-Simulator */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2B0C29FF29E55A4200D802A5 /* Build configuration list for PBXNativeTarget "OrzFMod-Simulator" */;
+			buildConfigurationList = 2B0C29FF29E55A4200D802A5 /* Build configuration list for PBXNativeTarget "FModAPI-Simulator" */;
 			buildPhases = (
 				2B0C29E429E55A4200D802A5 /* Headers */,
 				2B0C29F229E55A4200D802A5 /* Sources */,
@@ -361,16 +348,16 @@
 			);
 			dependencies = (
 			);
-			name = "OrzFMod-Simulator";
+			name = "FModAPI-Simulator";
 			packageProductDependencies = (
 			);
 			productName = OrzFMod;
-			productReference = 2B0C2A0229E55A4200D802A5 /* OrzFMod-Simulator.framework */;
+			productReference = 2B0C2A0229E55A4200D802A5 /* FModAPI-Simulator.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F326F85221AEEEC200B60098 /* OrzFMod */ = {
+		F326F85221AEEEC200B60098 /* FModAPI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F326F86721AEEEC200B60098 /* Build configuration list for PBXNativeTarget "OrzFMod" */;
+			buildConfigurationList = F326F86721AEEEC200B60098 /* Build configuration list for PBXNativeTarget "FModAPI" */;
 			buildPhases = (
 				F326F84E21AEEEC200B60098 /* Headers */,
 				F326F84F21AEEEC200B60098 /* Sources */,
@@ -381,11 +368,11 @@
 			);
 			dependencies = (
 			);
-			name = OrzFMod;
+			name = FModAPI;
 			packageProductDependencies = (
 			);
 			productName = OrzFMod;
-			productReference = F326F85321AEEEC200B60098 /* OrzFMod.framework */;
+			productReference = F326F85321AEEEC200B60098 /* FModAPI.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		F326F8B021AEF15900B60098 /* FModDemo */ = {
@@ -395,7 +382,7 @@
 				F326F8AD21AEF15900B60098 /* Sources */,
 				F326F8AE21AEF15900B60098 /* Frameworks */,
 				F326F8AF21AEF15900B60098 /* Resources */,
-				2BA1978529E563EC0022D9C8 /* Embed Frameworks */,
+				2BA1989129E591820022D9C8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -403,7 +390,7 @@
 			);
 			name = FModDemo;
 			packageProductDependencies = (
-				2B4035D329E54B9500E484FB /* SnapKit */,
+				2BA1989229E5918A0022D9C8 /* SnapKit-Dynamic */,
 			);
 			productName = FModDemo;
 			productReference = F326F8B121AEF15900B60098 /* FModDemo.app */;
@@ -424,7 +411,7 @@
 					};
 					F326F8B021AEF15900B60098 = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1030;
+						LastSwiftMigration = 1420;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -450,8 +437,8 @@
 			projectRoot = "";
 			targets = (
 				F326F8B021AEF15900B60098 /* FModDemo */,
-				F326F85221AEEEC200B60098 /* OrzFMod */,
-				2B0C29E329E55A4200D802A5 /* OrzFMod-Simulator */,
+				F326F85221AEEEC200B60098 /* FModAPI */,
+				2B0C29E329E55A4200D802A5 /* FModAPI-Simulator */,
 			);
 		};
 /* End PBXProject section */
@@ -495,9 +482,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B0C29F329E55A4200D802A5 /* common.cpp in Sources */,
-				2B0C29F429E55A4200D802A5 /* common_platform.mm in Sources */,
-				2B0C29F529E55A4200D802A5 /* FModCapsule.mm in Sources */,
+				2BA1987E29E58EC20022D9C8 /* common_platform.mm in Sources */,
+				2BA1988029E58EC20022D9C8 /* FModCapsule.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -505,9 +491,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E22D946B22FD9BC300A9013E /* common.cpp in Sources */,
-				E22D946C22FD9BC300A9013E /* common_platform.mm in Sources */,
-				F326F88921AEEF8E00B60098 /* FModCapsule.mm in Sources */,
+				2BA1987D29E58EC20022D9C8 /* common_platform.mm in Sources */,
+				2BA1987F29E58EC20022D9C8 /* FModCapsule.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,6 +504,7 @@
 				F33C382E26908D27008E6FC4 /* FModMusicCell.swift in Sources */,
 				F3680AE5269014F70012F2CF /* FModMusicStore.swift in Sources */,
 				F326F8B421AEF15900B60098 /* AppDelegate.swift in Sources */,
+				2BA1989729E5936B0022D9C8 /* common.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -559,9 +545,9 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = OrzFMod/Info.plist;
+				INFOPLIST_FILE = FModAPI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -571,13 +557,17 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/OrzFMod/FModCapsule/FModAPI/api/core/lib",
 					"$(PROJECT_DIR)/OrzFMod/FModCapsule/FModAPI/iOS/core/lib",
+					"$(PROJECT_DIR)/OrzFMod/FModCapsule/FModAPI/lib",
+					"$(PROJECT_DIR)/OrzFMod/FModAPI/lib",
+					"$(PROJECT_DIR)/FModAPI/iOSAPI/lib",
 				);
 				MACH_O_TYPE = mh_dylib;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.joker.OrzFMod;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = NO;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -599,9 +589,9 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = OrzFMod/Info.plist;
+				INFOPLIST_FILE = FModAPI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -611,13 +601,17 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/OrzFMod/FModCapsule/FModAPI/api/core/lib",
 					"$(PROJECT_DIR)/OrzFMod/FModCapsule/FModAPI/iOS/core/lib",
+					"$(PROJECT_DIR)/OrzFMod/FModCapsule/FModAPI/lib",
+					"$(PROJECT_DIR)/OrzFMod/FModAPI/lib",
+					"$(PROJECT_DIR)/FModAPI/iOSAPI/lib",
 				);
 				MACH_O_TYPE = mh_dylib;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.joker.OrzFMod;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = NO;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -757,9 +751,9 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = OrzFMod/Info.plist;
+				INFOPLIST_FILE = FModAPI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -769,12 +763,16 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/OrzFMod/FModCapsule/FModAPI/api/core/lib",
 					"$(PROJECT_DIR)/OrzFMod/FModCapsule/FModAPI/iOS/core/lib",
+					"$(PROJECT_DIR)/OrzFMod/FModCapsule/FModAPI/lib",
+					"$(PROJECT_DIR)/OrzFMod/FModAPI/lib",
+					"$(PROJECT_DIR)/FModAPI/iOSAPI/lib",
 				);
 				MACH_O_TYPE = mh_dylib;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.joker.OrzFMod;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = NO;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -792,9 +790,9 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = OrzFMod/Info.plist;
+				INFOPLIST_FILE = FModAPI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -804,12 +802,16 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/OrzFMod/FModCapsule/FModAPI/api/core/lib",
 					"$(PROJECT_DIR)/OrzFMod/FModCapsule/FModAPI/iOS/core/lib",
+					"$(PROJECT_DIR)/OrzFMod/FModCapsule/FModAPI/lib",
+					"$(PROJECT_DIR)/OrzFMod/FModAPI/lib",
+					"$(PROJECT_DIR)/FModAPI/iOSAPI/lib",
 				);
 				MACH_O_TYPE = mh_dylib;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.joker.OrzFMod;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = NO;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -821,9 +823,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2N62934Y28;
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 arm64e armv7 arm7s";
 				INFOPLIST_FILE = FModDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -835,6 +837,9 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "FModDemo/FModCapsule/Common/FModDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -844,10 +849,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2N62934Y28;
 				EXCLUDED_ARCHS = "";
-				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 arm64e armv7 arm7s";
 				INFOPLIST_FILE = FModDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -859,6 +864,8 @@
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "FModDemo/FModCapsule/Common/FModDemo-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -866,7 +873,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2B0C29FF29E55A4200D802A5 /* Build configuration list for PBXNativeTarget "OrzFMod-Simulator" */ = {
+		2B0C29FF29E55A4200D802A5 /* Build configuration list for PBXNativeTarget "FModAPI-Simulator" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2B0C2A0029E55A4200D802A5 /* Debug */,
@@ -884,7 +891,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F326F86721AEEEC200B60098 /* Build configuration list for PBXNativeTarget "OrzFMod" */ = {
+		F326F86721AEEEC200B60098 /* Build configuration list for PBXNativeTarget "FModAPI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F326F86821AEEEC200B60098 /* Debug */,
@@ -916,10 +923,10 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		2B4035D329E54B9500E484FB /* SnapKit */ = {
+		2BA1989229E5918A0022D9C8 /* SnapKit-Dynamic */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F33C382F26908F0F008E6FC4 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
+			productName = "SnapKit-Dynamic";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

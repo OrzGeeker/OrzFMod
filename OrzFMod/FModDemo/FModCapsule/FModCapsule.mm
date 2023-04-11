@@ -7,9 +7,11 @@
 //
 
 #import "FModCapsule.h"
-#include "fmod.hpp"
-#include "common.h"
-#include "fmod_errors.h"
+#import <FModAPI/FModAPI.h>
+
+//#include "fmod.hpp"
+//#include "common.h"
+//#include "fmod_errors.h"
 
 @interface FModCapsule()
 {

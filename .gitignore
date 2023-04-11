@@ -5,6 +5,7 @@
 ## Build generated
 build/
 DerivedData/
+OrzFMod/build/
 
 ## Various settings
 *.pbxuser

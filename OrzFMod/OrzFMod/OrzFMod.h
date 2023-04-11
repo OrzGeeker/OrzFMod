@@ -15,6 +15,4 @@ FOUNDATION_EXPORT double OrzFModVersionNumber;
 FOUNDATION_EXPORT const unsigned char OrzFModVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <OrzFMod/PublicHeader.h>
-
-
 #import <OrzFMod/FModCapsule.h> 

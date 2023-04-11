@@ -9,7 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface FModCapsule : NSObject
-
 -(void)playStreamWithFilePath:(NSString *)filePath;
 -(void)play;
 -(void)pause;

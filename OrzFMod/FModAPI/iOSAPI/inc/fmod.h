@@ -12,7 +12,7 @@
 #ifndef _FMOD_H
 #define _FMOD_H
 
-#include "fmod_common.h"
+#include <FModAPI/fmod_common.h>
 
 #ifdef __cplusplus
 extern "C" 

@@ -892,8 +892,8 @@ typedef struct FMOD_DSP_DATA_PARAMETER_INFO
 /*
     FMOD optional headers for plugin development
 */
-#include "fmod_codec.h"
-#include "fmod_dsp.h"
-#include "fmod_output.h"
+#include <FModAPI/fmod_codec.h>
+#include <FModAPI/fmod_dsp.h>
+#include <FModAPI/fmod_output.h>
 
 #endif

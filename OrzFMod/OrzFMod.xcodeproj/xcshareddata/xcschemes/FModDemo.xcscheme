@@ -37,16 +37,6 @@
          </BuildableReference>
       </MacroExpansion>
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F326F8C321AEF15A00B60098"
-               BuildableName = "FModDemoTests.xctest"
-               BlueprintName = "FModDemoTests"
-               ReferencedContainer = "container:OrzFMod.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction

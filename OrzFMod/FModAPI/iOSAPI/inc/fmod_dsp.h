@@ -12,7 +12,7 @@
 #ifndef _FMOD_DSP_H
 #define _FMOD_DSP_H
 
-#include "fmod_dsp_effects.h"
+#include <FModAPI/fmod_dsp_effects.h>
 
 typedef struct FMOD_DSP_STATE        FMOD_DSP_STATE;
 typedef struct FMOD_DSP_BUFFER_ARRAY FMOD_DSP_BUFFER_ARRAY;

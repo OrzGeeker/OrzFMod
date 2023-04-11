@@ -11,7 +11,7 @@
 #ifndef _FMOD_ERRORS_H
 #define _FMOD_ERRORS_H
 
-#include "fmod.h"
+#include <FModAPI/fmod.h>
 
 #ifdef __GNUC__ 
 static const char *FMOD_ErrorString(FMOD_RESULT errcode) __attribute__((unused));

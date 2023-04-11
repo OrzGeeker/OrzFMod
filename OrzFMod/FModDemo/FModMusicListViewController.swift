@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import FModAPI
 
 class FModMusicListViewController: UIViewController {
 

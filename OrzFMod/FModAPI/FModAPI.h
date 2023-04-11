@@ -6,15 +6,19 @@
 //  Copyright © 2018 joker. All rights reserved.
 //
 
-#import "fmod_output.h"
-#import "fmod_dsp.h"
-#import "fmod_errors.h"
-#import "fmod.h"
-#import "fmod_codec.h"
-#import "fmod.hpp"
-#import "fmod_ios.h"
-#import "fmod_common.h"
-#import "fmod_dsp_effects.h"
+#import <FModAPI/fmod_output.h>
+#import <FModAPI/fmod_dsp.h>
+#import <FModAPI/fmod_errors.h>
+#import <FModAPI/fmod.h>
+#import <FModAPI/fmod_codec.h>
+#import <FModAPI/fmod.hpp>
+#import <FModAPI/fmod_ios.h>
+#import <FModAPI/fmod_common.h>
+#import <FModAPI/fmod_dsp_effects.h>
+
+#import <FModAPI/FModCapsule.h>
+#import <FModAPI/common_platform.h>
+#import <FModAPI/common.h>
 
 //! Project version number for OrzFMod.
 FOUNDATION_EXPORT double OrzFModVersionNumber;

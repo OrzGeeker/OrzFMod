@@ -8,7 +8,8 @@
 
 #import "FModCapsule.h"
 #import "common.h"
-#import <FModAPI/FModAPI.h>
+#include <FModAPI/fmod.hpp>
+#include <FModAPI/fmod_errors.h>
 
 @interface FModCapsule()
 {

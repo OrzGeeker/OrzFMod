@@ -2,6 +2,11 @@
 FMOD Example Framework
 Copyright (c), Firelight Technologies Pty, Ltd 2012-2019.
 ==============================================================================*/
+#ifndef FMOD_EXAMPLES_COMMON_PLATFORM_H
+#define FMOD_EXAMPLES_COMMON_PLATFORM_H
+
+#import <Foundation/Foundation.h>
+
 #include <pthread.h>
 #include <assert.h>
 
@@ -40,3 +45,5 @@ inline void Common_Mutex_Leave(Common_Mutex *mutex)
     int err = pthread_mutex_unlock(mutex);
     assert(err == 0);
 }
+
+#endif

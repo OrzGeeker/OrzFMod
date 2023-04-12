@@ -5,8 +5,8 @@ Copyright (c), Firelight Technologies Pty, Ltd 2012-2019.
 #ifndef FMOD_EXAMPLES_COMMON_H
 #define FMOD_EXAMPLES_COMMON_H
 
-#include "common_platform.h"
-#include "fmod.h"
+#include <FModAPI/common_platform.h>
+#include <FModAPI/fmod.h>
 
 #include <stddef.h>
 #include <string.h>

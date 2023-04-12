@@ -42,7 +42,7 @@ void ERRCHECK_fn(FMOD_RESULT result, const char *file, int line);
 
 /* Functions with platform specific implementation (common_platform) */
 void Common_Init(void **extraDriverData);
-void Common_Close();
+void Common_Close(void);
 void Common_Sleep(unsigned int ms);
 void Common_Exit(int returnCode);
 void Common_LoadFileMemory(const char *name, void **buff, int *length);

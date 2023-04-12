@@ -18,4 +18,5 @@
 -(BOOL)isPaused;
 -(BOOL)isSameAs:(NSString *)filePath;
 -(BOOL)canPlay:(NSString *)filePath;
+-(void)playDemoMusic;
 @end

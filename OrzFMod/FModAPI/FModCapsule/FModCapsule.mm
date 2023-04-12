@@ -192,4 +192,12 @@
     
     return ret;
 }
++ (NSString *)testMusicFilePath  {
+    NSString *ret = [[NSBundle bundleForClass:FModCapsule.class] pathForResource:@"test" ofType:@"xm"];
+    return ret;
+}
+- (void)playDemoMusic {
+    NSString *demoMusicFilePath = [FModCapsule testMusicFilePath];
+    [self playStreamWithFilePath:demoMusicFilePath];
+}
 @end

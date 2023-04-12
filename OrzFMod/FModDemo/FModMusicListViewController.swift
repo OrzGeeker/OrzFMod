@@ -34,7 +34,7 @@ class FModMusicListViewController: UIViewController {
     func configMusicList() {
         
         guard store != nil else {
-            playDemoMusicFile()
+            player.playDemoMusic()
             return
         }
         
@@ -46,11 +46,6 @@ class FModMusicListViewController: UIViewController {
         self.view.addSubview(musicListView!)
     }
         
-    func playDemoMusicFile() {
-        let testFilePath = Bundle.main.path(forResource: "test", ofType: "xm")
-        player.playStream(withFilePath: testFilePath)
-    }
-
     @IBAction func jumpToSelectedRow(_ sender: UIBarButtonItem) {
         if let indexPath = self.musicListView?.indexPathForSelectedRow {
             self.musicListView?.scrollToRow(at: indexPath, at: .middle, animated: true)

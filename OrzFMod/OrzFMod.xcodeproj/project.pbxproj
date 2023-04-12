@@ -7,34 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2BA197FC29E583F00022D9C8 /* fmod_output.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F029E583F00022D9C8 /* fmod_output.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2BA197FE29E583F00022D9C8 /* fmod_dsp.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F129E583F00022D9C8 /* fmod_dsp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2BA1980029E583F00022D9C8 /* fmod_errors.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F229E583F00022D9C8 /* fmod_errors.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2BA1980229E583F00022D9C8 /* fmod.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F329E583F00022D9C8 /* fmod.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2BA1980429E583F00022D9C8 /* fmod_codec.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F429E583F00022D9C8 /* fmod_codec.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2BA1980629E583F00022D9C8 /* fmod.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F529E583F00022D9C8 /* fmod.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
-		2BA1980829E583F00022D9C8 /* fmod_ios.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F629E583F00022D9C8 /* fmod_ios.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2BA1980A29E583F00022D9C8 /* fmod_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F729E583F00022D9C8 /* fmod_common.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2BA1980C29E583F00022D9C8 /* fmod_dsp_effects.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F829E583F00022D9C8 /* fmod_dsp_effects.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B4ADA1D29E6590100812913 /* libfmodL_iphoneos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA197FB29E583F00022D9C8 /* libfmodL_iphoneos.a */; };
+		2B4ADA3229E66F8900812913 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F8A621AEF04900B60098 /* AVFoundation.framework */; };
+		2B4ADA3329E66F8F00812913 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F8A821AEF05200B60098 /* AudioToolbox.framework */; };
+		2B4ADA3429E66F9300812913 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F8AA21AEF05A00B60098 /* UIKit.framework */; };
+		2B4ADA3529E66FFB00812913 /* FModAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F85321AEEEC200B60098 /* FModAPI.framework */; };
+		2B4ADA3629E66FFB00812913 /* FModAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F326F85321AEEEC200B60098 /* FModAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2B4ADA3A29E6703200812913 /* FModMusicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326F8B521AEF15900B60098 /* FModMusicListViewController.swift */; };
+		2BA197FC29E583F00022D9C8 /* fmod_output.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F029E583F00022D9C8 /* fmod_output.h */; };
+		2BA197FE29E583F00022D9C8 /* fmod_dsp.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F129E583F00022D9C8 /* fmod_dsp.h */; };
+		2BA1980029E583F00022D9C8 /* fmod_errors.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F229E583F00022D9C8 /* fmod_errors.h */; };
+		2BA1980229E583F00022D9C8 /* fmod.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F329E583F00022D9C8 /* fmod.h */; };
+		2BA1980429E583F00022D9C8 /* fmod_codec.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F429E583F00022D9C8 /* fmod_codec.h */; };
+		2BA1980629E583F00022D9C8 /* fmod.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F529E583F00022D9C8 /* fmod.hpp */; };
+		2BA1980829E583F00022D9C8 /* fmod_ios.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F629E583F00022D9C8 /* fmod_ios.h */; };
+		2BA1980A29E583F00022D9C8 /* fmod_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F729E583F00022D9C8 /* fmod_common.h */; };
+		2BA1980C29E583F00022D9C8 /* fmod_dsp_effects.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F829E583F00022D9C8 /* fmod_dsp_effects.h */; };
 		F326F86421AEEEC200B60098 /* FModAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = F326F85621AEEEC200B60098 /* FModAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F326F8B421AEF15900B60098 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326F8B321AEF15900B60098 /* AppDelegate.swift */; };
-		F326F8B621AEF15900B60098 /* FModMusicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326F8B521AEF15900B60098 /* FModMusicListViewController.swift */; };
 		F326F8B921AEF15900B60098 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F326F8B721AEF15900B60098 /* Main.storyboard */; };
 		F326F8BB21AEF15A00B60098 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F326F8BA21AEF15A00B60098 /* Assets.xcassets */; };
 		F326F8BE21AEF15A00B60098 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F326F8BC21AEF15A00B60098 /* LaunchScreen.storyboard */; };
 		F33C382E26908D27008E6FC4 /* FModMusicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33C382D26908D27008E6FC4 /* FModMusicCell.swift */; };
-		F35D5BC529E5C82F00906A94 /* libfmodL_iphoneos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA197FB29E583F00022D9C8 /* libfmodL_iphoneos.a */; };
 		F35D5BD629E5C9D600906A94 /* common.mm in Sources */ = {isa = PBXBuildFile; fileRef = F35D5BD029E5C9D600906A94 /* common.mm */; };
-		F35D5BD729E5C9D600906A94 /* common_platform.h in Headers */ = {isa = PBXBuildFile; fileRef = F35D5BD129E5C9D600906A94 /* common_platform.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F35D5BD829E5C9D600906A94 /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = F35D5BD229E5C9D600906A94 /* common.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F35D5BD729E5C9D600906A94 /* common_platform.h in Headers */ = {isa = PBXBuildFile; fileRef = F35D5BD129E5C9D600906A94 /* common_platform.h */; };
+		F35D5BD829E5C9D600906A94 /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = F35D5BD229E5C9D600906A94 /* common.h */; };
 		F35D5BD929E5C9D600906A94 /* common_platform.mm in Sources */ = {isa = PBXBuildFile; fileRef = F35D5BD329E5C9D600906A94 /* common_platform.mm */; };
 		F35D5BDA29E5C9D600906A94 /* FModCapsule.mm in Sources */ = {isa = PBXBuildFile; fileRef = F35D5BD429E5C9D600906A94 /* FModCapsule.mm */; };
 		F35D5BDB29E5C9D600906A94 /* FModCapsule.h in Headers */ = {isa = PBXBuildFile; fileRef = F35D5BD529E5C9D600906A94 /* FModCapsule.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F35D5BDD29E5CA3500906A94 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F8A621AEF04900B60098 /* AVFoundation.framework */; };
-		F35D5BDE29E5CA5A00906A94 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F8AA21AEF05A00B60098 /* UIKit.framework */; };
-		F35D5BDF29E5CA6400906A94 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F8A821AEF05200B60098 /* AudioToolbox.framework */; };
-		F35D5BED29E5CC5600906A94 /* FModAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F85321AEEEC200B60098 /* FModAPI.framework */; };
-		F35D5BEE29E5CC5600906A94 /* FModAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F326F85321AEEEC200B60098 /* FModAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F35D5BF229E5CDB800906A94 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F35D5BF129E5CDB800906A94 /* SnapKit */; };
 		F3680AE5269014F70012F2CF /* FModMusicStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3680AE4269014F70012F2CF /* FModMusicStore.swift */; };
 		F389BBDA21B05451002F8EAF /* FMOD_White.png in Resources */ = {isa = PBXBuildFile; fileRef = F389BBD821B05451002F8EAF /* FMOD_White.png */; };
@@ -43,7 +43,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F35D5BEF29E5CC5600906A94 /* PBXContainerItemProxy */ = {
+		2B4ADA3729E66FFC00812913 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F326F84A21AEEEC200B60098 /* Project object */;
 			proxyType = 1;
@@ -53,13 +53,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		2BA1989129E591820022D9C8 /* Embed Frameworks */ = {
+		2B4ADA3929E66FFC00812913 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F35D5BEE29E5CC5600906A94 /* FModAPI.framework in Embed Frameworks */,
+				2B4ADA3629E66FFB00812913 /* FModAPI.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -112,10 +112,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F35D5BC529E5C82F00906A94 /* libfmodL_iphoneos.a in Frameworks */,
-				F35D5BDE29E5CA5A00906A94 /* UIKit.framework in Frameworks */,
-				F35D5BDF29E5CA6400906A94 /* AudioToolbox.framework in Frameworks */,
-				F35D5BDD29E5CA3500906A94 /* AVFoundation.framework in Frameworks */,
+				2B4ADA3229E66F8900812913 /* AVFoundation.framework in Frameworks */,
+				2B4ADA3429E66F9300812913 /* UIKit.framework in Frameworks */,
+				2B4ADA1D29E6590100812913 /* libfmodL_iphoneos.a in Frameworks */,
+				2B4ADA3329E66F8F00812913 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,8 +123,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F35D5BED29E5CC5600906A94 /* FModAPI.framework in Frameworks */,
 				F35D5BF229E5CDB800906A94 /* SnapKit in Frameworks */,
+				2B4ADA3529E66FFB00812913 /* FModAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,12 +308,12 @@
 				F326F8AD21AEF15900B60098 /* Sources */,
 				F326F8AE21AEF15900B60098 /* Frameworks */,
 				F326F8AF21AEF15900B60098 /* Resources */,
-				2BA1989129E591820022D9C8 /* Embed Frameworks */,
+				2B4ADA3929E66FFC00812913 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				F35D5BF029E5CC5600906A94 /* PBXTargetDependency */,
+				2B4ADA3829E66FFC00812913 /* PBXTargetDependency */,
 			);
 			name = FModDemo;
 			packageProductDependencies = (
@@ -338,7 +338,7 @@
 					};
 					F326F8B021AEF15900B60098 = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1430;
+						LastSwiftMigration = 1420;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -407,9 +407,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F326F8B621AEF15900B60098 /* FModMusicListViewController.swift in Sources */,
 				F33C382E26908D27008E6FC4 /* FModMusicCell.swift in Sources */,
 				F3680AE5269014F70012F2CF /* FModMusicStore.swift in Sources */,
+				2B4ADA3A29E6703200812913 /* FModMusicListViewController.swift in Sources */,
 				F326F8B421AEF15900B60098 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -417,10 +417,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F35D5BF029E5CC5600906A94 /* PBXTargetDependency */ = {
+		2B4ADA3829E66FFC00812913 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F326F85221AEEEC200B60098 /* FModAPI */;
-			targetProxy = F35D5BEF29E5CC5600906A94 /* PBXContainerItemProxy */;
+			targetProxy = 2B4ADA3729E66FFC00812913 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -570,10 +570,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 2N62934Y28;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -587,13 +584,8 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/OrzFMod/FModCapsule/FModAPI/api/core/lib",
-					"$(PROJECT_DIR)/OrzFMod/FModCapsule/FModAPI/iOS/core/lib",
-					"$(PROJECT_DIR)/OrzFMod/FModCapsule/FModAPI/lib",
-					"$(PROJECT_DIR)/OrzFMod/FModAPI/lib",
 					"$(PROJECT_DIR)/FModAPI/iOSAPI/lib",
 				);
-				MACH_O_TYPE = mh_dylib;
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.joker.OrzFMod;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -609,10 +601,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 2N62934Y28;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -626,13 +615,8 @@
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/OrzFMod/FModCapsule/FModAPI/api/core/lib",
-					"$(PROJECT_DIR)/OrzFMod/FModCapsule/FModAPI/iOS/core/lib",
-					"$(PROJECT_DIR)/OrzFMod/FModCapsule/FModAPI/lib",
-					"$(PROJECT_DIR)/OrzFMod/FModAPI/lib",
 					"$(PROJECT_DIR)/FModAPI/iOSAPI/lib",
 				);
-				MACH_O_TYPE = mh_dylib;
 				MACOSX_DEPLOYMENT_TARGET = 11.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.joker.OrzFMod;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -650,7 +634,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2N62934Y28;
 				INFOPLIST_FILE = FModDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -675,7 +658,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2N62934Y28;
 				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = FModDemo/Info.plist;

@@ -6,7 +6,7 @@
 //  Copyright © 2018 joker. All rights reserved.
 //
 
-#import  <FModAPI/FModCapsule.h>
+#import  "FModCapsule.h"
 
 //! Project version number for OrzFMod.
 FOUNDATION_EXPORT double OrzFModVersionNumber;

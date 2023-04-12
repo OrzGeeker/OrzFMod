@@ -7,12 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B4ADA1D29E6590100812913 /* libfmodL_iphoneos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA197FB29E583F00022D9C8 /* libfmodL_iphoneos.a */; };
-		2B4ADA3229E66F8900812913 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F8A621AEF04900B60098 /* AVFoundation.framework */; };
-		2B4ADA3329E66F8F00812913 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F8A821AEF05200B60098 /* AudioToolbox.framework */; };
-		2B4ADA3429E66F9300812913 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F8AA21AEF05A00B60098 /* UIKit.framework */; };
-		2B4ADA3529E66FFB00812913 /* FModAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F85321AEEEC200B60098 /* FModAPI.framework */; };
-		2B4ADA3629E66FFB00812913 /* FModAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F326F85321AEEEC200B60098 /* FModAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2B4ADA3A29E6703200812913 /* FModMusicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326F8B521AEF15900B60098 /* FModMusicListViewController.swift */; };
 		2BA197FC29E583F00022D9C8 /* fmod_output.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F029E583F00022D9C8 /* fmod_output.h */; };
 		2BA197FE29E583F00022D9C8 /* fmod_dsp.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F129E583F00022D9C8 /* fmod_dsp.h */; };
@@ -23,6 +17,12 @@
 		2BA1980829E583F00022D9C8 /* fmod_ios.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F629E583F00022D9C8 /* fmod_ios.h */; };
 		2BA1980A29E583F00022D9C8 /* fmod_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F729E583F00022D9C8 /* fmod_common.h */; };
 		2BA1980C29E583F00022D9C8 /* fmod_dsp_effects.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F829E583F00022D9C8 /* fmod_dsp_effects.h */; };
+		2BE687AF29E680610013237F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F8A821AEF05200B60098 /* AudioToolbox.framework */; };
+		2BE687B029E6806A0013237F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F8A621AEF04900B60098 /* AVFoundation.framework */; };
+		2BE687B129E680740013237F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F8AA21AEF05A00B60098 /* UIKit.framework */; };
+		2BE687B529E686F60013237F /* libfmodL_iphoneos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA197FB29E583F00022D9C8 /* libfmodL_iphoneos.a */; };
+		2BE687B629E6875B0013237F /* FModAPI.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4ADA4529E6793100812913 /* FModAPI.xcframework */; };
+		2BE687B729E6875B0013237F /* FModAPI.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4ADA4529E6793100812913 /* FModAPI.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F326F86421AEEEC200B60098 /* FModAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = F326F85621AEEEC200B60098 /* FModAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F326F8B421AEF15900B60098 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326F8B321AEF15900B60098 /* AppDelegate.swift */; };
 		F326F8B921AEF15900B60098 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F326F8B721AEF15900B60098 /* Main.storyboard */; };
@@ -42,24 +42,14 @@
 		F389BBDC21B0552E002F8EAF /* test.xm in Resources */ = {isa = PBXBuildFile; fileRef = F326F8AC21AEF13600B60098 /* test.xm */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		2B4ADA3729E66FFC00812913 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F326F84A21AEEEC200B60098 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = F326F85221AEEEC200B60098;
-			remoteInfo = FModAPI;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXCopyFilesBuildPhase section */
-		2B4ADA3929E66FFC00812913 /* Embed Frameworks */ = {
+		2BE687B829E6875C0013237F /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				2B4ADA3629E66FFB00812913 /* FModAPI.framework in Embed Frameworks */,
+				2BE687B729E6875B0013237F /* FModAPI.xcframework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,6 +57,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2B4ADA4529E6793100812913 /* FModAPI.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FModAPI.xcframework; sourceTree = "<group>"; };
+		2B4ADA4B29E67B6900812913 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2BA197F029E583F00022D9C8 /* fmod_output.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_output.h; sourceTree = "<group>"; };
 		2BA197F129E583F00022D9C8 /* fmod_dsp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_dsp.h; sourceTree = "<group>"; };
 		2BA197F229E583F00022D9C8 /* fmod_errors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_errors.h; sourceTree = "<group>"; };
@@ -112,10 +104,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B4ADA3229E66F8900812913 /* AVFoundation.framework in Frameworks */,
-				2B4ADA3429E66F9300812913 /* UIKit.framework in Frameworks */,
-				2B4ADA1D29E6590100812913 /* libfmodL_iphoneos.a in Frameworks */,
-				2B4ADA3329E66F8F00812913 /* AudioToolbox.framework in Frameworks */,
+				2BE687B029E6806A0013237F /* AVFoundation.framework in Frameworks */,
+				2BE687B129E680740013237F /* UIKit.framework in Frameworks */,
+				2BE687AF29E680610013237F /* AudioToolbox.framework in Frameworks */,
+				2BE687B529E686F60013237F /* libfmodL_iphoneos.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,8 +115,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BE687B629E6875B0013237F /* FModAPI.xcframework in Frameworks */,
 				F35D5BF229E5CDB800906A94 /* SnapKit in Frameworks */,
-				2B4ADA3529E66FFB00812913 /* FModAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +191,8 @@
 		F326F8A321AEF04100B60098 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2B4ADA4B29E67B6900812913 /* Foundation.framework */,
+				2B4ADA4529E6793100812913 /* FModAPI.xcframework */,
 				F35D5BF329E5CEE100906A94 /* libc++.tbd */,
 				F35D5BB629E5C4DE00906A94 /* AVFAudio.framework */,
 				F326F8AA21AEF05A00B60098 /* UIKit.framework */,
@@ -308,12 +302,11 @@
 				F326F8AD21AEF15900B60098 /* Sources */,
 				F326F8AE21AEF15900B60098 /* Frameworks */,
 				F326F8AF21AEF15900B60098 /* Resources */,
-				2B4ADA3929E66FFC00812913 /* Embed Frameworks */,
+				2BE687B829E6875C0013237F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2B4ADA3829E66FFC00812913 /* PBXTargetDependency */,
 			);
 			name = FModDemo;
 			packageProductDependencies = (
@@ -415,14 +408,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		2B4ADA3829E66FFC00812913 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = F326F85221AEEEC200B60098 /* FModAPI */;
-			targetProxy = 2B4ADA3729E66FFC00812913 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F326F8B721AEF15900B60098 /* Main.storyboard */ = {
@@ -659,7 +644,6 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 2N62934Y28;
-				EXCLUDED_ARCHS = "";
 				INFOPLIST_FILE = FModDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (

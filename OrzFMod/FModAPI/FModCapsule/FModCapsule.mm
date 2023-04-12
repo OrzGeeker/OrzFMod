@@ -186,7 +186,7 @@
     ret = (result == FMOD_OK);
     
     if(sound) {
-        result = sound->release();
+        sound->release();
         sound = NULL;
     }
     

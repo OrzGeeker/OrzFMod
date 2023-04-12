@@ -14,11 +14,19 @@
 		</data>
 		<key>Headers/FModAPI.h</key>
 		<data>
-		DWR3WT+4fCvAfuyCsERW09lpV3M=
+		oKBKGM1YCwm/NIjjhjcRKKC9rEc=
+		</data>
+		<key>Headers/FModCapsule.h</key>
+		<data>
+		H3y4ws//I/7XFb/60a7E+6NAqfg=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		87ekWK87uPRCslvQhf3BLIUUHMk=
+		cNGJZfFWlvZgPEvTjR5EBGp0VBk=
+		</data>
+		<key>Modules/module.modulemap</key>
+		<data>
+		QoLuutdHC24P5mJwmS8u6PRC0jg=
 		</data>
 		<key>test.xm</key>
 		<data>
@@ -45,7 +53,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QbTAv6/94H8FcPzAZM95aHkl29uE55Lr6PPAbWPC5pw=
+			IS8RrVsqyqEqT1d/ajn8jLZxE+rix2zqhC8HHW1bAhc=
+			</data>
+		</dict>
+		<key>Headers/FModCapsule.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			kPjtTW6uCwuDxMSyrEGLfgLQhIR17JwhNayQ/BHPRu8=
+			</data>
+		</dict>
+		<key>Modules/module.modulemap</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0QQwOJdfp0bKW/6kIrN0/VBrNmhTImuRJaTYxEKo7iA=
 			</data>
 		</dict>
 		<key>test.xm</key>

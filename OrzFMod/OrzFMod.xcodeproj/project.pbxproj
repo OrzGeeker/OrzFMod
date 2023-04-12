@@ -21,8 +21,7 @@
 		2BE687B029E6806A0013237F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F8A621AEF04900B60098 /* AVFoundation.framework */; };
 		2BE687B129E680740013237F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F8AA21AEF05A00B60098 /* UIKit.framework */; };
 		2BE687B529E686F60013237F /* libfmodL_iphoneos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA197FB29E583F00022D9C8 /* libfmodL_iphoneos.a */; };
-		2BE687B629E6875B0013237F /* FModAPI.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4ADA4529E6793100812913 /* FModAPI.xcframework */; };
-		2BE687B729E6875B0013237F /* FModAPI.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2B4ADA4529E6793100812913 /* FModAPI.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2BE687C029E691C20013237F /* FModAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 2BE687BF29E691C20013237F /* FModAPI */; };
 		F326F86421AEEEC200B60098 /* FModAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = F326F85621AEEEC200B60098 /* FModAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F326F8B421AEF15900B60098 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326F8B321AEF15900B60098 /* AppDelegate.swift */; };
 		F326F8B921AEF15900B60098 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F326F8B721AEF15900B60098 /* Main.storyboard */; };
@@ -41,20 +40,6 @@
 		F389BBDB21B05451002F8EAF /* FMOD_Black.png in Resources */ = {isa = PBXBuildFile; fileRef = F389BBD921B05451002F8EAF /* FMOD_Black.png */; };
 		F389BBDC21B0552E002F8EAF /* test.xm in Resources */ = {isa = PBXBuildFile; fileRef = F326F8AC21AEF13600B60098 /* test.xm */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		2BE687B829E6875C0013237F /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				2BE687B729E6875B0013237F /* FModAPI.xcframework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2B4ADA4529E6793100812913 /* FModAPI.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FModAPI.xcframework; sourceTree = "<group>"; };
@@ -115,8 +100,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BE687B629E6875B0013237F /* FModAPI.xcframework in Frameworks */,
 				F35D5BF229E5CDB800906A94 /* SnapKit in Frameworks */,
+				2BE687C029E691C20013237F /* FModAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,7 +287,6 @@
 				F326F8AD21AEF15900B60098 /* Sources */,
 				F326F8AE21AEF15900B60098 /* Frameworks */,
 				F326F8AF21AEF15900B60098 /* Resources */,
-				2BE687B829E6875C0013237F /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -311,6 +295,7 @@
 			name = FModDemo;
 			packageProductDependencies = (
 				F35D5BF129E5CDB800906A94 /* SnapKit */,
+				2BE687BF29E691C20013237F /* FModAPI */,
 			);
 			productName = FModDemo;
 			productReference = F326F8B121AEF15900B60098 /* FModDemo.app */;
@@ -351,6 +336,7 @@
 			mainGroup = F326F84921AEEEC200B60098;
 			packageReferences = (
 				F33C382F26908F0F008E6FC4 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				2BE687BE29E691C20013237F /* XCRemoteSwiftPackageReference "OrzFMod" */,
 			);
 			productRefGroup = F326F85421AEEEC200B60098 /* Products */;
 			projectDirPath = "";
@@ -693,6 +679,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		2BE687BE29E691C20013237F /* XCRemoteSwiftPackageReference "OrzFMod" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/OrzGeeker/OrzFMod.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.1;
+			};
+		};
 		F33C382F26908F0F008E6FC4 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
@@ -704,6 +698,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		2BE687BF29E691C20013237F /* FModAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2BE687BE29E691C20013237F /* XCRemoteSwiftPackageReference "OrzFMod" */;
+			productName = FModAPI;
+		};
 		F35D5BF129E5CDB800906A94 /* SnapKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F33C382F26908F0F008E6FC4 /* XCRemoteSwiftPackageReference "SnapKit" */;

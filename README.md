@@ -15,7 +15,7 @@ FMod Offical Site: <https://www.fmod.com>
 Now you can use my FMod Swift Capsule!
 
 
-# Example for play a test.xm music file
+# Example for play a test music
 
 ```swift
 import UIKit
@@ -23,14 +23,13 @@ import OrzFMod
 
 class ViewController: UIViewController {
   
-    var player = FModCapsule()
+    let player = FModCapsule()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        let FModResBundle = Bundle(for: FModCapsule.self);
-        player.playStream(withFilePath: FModResBundle.path(forResource: "test", ofType: "xm"))
+        player.playDemoMusic()
     }
 }
 ```

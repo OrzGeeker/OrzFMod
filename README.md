@@ -19,7 +19,7 @@ Now you can use my FMod Swift Capsule!
 
 ```swift
 import UIKit
-import OrzFMod
+import FModAPI
 
 class ViewController: UIViewController {
   

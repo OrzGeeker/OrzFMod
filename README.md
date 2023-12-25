@@ -9,7 +9,7 @@ FMod Offical Site: <https://www.fmod.com>
 ## Swift Package Manager
 
 ```swift
-.package(url: "https://github.com/OrzGeeker/OrzFMod.git", .upToNextMajor("0.0.1"))
+.package(url: "https://github.com/OrzGeeker/OrzFMod.git", .upToNextMajor("0.0.2"))
 ```
 
 Now you can use my FMod Swift Capsule!

@@ -25,7 +25,6 @@
 		F35D5BDB29E5C9D600906A94 /* FModCapsule.h in Headers */ = {isa = PBXBuildFile; fileRef = F35D5BD529E5C9D600906A94 /* FModCapsule.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F37358A92B39E7F200D7C85C /* common_macOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = F37358A72B39E7F200D7C85C /* common_macOS.mm */; platformFilters = (macos, ); };
 		F37358AA2B39E7F200D7C85C /* common_iOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = F37358A82B39E7F200D7C85C /* common_iOS.mm */; platformFilter = ios; };
-		F37358AF2B39EA3100D7C85C /* libfmod_iphonesimulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F373589A2B39D87F00D7C85C /* libfmod_iphonesimulator.a */; platformFilter = ios; };
 		F37358B72B39EB8800D7C85C /* DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37358B62B39EB8800D7C85C /* DemoApp.swift */; };
 		F37358B92B39EB8800D7C85C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37358B82B39EB8800D7C85C /* ContentView.swift */; };
 		F37358BB2B39EB8B00D7C85C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F37358BA2B39EB8B00D7C85C /* Assets.xcassets */; };
@@ -34,6 +33,7 @@
 		F37358CC2B39F25000D7C85C /* FModAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F85321AEEEC200B60098 /* FModAPI.framework */; };
 		F37358CD2B39F25000D7C85C /* FModAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F326F85321AEEEC200B60098 /* FModAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F37358D12B39F26600D7C85C /* libfmod.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = F373588F2B39D80600D7C85C /* libfmod.dylib */; platformFilters = (macos, ); };
+		F37358D32B39F3E900D7C85C /* libfmod_iphoneos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F37358992B39D87F00D7C85C /* libfmod_iphoneos.a */; };
 		F389BBDA21B05451002F8EAF /* FMOD_White.png in Resources */ = {isa = PBXBuildFile; fileRef = F389BBD821B05451002F8EAF /* FMOD_White.png */; };
 		F389BBDB21B05451002F8EAF /* FMOD_Black.png in Resources */ = {isa = PBXBuildFile; fileRef = F389BBD921B05451002F8EAF /* FMOD_Black.png */; };
 		F389BBDC21B0552E002F8EAF /* test.xm in Resources */ = {isa = PBXBuildFile; fileRef = F326F8AC21AEF13600B60098 /* test.xm */; };
@@ -121,8 +121,8 @@
 			files = (
 				F37358CB2B39F23D00D7C85C /* libfmod.dylib in Frameworks */,
 				2BE687B029E6806A0013237F /* AVFoundation.framework in Frameworks */,
-				F37358AF2B39EA3100D7C85C /* libfmod_iphonesimulator.a in Frameworks */,
 				2BE687B129E680740013237F /* UIKit.framework in Frameworks */,
+				F37358D32B39F3E900D7C85C /* libfmod_iphoneos.a in Frameworks */,
 				2BE687AF29E680610013237F /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

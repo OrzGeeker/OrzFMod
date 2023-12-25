@@ -9,15 +9,18 @@ ARVHIVE_DIR="${BUILD_DIR}/archives"
 
 IPHONEOS_SCHEME="${SCHEME}-iphoneos"
 IPHONE_SIMULATOR_SCHEMA="${SCHEME}-Simulator"
+MACOS_SCHEME="${SCHEME}-macos"
 
 IPHONE_OS_ARCHIVE_PATH="${ARVHIVE_DIR}/${IPHONEOS_SCHEME}.xcarchive"
 IPHONE_SIMULATOR_ARCHIVE_PATH="${ARVHIVE_DIR}/${IPHONE_SIMULATOR_SCHEMA}.xcarchive"
+MACOS_ARCHIVE_PATH="${ARVHIVE_DIR}/${MACOS_SCHEME}.xcarchive"
 
 XCFRAMEWORK="${BUILD_DIR}/${SCHEME}.xcframework"
 XCFRAMEWORK_ZIP="${XCFRAMEWORK}.zip"
 
 # rm -rf ${BUILD_DIR}
 
+# iOS-Simulator
 # xcodebuild \
 #     -project ${PROJECT_NAME} \
 #     -scheme  ${SCHEME} \
@@ -26,6 +29,7 @@ XCFRAMEWORK_ZIP="${XCFRAMEWORK}.zip"
 #     archive SKIP_INSTALL=NO \
 #     BUILD_LIBRARY_FOR_DISTRIBUTION=YES
 
+# iOS
 # xcodebuild \
 #     -project ${PROJECT_NAME} \
 #     -scheme  ${SCHEME} \
@@ -34,9 +38,19 @@ XCFRAMEWORK_ZIP="${XCFRAMEWORK}.zip"
 #     archive SKIP_INSTALL=NO \
 #     BUILD_LIBRARY_FOR_DISTRIBUTION=YES
 
+# macOS
+# xcodebuild \
+#     -project ${PROJECT_NAME} \
+#     -scheme  ${SCHEME} \
+#     -archivePath ${MACOS_ARCHIVE_PATH} \
+#     -destination "generic/platform=macOS" \
+#     archive SKIP_INSTALL=NO \
+#     BUILD_LIBRARY_FOR_DISTRIBUTION=YES
+
 xcodebuild -create-xcframework \
     -archive ${IPHONE_OS_ARCHIVE_PATH} -framework ${SCHEME}.framework \
     -archive ${IPHONE_SIMULATOR_ARCHIVE_PATH} -framework ${SCHEME}.framework  \
+    -archive ${MACOS_ARCHIVE_PATH} -framework ${SCHEME}.framework  \
     -output ${XCFRAMEWORK}
 
 if [ $? -eq 0 ]; then

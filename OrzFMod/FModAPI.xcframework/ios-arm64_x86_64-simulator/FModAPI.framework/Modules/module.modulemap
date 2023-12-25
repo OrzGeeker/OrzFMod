@@ -1,6 +1,6 @@
 framework module FModAPI {
   umbrella header "FModAPI.h"
-
   export *
+
   module * { export * }
 }

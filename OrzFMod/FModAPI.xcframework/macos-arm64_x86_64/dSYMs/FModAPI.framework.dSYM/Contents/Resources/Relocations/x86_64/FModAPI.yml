@@ -1,0 +1,30 @@
+---
+triple:          'x86_64-apple-darwin'
+binary-path:     '/Users/joker/Library/Developer/Xcode/DerivedData/OrzFMod-guxtqgrksodozbbjuykbbfoepanh/Build/Intermediates.noindex/ArchiveIntermediates/FModAPI/InstallationBuildProductsLocation/Library/Frameworks/FModAPI.framework/Versions/A/FModAPI'
+relocations:
+  - { offsetInCU: 0x33, offset: 0x33, size: 0x8, addend: 0x0, symName: _FModAPIVersionString, symObjAddr: 0x0, symBinAddr: 0x21F0, symSize: 0x0 }
+  - { offsetInCU: 0x67, offset: 0x67, size: 0x8, addend: 0x0, symName: _FModAPIVersionNumber, symObjAddr: 0x28, symBinAddr: 0x2218, symSize: 0x0 }
+  - { offsetInCU: 0x27, offset: 0xA3, size: 0x8, addend: 0x0, symName: __Z30Common_RegisterSuspendCallbackPFvbE, symObjAddr: 0x0, symBinAddr: 0x175C, symSize: 0x6 }
+  - { offsetInCU: 0x34, offset: 0xB0, size: 0x8, addend: 0x0, symName: __Z30Common_RegisterSuspendCallbackPFvbE, symObjAddr: 0x0, symBinAddr: 0x175C, symSize: 0x6 }
+  - { offsetInCU: 0x5B, offset: 0xD7, size: 0x8, addend: 0x0, symName: __Z11Common_InitPPv, symObjAddr: 0x6, symBinAddr: 0x1762, symSize: 0x6 }
+  - { offsetInCU: 0x27, offset: 0x13E, size: 0x8, addend: 0x0, symName: '-[FModCapsule init]', symObjAddr: 0x0, symBinAddr: 0x1768, symSize: 0x69 }
+  - { offsetInCU: 0x5643, offset: 0x575A, size: 0x8, addend: 0x0, symName: '-[FModCapsule init]', symObjAddr: 0x0, symBinAddr: 0x1768, symSize: 0x69 }
+  - { offsetInCU: 0x569B, offset: 0x57B2, size: 0x8, addend: 0x0, symName: '-[FModCapsule createSystem]', symObjAddr: 0x69, symBinAddr: 0x17D1, symSize: 0x177 }
+  - { offsetInCU: 0x57D8, offset: 0x58EF, size: 0x8, addend: 0x0, symName: __ZL16FMOD_ErrorString11FMOD_RESULT, symObjAddr: 0x1E0, symBinAddr: 0x1948, symSize: 0x26 }
+  - { offsetInCU: 0x5825, offset: 0x593C, size: 0x8, addend: 0x0, symName: '-[FModCapsule playStreamWithFilePath:]', symObjAddr: 0x206, symBinAddr: 0x196E, symSize: 0x218 }
+  - { offsetInCU: 0x5988, offset: 0x5A9F, size: 0x8, addend: 0x0, symName: '-[FModCapsule play]', symObjAddr: 0x41E, symBinAddr: 0x1B86, symSize: 0x41 }
+  - { offsetInCU: 0x59D5, offset: 0x5AEC, size: 0x8, addend: 0x0, symName: '-[FModCapsule pause]', symObjAddr: 0x45F, symBinAddr: 0x1BC7, symSize: 0x44 }
+  - { offsetInCU: 0x5A22, offset: 0x5B39, size: 0x8, addend: 0x0, symName: '-[FModCapsule close]', symObjAddr: 0x4A3, symBinAddr: 0x1C0B, symSize: 0x2E }
+  - { offsetInCU: 0x5A77, offset: 0x5B8E, size: 0x8, addend: 0x0, symName: '-[FModCapsule releaseSound]', symObjAddr: 0x4D1, symBinAddr: 0x1C39, symSize: 0x8A }
+  - { offsetInCU: 0x5AF0, offset: 0x5C07, size: 0x8, addend: 0x0, symName: '-[FModCapsule releaseSystem]', symObjAddr: 0x55B, symBinAddr: 0x1CC3, symSize: 0xD7 }
+  - { offsetInCU: 0x5B8E, offset: 0x5CA5, size: 0x8, addend: 0x0, symName: '-[FModCapsule stop]', symObjAddr: 0x632, symBinAddr: 0x1D9A, symSize: 0x15 }
+  - { offsetInCU: 0x5BBE, offset: 0x5CD5, size: 0x8, addend: 0x0, symName: '-[FModCapsule isPlaying]', symObjAddr: 0x647, symBinAddr: 0x1DAF, symSize: 0x55 }
+  - { offsetInCU: 0x5C1E, offset: 0x5D35, size: 0x8, addend: 0x0, symName: '-[FModCapsule isPaused]', symObjAddr: 0x69C, symBinAddr: 0x1E04, symSize: 0x31 }
+  - { offsetInCU: 0x5C6F, offset: 0x5D86, size: 0x8, addend: 0x0, symName: '-[FModCapsule isSameAs:]', symObjAddr: 0x6CD, symBinAddr: 0x1E35, symSize: 0x8D }
+  - { offsetInCU: 0x5D2A, offset: 0x5E41, size: 0x8, addend: 0x0, symName: '-[FModCapsule canPlay:]', symObjAddr: 0x75A, symBinAddr: 0x1EC2, symSize: 0x99 }
+  - { offsetInCU: 0x5DDC, offset: 0x5EF3, size: 0x8, addend: 0x0, symName: '+[FModCapsule testMusicFilePath]', symObjAddr: 0x7F3, symBinAddr: 0x1F5B, symSize: 0x8B }
+  - { offsetInCU: 0x5E51, offset: 0x5F68, size: 0x8, addend: 0x0, symName: '-[FModCapsule playDemoMusic]', symObjAddr: 0x87E, symBinAddr: 0x1FE6, symSize: 0x67 }
+  - { offsetInCU: 0x5ECD, offset: 0x5FE4, size: 0x8, addend: 0x0, symName: '-[FModCapsule currentPlayFilePath]', symObjAddr: 0x8E5, symBinAddr: 0x204D, symSize: 0xA }
+  - { offsetInCU: 0x5EFF, offset: 0x6016, size: 0x8, addend: 0x0, symName: '-[FModCapsule setCurrentPlayFilePath:]', symObjAddr: 0x8EF, symBinAddr: 0x2057, symSize: 0xF }
+  - { offsetInCU: 0x5F3A, offset: 0x6051, size: 0x8, addend: 0x0, symName: '-[FModCapsule .cxx_destruct]', symObjAddr: 0x8FE, symBinAddr: 0x2066, symSize: 0x10 }
+...

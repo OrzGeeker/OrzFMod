@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B4ADA3A29E6703200812913 /* FModMusicListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326F8B521AEF15900B60098 /* FModMusicListViewController.swift */; };
 		2BA197FC29E583F00022D9C8 /* fmod_output.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F029E583F00022D9C8 /* fmod_output.h */; };
 		2BA197FE29E583F00022D9C8 /* fmod_dsp.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F129E583F00022D9C8 /* fmod_dsp.h */; };
 		2BA1980029E583F00022D9C8 /* fmod_errors.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F229E583F00022D9C8 /* fmod_errors.h */; };
@@ -17,29 +16,63 @@
 		2BA1980829E583F00022D9C8 /* fmod_ios.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F629E583F00022D9C8 /* fmod_ios.h */; };
 		2BA1980A29E583F00022D9C8 /* fmod_common.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F729E583F00022D9C8 /* fmod_common.h */; };
 		2BA1980C29E583F00022D9C8 /* fmod_dsp_effects.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BA197F829E583F00022D9C8 /* fmod_dsp_effects.h */; };
-		2BE687AF29E680610013237F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F8A821AEF05200B60098 /* AudioToolbox.framework */; };
-		2BE687B029E6806A0013237F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F8A621AEF04900B60098 /* AVFoundation.framework */; };
-		2BE687B129E680740013237F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F8AA21AEF05A00B60098 /* UIKit.framework */; };
-		2BE687B529E686F60013237F /* libfmodL_iphoneos.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BA197FB29E583F00022D9C8 /* libfmodL_iphoneos.a */; };
-		2BE687C029E691C20013237F /* FModAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 2BE687BF29E691C20013237F /* FModAPI */; };
+		2BE687AF29E680610013237F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F8A821AEF05200B60098 /* AudioToolbox.framework */; platformFilter = ios; };
+		2BE687B029E6806A0013237F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F8A621AEF04900B60098 /* AVFoundation.framework */; platformFilter = ios; };
+		2BE687B129E680740013237F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F8AA21AEF05A00B60098 /* UIKit.framework */; platformFilter = ios; };
 		F326F86421AEEEC200B60098 /* FModAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = F326F85621AEEEC200B60098 /* FModAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F326F8B421AEF15900B60098 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F326F8B321AEF15900B60098 /* AppDelegate.swift */; };
-		F326F8B921AEF15900B60098 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F326F8B721AEF15900B60098 /* Main.storyboard */; };
-		F326F8BB21AEF15A00B60098 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F326F8BA21AEF15A00B60098 /* Assets.xcassets */; };
-		F326F8BE21AEF15A00B60098 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F326F8BC21AEF15A00B60098 /* LaunchScreen.storyboard */; };
-		F33C382E26908D27008E6FC4 /* FModMusicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33C382D26908D27008E6FC4 /* FModMusicCell.swift */; };
-		F35D5BD629E5C9D600906A94 /* common.mm in Sources */ = {isa = PBXBuildFile; fileRef = F35D5BD029E5C9D600906A94 /* common.mm */; };
-		F35D5BD729E5C9D600906A94 /* common_platform.h in Headers */ = {isa = PBXBuildFile; fileRef = F35D5BD129E5C9D600906A94 /* common_platform.h */; };
-		F35D5BD829E5C9D600906A94 /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = F35D5BD229E5C9D600906A94 /* common.h */; };
-		F35D5BD929E5C9D600906A94 /* common_platform.mm in Sources */ = {isa = PBXBuildFile; fileRef = F35D5BD329E5C9D600906A94 /* common_platform.mm */; };
+		F35D5BD729E5C9D600906A94 /* common.h in Headers */ = {isa = PBXBuildFile; fileRef = F35D5BD129E5C9D600906A94 /* common.h */; };
 		F35D5BDA29E5C9D600906A94 /* FModCapsule.mm in Sources */ = {isa = PBXBuildFile; fileRef = F35D5BD429E5C9D600906A94 /* FModCapsule.mm */; };
 		F35D5BDB29E5C9D600906A94 /* FModCapsule.h in Headers */ = {isa = PBXBuildFile; fileRef = F35D5BD529E5C9D600906A94 /* FModCapsule.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F35D5BF229E5CDB800906A94 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F35D5BF129E5CDB800906A94 /* SnapKit */; };
-		F3680AE5269014F70012F2CF /* FModMusicStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3680AE4269014F70012F2CF /* FModMusicStore.swift */; };
+		F37358A92B39E7F200D7C85C /* common_macOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = F37358A72B39E7F200D7C85C /* common_macOS.mm */; platformFilters = (macos, ); };
+		F37358AA2B39E7F200D7C85C /* common_iOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = F37358A82B39E7F200D7C85C /* common_iOS.mm */; platformFilter = ios; };
+		F37358AF2B39EA3100D7C85C /* libfmod_iphonesimulator.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F373589A2B39D87F00D7C85C /* libfmod_iphonesimulator.a */; platformFilter = ios; };
+		F37358B72B39EB8800D7C85C /* DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37358B62B39EB8800D7C85C /* DemoApp.swift */; };
+		F37358B92B39EB8800D7C85C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F37358B82B39EB8800D7C85C /* ContentView.swift */; };
+		F37358BB2B39EB8B00D7C85C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F37358BA2B39EB8B00D7C85C /* Assets.xcassets */; };
+		F37358BF2B39EB8B00D7C85C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F37358BE2B39EB8B00D7C85C /* Preview Assets.xcassets */; };
+		F37358CB2B39F23D00D7C85C /* libfmod.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F373588F2B39D80600D7C85C /* libfmod.dylib */; platformFilters = (macos, ); };
+		F37358CC2B39F25000D7C85C /* FModAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F326F85321AEEEC200B60098 /* FModAPI.framework */; };
+		F37358CD2B39F25000D7C85C /* FModAPI.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F326F85321AEEEC200B60098 /* FModAPI.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F37358D12B39F26600D7C85C /* libfmod.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = F373588F2B39D80600D7C85C /* libfmod.dylib */; platformFilters = (macos, ); };
 		F389BBDA21B05451002F8EAF /* FMOD_White.png in Resources */ = {isa = PBXBuildFile; fileRef = F389BBD821B05451002F8EAF /* FMOD_White.png */; };
 		F389BBDB21B05451002F8EAF /* FMOD_Black.png in Resources */ = {isa = PBXBuildFile; fileRef = F389BBD921B05451002F8EAF /* FMOD_Black.png */; };
 		F389BBDC21B0552E002F8EAF /* test.xm in Resources */ = {isa = PBXBuildFile; fileRef = F326F8AC21AEF13600B60098 /* test.xm */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F37358CE2B39F25000D7C85C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F326F84A21AEEEC200B60098 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F326F85221AEEEC200B60098;
+			remoteInfo = FModAPI;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F37358D02B39F25000D7C85C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F37358CD2B39F25000D7C85C /* FModAPI.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F37358D22B39F26600D7C85C /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F37358D12B39F26600D7C85C /* libfmod.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		2B4ADA4529E6793100812913 /* FModAPI.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = FModAPI.xcframework; sourceTree = "<group>"; };
@@ -53,8 +86,6 @@
 		2BA197F629E583F00022D9C8 /* fmod_ios.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_ios.h; sourceTree = "<group>"; };
 		2BA197F729E583F00022D9C8 /* fmod_common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_common.h; sourceTree = "<group>"; };
 		2BA197F829E583F00022D9C8 /* fmod_dsp_effects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fmod_dsp_effects.h; sourceTree = "<group>"; };
-		2BA197FA29E583F00022D9C8 /* libfmodL_iphonesimulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmodL_iphonesimulator.a; sourceTree = "<group>"; };
-		2BA197FB29E583F00022D9C8 /* libfmodL_iphoneos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmodL_iphoneos.a; sourceTree = "<group>"; };
 		F326F85321AEEEC200B60098 /* FModAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FModAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F326F85621AEEEC200B60098 /* FModAPI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FModAPI.h; sourceTree = "<group>"; };
 		F326F85721AEEEC200B60098 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -63,23 +94,22 @@
 		F326F8A821AEF05200B60098 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		F326F8AA21AEF05A00B60098 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F326F8AC21AEF13600B60098 /* test.xm */ = {isa = PBXFileReference; lastKnownFileType = file; path = test.xm; sourceTree = "<group>"; };
-		F326F8B121AEF15900B60098 /* FModDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FModDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F326F8B321AEF15900B60098 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F326F8B521AEF15900B60098 /* FModMusicListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FModMusicListViewController.swift; sourceTree = "<group>"; };
-		F326F8B821AEF15900B60098 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F326F8BA21AEF15A00B60098 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F326F8BD21AEF15A00B60098 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F326F8BF21AEF15A00B60098 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F33C382D26908D27008E6FC4 /* FModMusicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FModMusicCell.swift; sourceTree = "<group>"; };
 		F35D5BB629E5C4DE00906A94 /* AVFAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFAudio.framework; path = System/Library/Frameworks/AVFAudio.framework; sourceTree = SDKROOT; };
-		F35D5BD029E5C9D600906A94 /* common.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = common.mm; sourceTree = "<group>"; };
-		F35D5BD129E5C9D600906A94 /* common_platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common_platform.h; sourceTree = "<group>"; };
-		F35D5BD229E5C9D600906A94 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
-		F35D5BD329E5C9D600906A94 /* common_platform.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = common_platform.mm; sourceTree = "<group>"; };
+		F35D5BD129E5C9D600906A94 /* common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = common.h; sourceTree = "<group>"; };
 		F35D5BD429E5C9D600906A94 /* FModCapsule.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FModCapsule.mm; sourceTree = "<group>"; };
 		F35D5BD529E5C9D600906A94 /* FModCapsule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FModCapsule.h; sourceTree = "<group>"; };
 		F35D5BF329E5CEE100906A94 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
-		F3680AE4269014F70012F2CF /* FModMusicStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FModMusicStore.swift; sourceTree = "<group>"; };
+		F373588F2B39D80600D7C85C /* libfmod.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libfmod.dylib; sourceTree = "<group>"; };
+		F37358992B39D87F00D7C85C /* libfmod_iphoneos.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmod_iphoneos.a; sourceTree = "<group>"; };
+		F373589A2B39D87F00D7C85C /* libfmod_iphonesimulator.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfmod_iphonesimulator.a; sourceTree = "<group>"; };
+		F37358A72B39E7F200D7C85C /* common_macOS.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = common_macOS.mm; sourceTree = "<group>"; };
+		F37358A82B39E7F200D7C85C /* common_iOS.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = common_iOS.mm; sourceTree = "<group>"; };
+		F37358B42B39EB8800D7C85C /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F37358B62B39EB8800D7C85C /* DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoApp.swift; sourceTree = "<group>"; };
+		F37358B82B39EB8800D7C85C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F37358BA2B39EB8B00D7C85C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F37358BC2B39EB8B00D7C85C /* Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Demo.entitlements; sourceTree = "<group>"; };
+		F37358BE2B39EB8B00D7C85C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F389BBD821B05451002F8EAF /* FMOD_White.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FMOD_White.png; sourceTree = "<group>"; };
 		F389BBD921B05451002F8EAF /* FMOD_Black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FMOD_Black.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -89,34 +119,25 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F37358CB2B39F23D00D7C85C /* libfmod.dylib in Frameworks */,
 				2BE687B029E6806A0013237F /* AVFoundation.framework in Frameworks */,
+				F37358AF2B39EA3100D7C85C /* libfmod_iphonesimulator.a in Frameworks */,
 				2BE687B129E680740013237F /* UIKit.framework in Frameworks */,
 				2BE687AF29E680610013237F /* AudioToolbox.framework in Frameworks */,
-				2BE687B529E686F60013237F /* libfmodL_iphoneos.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F326F8AE21AEF15900B60098 /* Frameworks */ = {
+		F37358B12B39EB8800D7C85C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F35D5BF229E5CDB800906A94 /* SnapKit in Frameworks */,
-				2BE687C029E691C20013237F /* FModAPI in Frameworks */,
+				F37358CC2B39F25000D7C85C /* FModAPI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2BA197EE29E583F00022D9C8 /* iOSAPI */ = {
-			isa = PBXGroup;
-			children = (
-				2BA197EF29E583F00022D9C8 /* inc */,
-				2BA197F929E583F00022D9C8 /* lib */,
-			);
-			path = iOSAPI;
-			sourceTree = "<group>";
-		};
 		2BA197EF29E583F00022D9C8 /* inc */ = {
 			isa = PBXGroup;
 			children = (
@@ -136,8 +157,8 @@
 		2BA197F929E583F00022D9C8 /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				2BA197FA29E583F00022D9C8 /* libfmodL_iphonesimulator.a */,
-				2BA197FB29E583F00022D9C8 /* libfmodL_iphoneos.a */,
+				F37358AC2B39E97900D7C85C /* macOS */,
+				F37358AB2B39E97000D7C85C /* iOS */,
 			);
 			path = lib;
 			sourceTree = "<group>";
@@ -145,8 +166,8 @@
 		F326F84921AEEEC200B60098 = {
 			isa = PBXGroup;
 			children = (
+				F37358B52B39EB8800D7C85C /* Demo */,
 				F326F85521AEEEC200B60098 /* FModAPI */,
-				F326F8B221AEF15900B60098 /* FModDemo */,
 				F326F85421AEEEC200B60098 /* Products */,
 				F326F8A321AEF04100B60098 /* Frameworks */,
 			);
@@ -156,7 +177,7 @@
 			isa = PBXGroup;
 			children = (
 				F326F85321AEEEC200B60098 /* FModAPI.framework */,
-				F326F8B121AEF15900B60098 /* FModDemo.app */,
+				F37358B42B39EB8800D7C85C /* Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -164,11 +185,10 @@
 		F326F85521AEEEC200B60098 /* FModAPI */ = {
 			isa = PBXGroup;
 			children = (
-				F35D5BCE29E5C9D600906A94 /* FModCapsule */,
-				2BA197EE29E583F00022D9C8 /* iOSAPI */,
-				F326F8D721AEFA2B00B60098 /* Resources */,
 				F326F85621AEEEC200B60098 /* FModAPI.h */,
 				F326F85721AEEEC200B60098 /* Info.plist */,
+				F35D5BCE29E5C9D600906A94 /* FModCapsule */,
+				F326F8D721AEFA2B00B60098 /* Resources */,
 			);
 			path = FModAPI;
 			sourceTree = "<group>";
@@ -188,21 +208,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F326F8B221AEF15900B60098 /* FModDemo */ = {
-			isa = PBXGroup;
-			children = (
-				F326F8B321AEF15900B60098 /* AppDelegate.swift */,
-				F33C382D26908D27008E6FC4 /* FModMusicCell.swift */,
-				F326F8B521AEF15900B60098 /* FModMusicListViewController.swift */,
-				F3680AE4269014F70012F2CF /* FModMusicStore.swift */,
-				F326F8B721AEF15900B60098 /* Main.storyboard */,
-				F326F8BA21AEF15A00B60098 /* Assets.xcassets */,
-				F326F8BC21AEF15A00B60098 /* LaunchScreen.storyboard */,
-				F326F8BF21AEF15A00B60098 /* Info.plist */,
-			);
-			path = FModDemo;
-			sourceTree = "<group>";
-		};
 		F326F8D721AEFA2B00B60098 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -216,9 +221,11 @@
 		F35D5BCE29E5C9D600906A94 /* FModCapsule */ = {
 			isa = PBXGroup;
 			children = (
-				F35D5BCF29E5C9D600906A94 /* Common */,
-				F35D5BD429E5C9D600906A94 /* FModCapsule.mm */,
 				F35D5BD529E5C9D600906A94 /* FModCapsule.h */,
+				F35D5BD429E5C9D600906A94 /* FModCapsule.mm */,
+				F35D5BCF29E5C9D600906A94 /* Common */,
+				2BA197EF29E583F00022D9C8 /* inc */,
+				2BA197F929E583F00022D9C8 /* lib */,
 			);
 			path = FModCapsule;
 			sourceTree = "<group>";
@@ -226,12 +233,48 @@
 		F35D5BCF29E5C9D600906A94 /* Common */ = {
 			isa = PBXGroup;
 			children = (
-				F35D5BD029E5C9D600906A94 /* common.mm */,
-				F35D5BD129E5C9D600906A94 /* common_platform.h */,
-				F35D5BD229E5C9D600906A94 /* common.h */,
-				F35D5BD329E5C9D600906A94 /* common_platform.mm */,
+				F37358A82B39E7F200D7C85C /* common_iOS.mm */,
+				F37358A72B39E7F200D7C85C /* common_macOS.mm */,
+				F35D5BD129E5C9D600906A94 /* common.h */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		F37358AB2B39E97000D7C85C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F37358992B39D87F00D7C85C /* libfmod_iphoneos.a */,
+				F373589A2B39D87F00D7C85C /* libfmod_iphonesimulator.a */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		F37358AC2B39E97900D7C85C /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				F373588F2B39D80600D7C85C /* libfmod.dylib */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		F37358B52B39EB8800D7C85C /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				F37358B62B39EB8800D7C85C /* DemoApp.swift */,
+				F37358B82B39EB8800D7C85C /* ContentView.swift */,
+				F37358BA2B39EB8B00D7C85C /* Assets.xcassets */,
+				F37358BC2B39EB8B00D7C85C /* Demo.entitlements */,
+				F37358BD2B39EB8B00D7C85C /* Preview Content */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		F37358BD2B39EB8B00D7C85C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F37358BE2B39EB8B00D7C85C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,8 +292,7 @@
 				2BA1980029E583F00022D9C8 /* fmod_errors.h in Headers */,
 				2BA1980429E583F00022D9C8 /* fmod_codec.h in Headers */,
 				2BA1980A29E583F00022D9C8 /* fmod_common.h in Headers */,
-				F35D5BD829E5C9D600906A94 /* common.h in Headers */,
-				F35D5BD729E5C9D600906A94 /* common_platform.h in Headers */,
+				F35D5BD729E5C9D600906A94 /* common.h in Headers */,
 				2BA197FE29E583F00022D9C8 /* fmod_dsp.h in Headers */,
 				2BA1980629E583F00022D9C8 /* fmod.hpp in Headers */,
 				2BA197FC29E583F00022D9C8 /* fmod_output.h in Headers */,
@@ -268,6 +310,7 @@
 				F326F84F21AEEEC200B60098 /* Sources */,
 				F326F85021AEEEC200B60098 /* Frameworks */,
 				F326F85121AEEEC200B60098 /* Resources */,
+				F37358D22B39F26600D7C85C /* Embed Libraries */,
 			);
 			buildRules = (
 			);
@@ -280,25 +323,23 @@
 			productReference = F326F85321AEEEC200B60098 /* FModAPI.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F326F8B021AEF15900B60098 /* FModDemo */ = {
+		F37358B32B39EB8800D7C85C /* Demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F326F8CB21AEF15A00B60098 /* Build configuration list for PBXNativeTarget "FModDemo" */;
+			buildConfigurationList = F37358C02B39EB8B00D7C85C /* Build configuration list for PBXNativeTarget "Demo" */;
 			buildPhases = (
-				F326F8AD21AEF15900B60098 /* Sources */,
-				F326F8AE21AEF15900B60098 /* Frameworks */,
-				F326F8AF21AEF15900B60098 /* Resources */,
+				F37358B02B39EB8800D7C85C /* Sources */,
+				F37358B12B39EB8800D7C85C /* Frameworks */,
+				F37358B22B39EB8800D7C85C /* Resources */,
+				F37358D02B39F25000D7C85C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F37358CF2B39F25000D7C85C /* PBXTargetDependency */,
 			);
-			name = FModDemo;
-			packageProductDependencies = (
-				F35D5BF129E5CDB800906A94 /* SnapKit */,
-				2BE687BF29E691C20013237F /* FModAPI */,
-			);
-			productName = FModDemo;
-			productReference = F326F8B121AEF15900B60098 /* FModDemo.app */;
+			name = Demo;
+			productName = Demo;
+			productReference = F37358B42B39EB8800D7C85C /* Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -307,21 +348,16 @@
 		F326F84A21AEEEC200B60098 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
-				LastUpgradeCheck = 1420;
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 1510;
+				LastUpgradeCheck = 1510;
 				ORGANIZATIONNAME = joker;
 				TargetAttributes = {
 					F326F85221AEEEC200B60098 = {
 						CreatedOnToolsVersion = 10.1;
 					};
-					F326F8B021AEF15900B60098 = {
-						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1420;
-						SystemCapabilities = {
-							com.apple.BackgroundModes = {
-								enabled = 1;
-							};
-						};
+					F37358B32B39EB8800D7C85C = {
+						CreatedOnToolsVersion = 15.1;
 					};
 				};
 			};
@@ -342,7 +378,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F326F8B021AEF15900B60098 /* FModDemo */,
+				F37358B32B39EB8800D7C85C /* Demo */,
 				F326F85221AEEEC200B60098 /* FModAPI */,
 			);
 		};
@@ -359,13 +395,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F326F8AF21AEF15900B60098 /* Resources */ = {
+		F37358B22B39EB8800D7C85C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F326F8BE21AEF15A00B60098 /* LaunchScreen.storyboard in Resources */,
-				F326F8BB21AEF15A00B60098 /* Assets.xcassets in Resources */,
-				F326F8B921AEF15900B60098 /* Main.storyboard in Resources */,
+				F37358BF2B39EB8B00D7C85C /* Preview Assets.xcassets in Resources */,
+				F37358BB2B39EB8B00D7C85C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,49 +411,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F35D5BD629E5C9D600906A94 /* common.mm in Sources */,
-				F35D5BD929E5C9D600906A94 /* common_platform.mm in Sources */,
+				F37358A92B39E7F200D7C85C /* common_macOS.mm in Sources */,
 				F35D5BDA29E5C9D600906A94 /* FModCapsule.mm in Sources */,
+				F37358AA2B39E7F200D7C85C /* common_iOS.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F326F8AD21AEF15900B60098 /* Sources */ = {
+		F37358B02B39EB8800D7C85C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F33C382E26908D27008E6FC4 /* FModMusicCell.swift in Sources */,
-				F3680AE5269014F70012F2CF /* FModMusicStore.swift in Sources */,
-				2B4ADA3A29E6703200812913 /* FModMusicListViewController.swift in Sources */,
-				F326F8B421AEF15900B60098 /* AppDelegate.swift in Sources */,
+				F37358B92B39EB8800D7C85C /* ContentView.swift in Sources */,
+				F37358B72B39EB8800D7C85C /* DemoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXVariantGroup section */
-		F326F8B721AEF15900B60098 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F326F8B821AEF15900B60098 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
+/* Begin PBXTargetDependency section */
+		F37358CF2B39F25000D7C85C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F326F85221AEEEC200B60098 /* FModAPI */;
+			targetProxy = F37358CE2B39F25000D7C85C /* PBXContainerItemProxy */;
 		};
-		F326F8BC21AEF15A00B60098 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F326F8BD21AEF15A00B60098 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		F326F86521AEEEC200B60098 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -453,6 +476,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -474,6 +498,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -483,6 +508,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -517,6 +543,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -531,6 +558,7 @@
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -541,13 +569,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = FModAPI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -556,15 +585,18 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/FModAPI/iOSAPI/lib",
+					"$(PROJECT_DIR)/FModAPI/macOSAPI/lib",
+					"$(PROJECT_DIR)/FModAPI/FModCapsule/lib/macOS",
+					"$(PROJECT_DIR)/FModAPI/FModCapsule/lib/iOS",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joker.OrzFMod;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = NO;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -572,13 +604,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
 				INFOPLIST_FILE = FModAPI/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -587,60 +620,101 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/FModAPI/iOSAPI/lib",
+					"$(PROJECT_DIR)/FModAPI/macOSAPI/lib",
+					"$(PROJECT_DIR)/FModAPI/FModCapsule/lib/macOS",
+					"$(PROJECT_DIR)/FModAPI/FModCapsule/lib/iOS",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++14";
 				PRODUCT_BUNDLE_IDENTIFIER = com.joker.OrzFMod;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = NO;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		F326F8CC21AEF15A00B60098 /* Debug */ = {
+		F37358C12B39EB8B00D7C85C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
-				CLANG_ENABLE_MODULES = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = Demo/Demo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Demo/Preview Content\"";
 				DEVELOPMENT_TEAM = 2N62934Y28;
-				INFOPLIST_FILE = FModDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.joker.OrzPlayer;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joker.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		F326F8CD21AEF15A00B60098 /* Release */ = {
+		F37358C22B39EB8B00D7C85C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
-				CLANG_ENABLE_MODULES = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CODE_SIGN_ENTITLEMENTS = Demo/Demo.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Demo/Preview Content\"";
 				DEVELOPMENT_TEAM = 2N62934Y28;
-				INFOPLIST_FILE = FModDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.joker.OrzPlayer;
+				ENABLE_PREVIEWS = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MARKETING_VERSION = 1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.joker.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
-				SUPPORTS_MACCATALYST = NO;
-				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -667,11 +741,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F326F8CB21AEF15A00B60098 /* Build configuration list for PBXNativeTarget "FModDemo" */ = {
+		F37358C02B39EB8B00D7C85C /* Build configuration list for PBXNativeTarget "Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F326F8CC21AEF15A00B60098 /* Debug */,
-				F326F8CD21AEF15A00B60098 /* Release */,
+				F37358C12B39EB8B00D7C85C /* Debug */,
+				F37358C22B39EB8B00D7C85C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -696,19 +770,6 @@
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		2BE687BF29E691C20013237F /* FModAPI */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 2BE687BE29E691C20013237F /* XCRemoteSwiftPackageReference "OrzFMod" */;
-			productName = FModAPI;
-		};
-		F35D5BF129E5CDB800906A94 /* SnapKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F33C382F26908F0F008E6FC4 /* XCRemoteSwiftPackageReference "SnapKit" */;
-			productName = SnapKit;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F326F84A21AEEEC200B60098 /* Project object */;
 }
